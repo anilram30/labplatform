@@ -1,0 +1,257 @@
+{
+ "run": {
+  "id": "C1000T1A-L407-00028__sparam-1000base-t1-pair__20260608T114524",
+  "site": "LAB4",
+  "instrument_serial": "VNA-4004",
+  "calibration_record": "CAL-LAB4-20260607",
+  "sample_id": "C1000T1A-L407-0002",
+  "procedure_sha": "d3b0a61fbad981e2b9c0feecea12e19537dc09d2a393ffb06a0ae64e8b434adf",
+  "procedure_id": "sparam-1000base-t1-pair",
+  "operator": "l.wang",
+  "campaign": "production-2026",
+  "batch": "P-08",
+  "started": "2026-06-08T11:45:24+00:00",
+  "finished": "2026-06-08T11:45:29+00:00",
+  "t_unix": 1780919124.0,
+  "temperature_c": 23.5,
+  "temperature_method": "ambient (no chamber)",
+  "ambient_c": 23.5,
+  "humidity_pct": 45.0,
+  "state": "DONE",
+  "trust": "trusted",
+  "verdict": "PASS",
+  "headline": "insertion_loss[A]",
+  "headline_margin": 0.22458074745882434,
+  "attempts": 1,
+  "cal_age_days": 1.1148680555599708,
+  "cal_delta_t_k": 0.3000000000000007,
+  "verification_status": "pass",
+  "verification_dev_db": 0.055551082224102544,
+  "trace_noise_db": 0.00017610818782603764,
+  "ifbw_hz": 1000.0,
+  "averages": 1,
+  "power_dbm": 0.0,
+  "points": 1200,
+  "archive_dir": "/tmp/claude-0/-home-claude/3f47c158-0c10-51ff-923e-b80cf8aa746d/scratchpad/net10/LAB4/archive/2026/C1000T1A-L407-00028__sparam-1000base-t1-pair__20260608T114524",
+  "manifest_sha256": "8eeecc501d97167cebab7f933aa81c4612213367df45adf52af396dc437c43e6",
+  "source": "labauto"
+ },
+ "software": {
+  "labauto": "0.1.0",
+  "cablecheck": "0.1.1",
+  "numpy": "2.4.4",
+  "python": "3.11.15",
+  "platform": "Linux-6.18.44-fc-v33-x86_64-with-glibc2.39",
+  "labauto_git": "880a73f",
+  "zprofile": "0.1.0",
+  "cableanalytics": "0.1.0"
+ },
+ "site": {
+  "id": "LAB4",
+  "name": "Site 4 - Changzhou",
+  "timezone": "UTC",
+  "scope": ""
+ },
+ "instrument": {
+  "id": 190,
+  "site": "LAB4",
+  "role": "vna",
+  "manufacturer": "labauto-sim",
+  "model": "VNA4-8500",
+  "serial": "VNA-4004",
+  "firmware": "A.01.20"
+ },
+ "calibration": {
+  "id": 228,
+  "site": "LAB4",
+  "instrument_serial": "VNA-4004",
+  "record_id": "CAL-LAB4-20260607",
+  "type": "SOLT",
+  "ports": "[1, 2, 3, 4]",
+  "date": "2026-06-07T09:00:00+00:00",
+  "temperature_c": 23.2,
+  "operator": "l.wang",
+  "kit_serial": "85052D-LAB4",
+  "kit_due": "2027-04-03T09:00:00+00:00",
+  "verifications": [
+   {
+    "time": "2026-06-08T11:00:09+00:00",
+    "standard": "CHECK-ATT20",
+    "status": "pass",
+    "max_dev_db": 0.055551082224102544,
+    "max_dev_deg": 0.5191069327178822,
+    "min_rl_db": 41.739642976329904
+   }
+  ]
+ },
+ "procedure": {
+  "id": "sparam-1000base-t1-pair",
+  "version": "1.2",
+  "kind": "s-parameters",
+  "cable_type": "1000base-t1-link-segment",
+  "sha256": "d3b0a61fbad981e2b9c0feecea12e19537dc09d2a393ffb06a0ae64e8b434adf"
+ },
+ "sample": {
+  "id": "C1000T1A-L407-0002",
+  "kind": "production",
+  "part_number": "C1000T1A",
+  "lot": "L407",
+  "cable_type": "1000base-t1-link-segment",
+  "length_m": 15.0,
+  "design": "D100-PE-035",
+  "notes": ""
+ },
+ "files": [
+  {
+   "path": "analysis/cablecheck_result.json",
+   "sha256": "a6bd3f5980917ad839bd22a4c753857cc85a95efc2ce16a2e624aa459434bdfa",
+   "bytes": 403791
+  },
+  {
+   "path": "aux.json",
+   "sha256": "af86e5ea71e694b7d598d38c22d12a9e56ef5455bf4a5d28922335e21bea6cba",
+   "bytes": 467
+  },
+  {
+   "path": "journal.jsonl",
+   "sha256": "dc359fc9f09de1424ade1a0a2bd6e57943cf9e11acaddc9c8f880634d294621e",
+   "bytes": 3451
+  },
+  {
+   "path": "pairA.s4p",
+   "sha256": "f5b12c421f3c4e5caad11553ca4ae272821f0e6574a2a17fd447645ce86c6d8f",
+   "bytes": 927846
+  },
+  {
+   "path": "pairA.s4p.meta.json",
+   "sha256": "e8ef752e26de35a5413675afd86bca5b3cd4da43d8ad967a4fa5669e9275abf0",
+   "bytes": 6744
+  },
+  {
+   "path": "procedure.toml",
+   "sha256": "d3b0a61fbad981e2b9c0feecea12e19537dc09d2a393ffb06a0ae64e8b434adf",
+   "bytes": 2300
+  }
+ ],
+ "archive_integrity": {
+  "ok": true,
+  "modified": [],
+  "missing": [],
+  "unlisted": [],
+  "files": 6
+ },
+ "results": [
+  {
+   "quantity": "group_delay",
+   "pair": "A",
+   "f_hz": 100000000.0,
+   "value": 73.46745270464075,
+   "unit": "ns",
+   "u_std": 0.0049929672982377896,
+   "margin": null,
+   "budget": {
+    "value": 73.46745270464075,
+    "value_raw": 73.46745270464075,
+    "u_repeat": 0.0015516720561632065,
+    "u_reprod": 0.0047193258280600016,
+    "u_cal": 0.0,
+    "u_fixture": 0.0,
+    "u_instrument": 0.0,
+    "u_environment": 0.0,
+    "u_noise": 0.0,
+    "u_res": 0.0005,
+    "u_T": 0.0,
+    "u_rep": 0.0015516720561632065,
+    "u_sys": 0.0,
+    "u_c": 0.0049929672982377896,
+    "U_k2": 0.009985934596475579,
+    "rep_source": "pooled artefact repeats",
+    "reprod_source": "site round-to-round sigma_c beyond the calibration bound"
+   }
+  },
+  {
+   "quantity": "impedance_fitted",
+   "pair": "A",
+   "f_hz": null,
+   "value": 99.97106813204395,
+   "unit": "ohm",
+   "u_std": 0.9464475775792413,
+   "margin": 4.968069454980892,
+   "budget": {
+    "value": 99.97106813204395,
+    "value_raw": 99.968069,
+    "u_repeat": 0.0002329728167266611,
+    "u_reprod": 0.0,
+    "u_cal": 0.9451205788177992,
+    "u_fixture": 0.0,
+    "u_instrument": 0.05,
+    "u_environment": 0.0031311857799651557,
+    "u_noise": 0.0,
+    "u_res": 0.0005,
+    "u_T": 0.0031311857799651557,
+    "u_rep": 0.0002329728167266611,
+    "u_sys": 0.9464474168326946,
+    "u_c": 0.9464475775792413,
+    "U_k2": 1.8928951551584825,
+    "rep_source": "pooled artefact repeats",
+    "reprod_source": "site round-to-round sigma_c beyond the calibration bound"
+   }
+  },
+  {
+   "quantity": "impedance_max",
+   "pair": "A",
+   "f_hz": null,
+   "value": 102.7735612068362,
+   "unit": "ohm",
+   "u_std": 0.9464506753082798,
+   "margin": 7.22952205729878,
+   "budget": {
+    "value": 102.7735612068362,
+    "value_raw": 102.770478,
+    "u_repeat": 0.002315289920649849,
+    "u_reprod": 0.0,
+    "u_cal": 0.9451205788177992,
+    "u_fixture": 0.0,
+    "u_instrument": 0.05,
+    "u_environment": 0.0032189624400349465,
+    "u_noise": 0.0,
+    "u_res": 0.0005,
+    "u_T": 0.0032189624400349465,
+    "u_rep": 0.002315289920649849,
+    "u_sys": 0.9464477112995108,
+    "u_c": 0.9464506753082798,
+    "U_k2": 1.8929013506165595,
+    "rep_source": "pooled artefact repeats",
+    "reprod_source": "site round-to-round sigma_c beyond the calibration bound"
+   }
+  },
+  {
+   "quantity": "impedance_mean",
+   "pair": "A",
+   "f_hz": null,
+   "value": 101.5091022730682,
+   "unit": "ohm",
+   "u_std": 0.946448810357654,
+   "margin": 3.493942912189567,
+   "budget": {
+    "value": 101.5091022730682,
+    "value_raw": 101.506057,
+    "u_repeat": 0.0014435382023585443,
+    "u_reprod": 0.0,
+    "u_cal": 0.9451205788177992,
+    "u_fixture": 0.0,
+    "u_instrument": 0.05,
+    "u_environment": 0.003179358423525542,
+    "u_noise": 0.0,
+    "u_res": 0.0005,
+    "u_T": 0.003179358423525542,
+    "u_rep": 0.0014435382023585443,
+    "u_sys": 0.9464475774309304,
+    "u_c": 0.946448810357654,
+    "U_k2": 1.892897620715308,
+    "rep_source": "pooled artefact repeats",
+    "reprod_source": "site round-to-round sigma_c beyond the calibration bound"
+   }
+  }
+ ]
+}

@@ -1,0 +1,7656 @@
+{
+ "artefact": "GOLD-RR26-0001",
+ "reference": "consensus",
+ "budgets_evaluated": 3610,
+ "overview": [
+  {
+   "site": "LAB1",
+   "name": "Site 1 - Roth (reference laboratory)",
+   "instrument": "VNA4-8500 VNA-1001",
+   "runs": 50,
+   "trusted": 50,
+   "flagged": 0,
+   "rejected": 0,
+   "aborted": 0,
+   "pass": 50,
+   "fail": 0,
+   "last_verification": {
+    "time": "2026-07-06T08:00:09+00:00",
+    "status": "pass",
+    "max_dev_db": 0.035205533326298166
+   },
+   "last_calibration": {
+    "record_id": "CAL-LAB1-20260705",
+    "date": "2026-07-05T06:00:00+00:00"
+   },
+   "events": {
+    "action": 1,
+    "warning": 1
+   }
+  },
+  {
+   "site": "LAB2",
+   "name": "Site 2 - Kitzingen",
+   "instrument": "VNA4-8500 VNA-2002",
+   "runs": 50,
+   "trusted": 50,
+   "flagged": 0,
+   "rejected": 0,
+   "aborted": 0,
+   "pass": 42,
+   "fail": 8,
+   "last_verification": {
+    "time": "2026-07-06T09:00:09+00:00",
+    "status": "pass",
+    "max_dev_db": 0.043933708182272824
+   },
+   "last_calibration": {
+    "record_id": "CAL-LAB2-20260705",
+    "date": "2026-07-05T07:00:00+00:00"
+   },
+   "events": {
+    "action": 3,
+    "warning": 6
+   }
+  },
+  {
+   "site": "LAB3",
+   "name": "Site 3 - Jelenia Gora",
+   "instrument": "VNA4-8500 VNA-3003",
+   "runs": 50,
+   "trusted": 50,
+   "flagged": 0,
+   "rejected": 0,
+   "aborted": 0,
+   "pass": 42,
+   "fail": 8,
+   "last_verification": {
+    "time": "2026-07-06T10:00:09+00:00",
+    "status": "pass",
+    "max_dev_db": 0.040533198394449244
+   },
+   "last_calibration": {
+    "record_id": "CAL-LAB3-20260705",
+    "date": "2026-07-05T08:00:00+00:00"
+   },
+   "events": {
+    "action": 2,
+    "warning": 5
+   }
+  },
+  {
+   "site": "LAB4",
+   "name": "Site 4 - Changzhou",
+   "instrument": "VNA4-8500 VNA-4004",
+   "runs": 50,
+   "trusted": 40,
+   "flagged": 0,
+   "rejected": 0,
+   "aborted": 10,
+   "pass": 40,
+   "fail": 0,
+   "last_verification": {
+    "time": "2026-07-06T11:55:49+00:00",
+    "status": "fail",
+    "max_dev_db": 0.2067660667989415
+   },
+   "last_calibration": {
+    "record_id": "CAL-LAB4-20260705",
+    "date": "2026-07-05T09:00:00+00:00"
+   },
+   "events": {
+    "action": 14,
+    "warning": 9
+   }
+  }
+ ],
+ "comparisons": [
+  {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 10000000.0,
+   "unit": "dB",
+   "label": "insertion_loss[A] @ 10 MHz",
+   "reference": "consensus",
+   "x_ref": 0.9573701467089013,
+   "u_ref": 0.014054730027781816,
+   "U_ref_k2": 0.028109460055563633,
+   "sites": [
+    {
+     "site": "LAB1",
+     "n": 30,
+     "x": 0.9508170190800381,
+     "s": 0.019236496244753976,
+     "u_sys": 0.021177241444757647,
+     "u": 0.021466492838888285,
+     "U_k2": 0.04293298567777657,
+     "d": -0.006553127628863176,
+     "u_d": 0.01622574739875517,
+     "U_d_k2": 0.03245149479751034,
+     "En": -0.20193607936254226,
+     "zeta": -0.40387215872508453,
+     "z": -0.7370370838013474,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB1 differs from the reference by -0.006553 dB; the expanded uncertainty of that difference is 0.032 dB (E_n = -0.20): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB2",
+     "n": 30,
+     "x": 0.9528254568390208,
+     "s": 0.03633959173002577,
+     "u_sys": 0.037403491326467427,
+     "u": 0.03798736668480662,
+     "U_k2": 0.07597473336961325,
+     "d": -0.004544689869880547,
+     "u_d": 0.03529170712068381,
+     "U_d_k2": 0.07058341424136762,
+     "En": -0.06438750404364811,
+     "zeta": -0.12877500808729622,
+     "z": -0.5417860263543245,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB2 differs from the reference by -0.004545 dB; the expanded uncertainty of that difference is 0.071 dB (E_n = -0.06): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB3",
+     "n": 30,
+     "x": 0.970966880633119,
+     "s": 0.02552472346664394,
+     "u_sys": 0.029074698366767023,
+     "u": 0.02944579996173942,
+     "U_k2": 0.05889159992347884,
+     "d": 0.013596733924217674,
+     "u_d": 0.025875078729019188,
+     "U_d_k2": 0.051750157458038376,
+     "En": 0.2627380203672344,
+     "zeta": 0.5254760407344689,
+     "z": 1.221839539611196,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB3 differs from the reference by +0.0136 dB; the expanded uncertainty of that difference is 0.052 dB (E_n = +0.26): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB4",
+     "n": 24,
+     "x": 0.9589846627509715,
+     "s": 0.028329335533472763,
+     "u_sys": 0.030374329555391655,
+     "u": 0.030919888929779094,
+     "U_k2": 0.06183977785955819,
+     "d": 0.001614516042070191,
+     "u_d": 0.02754095305678516,
+     "U_d_k2": 0.05508190611357032,
+     "En": 0.02931118684856893,
+     "zeta": 0.05862237369713786,
+     "z": 0.05698357054446502,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB4 differs from the reference by +0.001615 dB; the expanded uncertainty of that difference is 0.055 dB (E_n = +0.03): the difference is not statistically distinguishable from zero - compatible."
+    }
+   ],
+   "consensus": {
+    "value": 0.9573701467089013,
+    "u": 0.014054730027781816,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "excluded": [],
+    "chi2": {
+     "chi2": 0.32344805823327366,
+     "dof": 3,
+     "critical": 7.814727903251179,
+     "consistent": true,
+     "birge": 0.32835349763797433
+    }
+   },
+   "robust": {
+    "mean": 0.9583985048257874,
+    "std": 0.010286437293829121,
+    "iterations": 5
+   }
+  },
+  {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 100000000.0,
+   "unit": "dB",
+   "label": "insertion_loss[A] @ 100 MHz",
+   "reference": "consensus",
+   "x_ref": 2.9104186006882005,
+   "u_ref": 0.01418999006814123,
+   "U_ref_k2": 0.02837998013628246,
+   "sites": [
+    {
+     "site": "LAB1",
+     "n": 30,
+     "x": 2.9036180591286165,
+     "s": 0.018667016962872863,
+     "u_sys": 0.02145312037683446,
+     "u": 0.0217221459493767,
+     "U_k2": 0.0434442918987534,
+     "d": -0.0068005415595839835,
+     "u_d": 0.016446756717118295,
+     "U_d_k2": 0.03289351343423659,
+     "En": -0.20674415255701353,
+     "zeta": -0.41348830511402707,
+     "z": -0.4673377824255259,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB1 differs from the reference by -0.006801 dB; the expanded uncertainty of that difference is 0.033 dB (E_n = -0.21): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB2",
+     "n": 30,
+     "x": 2.897961624459835,
+     "s": 0.040094490168789694,
+     "u_sys": 0.03768561353484367,
+     "u": 0.038389986614056425,
+     "U_k2": 0.07677997322811285,
+     "d": -0.012456976228365502,
+     "u_d": 0.03567121043773935,
+     "U_d_k2": 0.0713424208754787,
+     "En": -0.17460826357585973,
+     "zeta": -0.34921652715171947,
+     "z": -0.8406629865087687,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB2 differs from the reference by -0.01246 dB; the expanded uncertainty of that difference is 0.071 dB (E_n = -0.17): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB3",
+     "n": 30,
+     "x": 2.928570423582677,
+     "s": 0.025342844943304917,
+     "u_sys": 0.029352338590041376,
+     "u": 0.02971478487832466,
+     "U_k2": 0.05942956975664932,
+     "d": 0.018151822894476588,
+     "u_d": 0.026107711930216427,
+     "U_d_k2": 0.052215423860432854,
+     "En": 0.3476333533745658,
+     "zeta": 0.6952667067491316,
+     "z": 1.1795205475369912,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB3 differs from the reference by +0.01815 dB; the expanded uncertainty of that difference is 0.052 dB (E_n = +0.35): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB4",
+     "n": 24,
+     "x": 2.9126455921648158,
+     "s": 0.026747318399704137,
+     "u_sys": 0.03058564925682087,
+     "u": 0.03106913367304542,
+     "U_k2": 0.06213826734609084,
+     "d": 0.0022269914766153143,
+     "u_d": 0.02763937859394849,
+     "U_d_k2": 0.05527875718789698,
+     "En": 0.04028656919774064,
+     "zeta": 0.08057313839548128,
+     "z": 0.12848022139724471,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB4 differs from the reference by +0.002227 dB; the expanded uncertainty of that difference is 0.055 dB (E_n = +0.04): the difference is not statistically distinguishable from zero - compatible."
+    }
+   ],
+   "consensus": {
+    "value": 2.9104186006882005,
+    "u": 0.01418999006814123,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "excluded": [],
+    "chi2": {
+     "chi2": 0.581601069655103,
+     "dof": 3,
+     "critical": 7.814727903251179,
+     "consistent": true,
+     "birge": 0.4403033309190014
+    }
+   },
+   "robust": {
+    "mean": 2.9106989248339863,
+    "std": 0.015151494211787174,
+    "iterations": 3
+   }
+  },
+  {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 300000000.0,
+   "unit": "dB",
+   "label": "insertion_loss[A] @ 300 MHz",
+   "reference": "consensus",
+   "x_ref": 5.291451430341926,
+   "u_ref": 0.014526208978288815,
+   "U_ref_k2": 0.02905241795657763,
+   "sites": [
+    {
+     "site": "LAB1",
+     "n": 30,
+     "x": 5.285588185786147,
+     "s": 0.018519988915351372,
+     "u_sys": 0.022152092122170085,
+     "u": 0.02240866316933255,
+     "U_k2": 0.0448173263386651,
+     "d": -0.005863244555778913,
+     "u_d": 0.017062750005660945,
+     "U_d_k2": 0.03412550001132189,
+     "En": -0.17181417279845426,
+     "zeta": -0.3436283455969085,
+     "z": -0.45383063806334395,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB1 differs from the reference by -0.005863 dB; the expanded uncertainty of that difference is 0.034 dB (E_n = -0.17): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB2",
+     "n": 30,
+     "x": 5.278379707046121,
+     "s": 0.03238616311442471,
+     "u_sys": 0.03840895794192402,
+     "u": 0.03886142263085109,
+     "U_k2": 0.07772284526170219,
+     "d": -0.013071723295804638,
+     "u_d": 0.0360444090201616,
+     "U_d_k2": 0.0720888180403232,
+     "En": -0.18132802910560847,
+     "zeta": -0.36265605821121694,
+     "z": -1.0036219906450234,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB2 differs from the reference by -0.01307 dB; the expanded uncertainty of that difference is 0.072 dB (E_n = -0.18): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB3",
+     "n": 30,
+     "x": 5.303317936935042,
+     "s": 0.018710189529813702,
+     "u_sys": 0.030051623506573047,
+     "u": 0.030245150274419184,
+     "U_k2": 0.06049030054883837,
+     "d": 0.011866506593116277,
+     "u_d": 0.026528444504743967,
+     "U_d_k2": 0.053056889009487934,
+     "En": 0.22365628318302344,
+     "zeta": 0.4473125663660469,
+     "z": 0.8984191523068339,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB3 differs from the reference by +0.01187 dB; the expanded uncertainty of that difference is 0.053 dB (E_n = +0.22): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB4",
+     "n": 24,
+     "x": 5.298868149905935,
+     "s": 0.030549248801833143,
+     "u_sys": 0.03112642250033609,
+     "u": 0.03174491879709688,
+     "U_k2": 0.06348983759419376,
+     "d": 0.007416719564009355,
+     "u_d": 0.028226390526479933,
+     "U_d_k2": 0.056452781052959866,
+     "En": 0.13137917079853925,
+     "zeta": 0.2627583415970785,
+     "z": 0.5590334764014657,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB4 differs from the reference by +0.007417 dB; the expanded uncertainty of that difference is 0.056 dB (E_n = +0.13): the difference is not statistically distinguishable from zero - compatible."
+    }
+   ],
+   "consensus": {
+    "value": 5.291451430341926,
+    "u": 0.014526208978288815,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "excluded": [],
+    "chi2": {
+     "chi2": 0.39012344624950834,
+     "dof": 3,
+     "critical": 7.814727903251179,
+     "consistent": true,
+     "birge": 0.36061218608060946
+    }
+   },
+   "robust": {
+    "mean": 5.291538494918312,
+    "std": 0.013111298870337912,
+    "iterations": 2
+   }
+  },
+  {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 600000000.0,
+   "unit": "dB",
+   "label": "insertion_loss[A] @ 600 MHz",
+   "reference": "consensus",
+   "x_ref": 7.914935724532834,
+   "u_ref": 0.015079755323718424,
+   "U_ref_k2": 0.030159510647436848,
+   "sites": [
+    {
+     "site": "LAB1",
+     "n": 30,
+     "x": 7.907118766666667,
+     "s": 0.015117570220027741,
+     "u_sys": 0.0233399701670556,
+     "u": 0.023502600672641052,
+     "U_k2": 0.047005201345282105,
+     "d": -0.007816957866166874,
+     "u_d": 0.01802701355617212,
+     "U_d_k2": 0.03605402711234424,
+     "En": -0.2168123367137118,
+     "zeta": -0.4336246734274236,
+     "z": -1.2532333876616861,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB1 differs from the reference by -0.007817 dB; the expanded uncertainty of that difference is 0.036 dB (E_n = -0.22): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB2",
+     "n": 30,
+     "x": 7.917960813615609,
+     "s": 0.02981867798454838,
+     "u_sys": 0.03967063343952253,
+     "u": 0.04004244759482745,
+     "U_k2": 0.0800848951896549,
+     "d": 0.003025089082775878,
+     "u_d": 0.03709445495975495,
+     "U_d_k2": 0.0741889099195099,
+     "En": 0.04077548903276651,
+     "zeta": 0.08155097806553302,
+     "z": 0.13821994276673177,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB2 differs from the reference by +0.003025 dB; the expanded uncertainty of that difference is 0.074 dB (E_n = +0.04): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB3",
+     "n": 30,
+     "x": 7.919306800334168,
+     "s": 0.02344512366143083,
+     "u_sys": 0.03125067588701547,
+     "u": 0.031542466678727205,
+     "U_k2": 0.06308493335745441,
+     "d": 0.004371075801334001,
+     "u_d": 0.02770429900855464,
+     "U_d_k2": 0.05540859801710928,
+     "En": 0.07888804188808898,
+     "zeta": 0.15777608377617797,
+     "z": 0.31096201915413846,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB3 differs from the reference by +0.004371 dB; the expanded uncertainty of that difference is 0.055 dB (E_n = +0.08): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB4",
+     "n": 24,
+     "x": 7.92314889721182,
+     "s": 0.01925459911364536,
+     "u_sys": 0.03206164025454995,
+     "u": 0.032301644828165915,
+     "U_k2": 0.06460328965633183,
+     "d": 0.008213172678986247,
+     "u_d": 0.028565665369141388,
+     "U_d_k2": 0.057131330738282776,
+     "En": 0.14375951991404837,
+     "zeta": 0.28751903982809673,
+     "z": 0.804051425740702,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB4 differs from the reference by +0.008213 dB; the expanded uncertainty of that difference is 0.057 dB (E_n = +0.14): the difference is not statistically distinguishable from zero - compatible."
+    }
+   ],
+   "consensus": {
+    "value": 7.914935724532834,
+    "u": 0.015079755323718424,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "excluded": [],
+    "chi2": {
+     "chi2": 0.20018424745751673,
+     "dof": 3,
+     "critical": 7.814727903251179,
+     "consistent": true,
+     "birge": 0.25831779359122536
+    }
+   },
+   "robust": {
+    "mean": 7.916883819457066,
+    "std": 0.007791886879601321,
+    "iterations": 6
+   }
+  },
+  {
+   "quantity": "impedance_fitted",
+   "pair": "A",
+   "f_hz": null,
+   "unit": "ohm",
+   "label": "impedance_fitted[A]",
+   "reference": "consensus",
+   "x_ref": 100.17402338214052,
+   "u_ref": 0.4815716523679424,
+   "U_ref_k2": 0.9631433047358848,
+   "sites": [
+    {
+     "site": "LAB1",
+     "n": 30,
+     "x": 100.14331326666665,
+     "s": 0.21693920421882898,
+     "u_sys": 0.9573728985808747,
+     "u": 0.9581918497260256,
+     "U_k2": 1.9163836994520511,
+     "d": -0.03071011547386604,
+     "u_d": 0.8283841889588381,
+     "U_d_k2": 1.6567683779176763,
+     "En": -0.018536155013088983,
+     "zeta": -0.03707231002617797,
+     "z": -0.23250969162135468,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB1 differs from the reference by -0.03071 ohm; the expanded uncertainty of that difference is 1.7 ohm (E_n = -0.02): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB2",
+     "n": 30,
+     "x": 100.33622882726111,
+     "s": 0.38298050142822354,
+     "u_sys": 0.9803944261759684,
+     "u": 0.9828847167187921,
+     "U_k2": 1.9657694334375841,
+     "d": 0.1622054451205912,
+     "u_d": 0.8568261842374973,
+     "U_d_k2": 1.7136523684749947,
+     "En": 0.09465481337089407,
+     "zeta": 0.18930962674178814,
+     "z": 1.172310463450623,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB2 differs from the reference by +0.1622 ohm; the expanded uncertainty of that difference is 1.7 ohm (E_n = +0.09): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB3",
+     "n": 30,
+     "x": 100.04464758781138,
+     "s": 0.3028565845263793,
+     "u_sys": 0.9682360866417509,
+     "u": 0.9698136538368414,
+     "U_k2": 1.9396273076736827,
+     "d": -0.12937579432913537,
+     "u_d": 0.8418000159206309,
+     "U_d_k2": 1.6836000318412618,
+     "En": -0.07684473264570095,
+     "zeta": -0.1536894652914019,
+     "z": -0.9509977899511678,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB3 differs from the reference by -0.1294 ohm; the expanded uncertainty of that difference is 1.7 ohm (E_n = -0.08): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB4",
+     "n": 24,
+     "x": 100.1767800534016,
+     "s": 0.29810262729910136,
+     "u_sys": 0.9410637522629611,
+     "u": 0.9430290035341896,
+     "U_k2": 1.8860580070683792,
+     "d": 0.002756671261082033,
+     "u_d": 0.8107974131324645,
+     "U_d_k2": 1.621594826264929,
+     "En": 0.0016999753677258344,
+     "zeta": 0.003399950735451669,
+     "z": 0.011197018121899494,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB4 differs from the reference by +0.002757 ohm; the expanded uncertainty of that difference is 1.6 ohm (E_n = +0.00): the difference is not statistically distinguishable from zero - compatible."
+    }
+   ],
+   "consensus": {
+    "value": 100.17402338214052,
+    "u": 0.4815716523679424,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "excluded": [],
+    "chi2": {
+     "chi2": 0.04606693624006337,
+     "dof": 3,
+     "critical": 7.814727903251179,
+     "consistent": true,
+     "birge": 0.12391789787336797
+    }
+   },
+   "robust": {
+    "mean": 100.17524243378519,
+    "std": 0.13732402677876798,
+    "iterations": 3
+   }
+  },
+  {
+   "quantity": "impedance_mean",
+   "pair": "A",
+   "f_hz": null,
+   "unit": "ohm",
+   "label": "impedance_mean[A]",
+   "reference": "consensus",
+   "x_ref": 102.07464330012496,
+   "u_ref": 0.48213075376228354,
+   "U_ref_k2": 0.9642615075245671,
+   "sites": [
+    {
+     "site": "LAB1",
+     "n": 30,
+     "x": 102.02214723333333,
+     "s": 0.30041516439555066,
+     "u_sys": 0.9573730771368697,
+     "u": 0.9589429168932905,
+     "U_k2": 1.917885833786581,
+     "d": -0.05249606679163321,
+     "u_d": 0.8289278944132744,
+     "U_d_k2": 1.6578557888265488,
+     "En": -0.03166503814471739,
+     "zeta": -0.06333007628943478,
+     "z": -0.33305892207858817,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB1 differs from the reference by -0.0525 ohm; the expanded uncertainty of that difference is 1.7 ohm (E_n = -0.03): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB2",
+     "n": 30,
+     "x": 102.2187186513453,
+     "s": 0.46627676955420333,
+     "u_sys": 0.9803947430185587,
+     "u": 0.9840838309476598,
+     "U_k2": 1.9681676618953197,
+     "d": 0.1440753512203372,
+     "u_d": 0.8578874766595177,
+     "U_d_k2": 1.7157749533190354,
+     "En": 0.08397100735247036,
+     "zeta": 0.16794201470494072,
+     "z": 0.9100775965973233,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB2 differs from the reference by +0.1441 ohm; the expanded uncertainty of that difference is 1.7 ohm (E_n = +0.08): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB3",
+     "n": 30,
+     "x": 101.9053253804772,
+     "s": 0.39695322572952096,
+     "u_sys": 0.9682363241937235,
+     "u": 0.970944887692092,
+     "U_k2": 1.941889775384184,
+     "d": -0.1693179196477672,
+     "u_d": 0.8427834307887296,
+     "U_d_k2": 1.6855668615774593,
+     "En": -0.10045161868530618,
+     "zeta": -0.20090323737061236,
+     "z": -1.0718515346241229,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB3 differs from the reference by -0.1693 ohm; the expanded uncertainty of that difference is 1.7 ohm (E_n = -0.10): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB4",
+     "n": 24,
+     "x": 102.15305792507108,
+     "s": 0.3892698593422052,
+     "u_sys": 0.9410639607087287,
+     "u": 0.9444126062194137,
+     "U_k2": 1.8888252124388274,
+     "d": 0.07841462494612017,
+     "u_d": 0.812074569890449,
+     "U_d_k2": 1.624149139780898,
+     "En": 0.048280433751729544,
+     "zeta": 0.09656086750345909,
+     "z": 0.49483286010520794,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB4 differs from the reference by +0.07841 ohm; the expanded uncertainty of that difference is 1.6 ohm (E_n = +0.05): the difference is not statistically distinguishable from zero - compatible."
+    }
+   ],
+   "consensus": {
+    "value": 102.07464330012496,
+    "u": 0.48213075376228354,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "excluded": [],
+    "chi2": {
+     "chi2": 0.06173546868524357,
+     "dof": 3,
+     "critical": 7.814727903251179,
+     "consistent": true,
+     "birge": 0.14345204620969287
+    }
+   },
+   "robust": {
+    "mean": 102.07481229755673,
+    "std": 0.15812536681115474,
+    "iterations": 2
+   }
+  },
+  {
+   "quantity": "return_loss_min",
+   "pair": "A",
+   "f_hz": null,
+   "unit": "dB",
+   "label": "return_loss_min[A]",
+   "reference": "consensus",
+   "x_ref": 26.808729902975738,
+   "u_ref": 0.45862786794232063,
+   "U_ref_k2": 0.9172557358846413,
+   "sites": [
+    {
+     "site": "LAB1",
+     "n": 30,
+     "x": 26.9027353,
+     "s": 0.38363560362515636,
+     "u_sys": 0.9199331134600515,
+     "u": 0.9225956910365803,
+     "U_k2": 1.8451913820731607,
+     "d": 0.09400539702426158,
+     "u_d": 0.8005268814137015,
+     "U_d_k2": 1.601053762827403,
+     "En": 0.05871470353266055,
+     "zeta": 0.1174294070653211,
+     "z": 0.3947385518822301,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB1 differs from the reference by +0.09401 dB; the expanded uncertainty of that difference is 1.6 dB (E_n = +0.06): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB2",
+     "n": 30,
+     "x": 26.5212193,
+     "s": 0.44778750456924876,
+     "u_sys": 0.9017057040349361,
+     "u": 0.9054043102379281,
+     "U_k2": 1.8108086204758562,
+     "d": -0.2875106029757397,
+     "u_d": 0.7806519350799687,
+     "U_d_k2": 1.5613038701599373,
+     "En": -0.18414775526450697,
+     "zeta": -0.36829551052901394,
+     "z": -1.277197165826553,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB2 differs from the reference by -0.2875 dB; the expanded uncertainty of that difference is 1.6 dB (E_n = -0.18): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB3",
+     "n": 30,
+     "x": 26.977170800000003,
+     "s": 0.3986716102743173,
+     "u_sys": 0.9385577400320116,
+     "u": 0.9413759078083284,
+     "U_k2": 1.8827518156166567,
+     "d": 0.168440897024265,
+     "u_d": 0.8221004066101875,
+     "U_d_k2": 1.644200813220375,
+     "En": 0.10244545293366705,
+     "zeta": 0.2048909058673341,
+     "z": 0.7209407848567775,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB3 differs from the reference by +0.1684 dB; the expanded uncertainty of that difference is 1.6 dB (E_n = +0.10): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB4",
+     "n": 24,
+     "x": 26.849517083333335,
+     "s": 0.40890977546258606,
+     "u_sys": 0.8974003481946201,
+     "u": 0.9012737385460061,
+     "U_k2": 1.8025474770920122,
+     "d": 0.04078718035759721,
+     "u_d": 0.7758574808167902,
+     "U_d_k2": 1.5517149616335804,
+     "En": 0.026285227226692572,
+     "zeta": 0.052570454453385144,
+     "z": 0.16151782908748305,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB4 differs from the reference by +0.04079 dB; the expanded uncertainty of that difference is 1.6 dB (E_n = +0.03): the difference is not statistically distinguishable from zero - compatible."
+    }
+   ],
+   "consensus": {
+    "value": 26.808729902975738,
+    "u": 0.45862786794232063,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "excluded": [],
+    "chi2": {
+     "chi2": 0.1452838234890553,
+     "dof": 3,
+     "critical": 7.814727903251179,
+     "consistent": true,
+     "birge": 0.22006349348090073
+    }
+   },
+   "robust": {
+    "mean": 26.812660620833338,
+    "std": 0.22818819883986327,
+    "iterations": 7
+   }
+  },
+  {
+   "quantity": "nvp",
+   "pair": "A",
+   "f_hz": null,
+   "unit": "",
+   "label": "nvp[A]",
+   "reference": "consensus",
+   "x_ref": 0.6807974076307904,
+   "u_ref": 0.0010235305103551836,
+   "U_ref_k2": 0.002047061020710367,
+   "sites": [
+    {
+     "site": "LAB1",
+     "n": 30,
+     "x": 0.6807989333333333,
+     "s": 9.598611010634026e-06,
+     "u_sys": 0.0020470323190974345,
+     "u": 0.002047033069234723,
+     "U_k2": 0.004094066138469446,
+     "d": 1.5257025428594417e-06,
+     "u_d": 0.001772774571374654,
+     "U_d_k2": 0.003545549142749308,
+     "En": 0.0004303148768871311,
+     "zeta": 0.0008606297537742622,
+     "z": 0.34980439678409103,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB1 differs from the reference by +1.526e-06 ; the expanded uncertainty of that difference is 0.0035  (E_n = +0.00): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB2",
+     "n": 30,
+     "x": 0.6807934714124272,
+     "s": 1.5242875993160902e-05,
+     "u_sys": 0.00204709842387547,
+     "u": 0.002047100315537985,
+     "U_k2": 0.00409420063107597,
+     "d": -3.936218363254085e-06,
+     "u_d": 0.0017728522206455267,
+     "U_d_k2": 0.0035457044412910534,
+     "En": -0.001110137189500442,
+     "zeta": -0.002220274379000884,
+     "z": -0.9024644517360015,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB2 differs from the reference by -3.936e-06 ; the expanded uncertainty of that difference is 0.0035  (E_n = -0.00): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB3",
+     "n": 30,
+     "x": 0.6808020518768874,
+     "s": 1.0563945891196492e-05,
+     "u_sys": 0.002047078375735031,
+     "u": 0.0020470792843220315,
+     "U_k2": 0.004094158568644063,
+     "d": 4.644246096918714e-06,
+     "u_d": 0.0017728279360029438,
+     "U_d_k2": 0.0035456558720058876,
+     "En": 0.001309841187236064,
+     "zeta": 0.002619682374472128,
+     "z": 1.0648010092634865,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB3 differs from the reference by +4.644e-06 ; the expanded uncertainty of that difference is 0.0035  (E_n = +0.00): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB4",
+     "n": 24,
+     "x": 0.6807951738552157,
+     "s": 1.09993417936145e-05,
+     "u_sys": 0.002047030185026213,
+     "u": 0.002047031416337273,
+     "U_k2": 0.004094062832674546,
+     "d": -2.2337755747336985e-06,
+     "u_d": 0.0017727726627641345,
+     "U_d_k2": 0.003545545325528269,
+     "En": -0.0006300231331553706,
+     "zeta": -0.0012600462663107412,
+     "z": -0.5121409543624847,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB4 differs from the reference by -2.234e-06 ; the expanded uncertainty of that difference is 0.0035  (E_n = -0.00): the difference is not statistically distinguishable from zero - compatible."
+    }
+   ],
+   "consensus": {
+    "value": 0.6807974076307904,
+    "u": 0.0010235305103551836,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "excluded": [],
+    "chi2": {
+     "chi2": 1.0590627059017053e-05,
+     "dof": 3,
+     "critical": 7.814727903251179,
+     "consistent": true,
+     "birge": 0.0018788850469553349
+    }
+   },
+   "robust": {
+    "mean": 0.6807974076194659,
+    "std": 4.36162004075109e-06,
+    "iterations": 2
+   }
+  },
+  {
+   "quantity": "loop_resistance",
+   "pair": null,
+   "f_hz": null,
+   "unit": "ohm",
+   "label": "loop_resistance",
+   "reference": "consensus",
+   "x_ref": 2.735115989372809,
+   "u_ref": 0.0032117534305304883,
+   "U_ref_k2": 0.006423506861060977,
+   "sites": [
+    {
+     "site": "LAB1",
+     "n": 30,
+     "x": 2.735139333333333,
+     "s": 0.00042788762086778357,
+     "u_sys": 0.005821148974169013,
+     "u": 0.005821673153542031,
+     "U_k2": 0.011643346307084062,
+     "d": 2.3343960524169205e-05,
+     "u_d": 0.004855565693938004,
+     "U_d_k2": 0.009711131387876009,
+     "En": 0.002403835309376339,
+     "zeta": 0.004807670618752678,
+     "z": 0.2080895096980229,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB1 differs from the reference by +2.334e-05 ohm; the expanded uncertainty of that difference is 0.0097 ohm (E_n = +0.00): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB2",
+     "n": 30,
+     "x": 2.7349398628418813,
+     "s": 0.0004253800057340196,
+     "u_sys": 0.007568066317653407,
+     "u": 0.00756846479765718,
+     "U_k2": 0.01513692959531436,
+     "d": -0.00017612653092768937,
+     "u_d": 0.006853196283111376,
+     "U_d_k2": 0.013706392566222752,
+     "En": -0.012849955236341727,
+     "zeta": -0.025699910472683454,
+     "z": -1.0567908977145788,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB2 differs from the reference by -0.0001761 ohm; the expanded uncertainty of that difference is 0.014 ohm (E_n = -0.01): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB3",
+     "n": 30,
+     "x": 2.7352739599961184,
+     "s": 0.00042957585397380234,
+     "u_sys": 0.006654962200425257,
+     "u": 0.006655424334298018,
+     "U_k2": 0.013310848668596036,
+     "d": 0.00015797062330946687,
+     "u_d": 0.0058291777268360805,
+     "U_d_k2": 0.011658355453672161,
+     "En": 0.013549992015358317,
+     "zeta": 0.027099984030716635,
+     "z": 1.061782839638829,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB3 differs from the reference by +0.000158 ohm; the expanded uncertainty of that difference is 0.012 ohm (E_n = +0.01): the difference is not statistically distinguishable from zero - compatible."
+    },
+    {
+     "site": "LAB4",
+     "n": 24,
+     "x": 2.7350729150552495,
+     "s": 0.0004289011841836977,
+     "u_sys": 0.006040195860587996,
+     "u": 0.0060408303135418215,
+     "U_k2": 0.012081660627083643,
+     "d": -4.307431755945501e-05,
+     "u_d": 0.005116275088233765,
+     "U_d_k2": 0.01023255017646753,
+     "En": -0.004209538855574425,
+     "zeta": -0.00841907771114885,
+     "z": -0.21308145163353742,
+     "member": true,
+     "status": "compatible",
+     "verdict": "satisfactory",
+     "statement": "LAB4 differs from the reference by -4.307e-05 ohm; the expanded uncertainty of that difference is 0.01 ohm (E_n = -0.00): the difference is not statistically distinguishable from zero - compatible."
+    }
+   ],
+   "consensus": {
+    "value": 2.735115989372809,
+    "u": 0.0032117534305304883,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "excluded": [],
+    "chi2": {
+     "chi2": 0.0011718471787943204,
+     "dof": 3,
+     "critical": 7.814727903251179,
+     "consistent": true,
+     "birge": 0.01976400076565404
+    }
+   },
+   "robust": {
+    "mean": 2.735106517806646,
+    "std": 0.00015769909177412982,
+    "iterations": 2
+   }
+  }
+ ],
+ "en_vs_frequency": {
+  "f_hz": [
+   10000000.0,
+   30344827.586206898,
+   50689655.172413796,
+   71034482.7586207,
+   91379310.34482759,
+   111724137.93103449,
+   132068965.51724139,
+   152413793.10344827,
+   172758620.68965518,
+   193103448.2758621,
+   213448275.86206898,
+   233793103.44827586,
+   254137931.03448278,
+   274482758.6206897,
+   294827586.20689654,
+   315172413.79310346,
+   335517241.37931037,
+   355862068.9655173,
+   376206896.5517242,
+   396551724.13793105,
+   416896551.72413796,
+   437241379.3103449,
+   457586206.8965517,
+   477931034.48275864,
+   498275862.06896555,
+   518620689.65517247,
+   538965517.2413794,
+   559310344.8275863,
+   579655172.4137931,
+   600000000.0
+  ],
+  "sites": [
+   "LAB1",
+   "LAB2",
+   "LAB3",
+   "LAB4"
+  ],
+  "il": [
+   [
+    0.9508170190800382,
+    1.5915710760843842,
+    2.0487432722367753,
+    2.431227694648451,
+    2.7696032335518246,
+    3.0778665752398258,
+    3.364606430308067,
+    3.6342995899459303,
+    3.8906741642362728,
+    4.134442787905007,
+    4.36941208845057,
+    4.5958135641866456,
+    4.814913830454929,
+    5.027195303896961,
+    5.233939095904819,
+    5.4354478901760785,
+    5.632320889397573,
+    5.825035112201973,
+    6.013770245298346,
+    6.199226269905288,
+    6.381550388112902,
+    6.5604878213967455,
+    6.737026371934323,
+    6.910867278688219,
+    7.0828665473030945,
+    7.25137558225419,
+    7.418615173033002,
+    7.583352679539597,
+    7.746396293208219,
+    7.907118766666667
+   ],
+   [
+    0.9528254568390208,
+    1.5909678775440057,
+    2.0463067402002273,
+    2.427292303609875,
+    2.7644259025409545,
+    3.0715989711265848,
+    3.3573655017944875,
+    3.6262841416753337,
+    3.8820342532968724,
+    4.125428826232444,
+    4.360192088826037,
+    4.5866965538537565,
+    4.8061009878556895,
+    5.018941721505689,
+    5.22648427393655,
+    5.428991360272752,
+    5.627009316777085,
+    5.821027900486797,
+    6.011118498023054,
+    6.197967317033423,
+    6.3816604302533255,
+    6.561946096134558,
+    6.739760927656122,
+    6.914877623436257,
+    7.0880656188591855,
+    7.257725337798141,
+    7.426095264115506,
+    7.592001985605401,
+    7.756088042251119,
+    7.917960813615609
+   ],
+   [
+    0.970966880633119,
+    1.6138128228599735,
+    2.0724099988239133,
+    2.4558068724963813,
+    2.794573054184677,
+    3.10277190744674,
+    3.3889481400899717,
+    3.6578320636649404,
+    3.9131470861220636,
+    4.155800959704139,
+    4.38970220105306,
+    4.615186605740843,
+    4.833578422843967,
+    5.045297008768953,
+    5.251726961678061,
+    5.4530904705352885,
+    5.649854352884381,
+    5.842493989031112,
+    6.0310668009476265,
+    6.216224883374177,
+    6.3980556941743965,
+    6.576295118625405,
+    6.752013075622288,
+    6.924945406527842,
+    7.096084325347781,
+    7.263780172193319,
+    7.430471407131601,
+    7.594954109684543,
+    7.7580251608742685,
+    7.9193068003341685
+   ],
+   [
+    0.9589846627509714,
+    1.599712416990803,
+    2.0571075512512507,
+    2.43985475730556,
+    2.7785508870222593,
+    3.087096557984939,
+    3.3740673663614587,
+    3.644009982539656,
+    3.9006807492855473,
+    4.1447741451215645,
+    4.380172354481691,
+    4.607050030319363,
+    4.826717964853482,
+    5.03958764599273,
+    5.2470556786380245,
+    5.449270198041044,
+    5.646819596060873,
+    5.840175810230491,
+    6.029476971901001,
+    6.215372333408653,
+    6.398068398578975,
+    6.577120838640991,
+    6.753768010241551,
+    6.927573573255748,
+    7.099516623509629,
+    7.267867100187936,
+    7.434942816814879,
+    7.599586075217702,
+    7.762458074295267,
+    7.923148897211817
+   ]
+  ],
+  "u": [
+   [
+    0.018716411039258855,
+    0.018774859180004953,
+    0.0188361936105153,
+    0.018903652070629447,
+    0.018975213183683906,
+    0.019053863162337432,
+    0.01914010179136448,
+    0.019229203827792734,
+    0.019321962105815223,
+    0.019408706788906112,
+    0.01949310515329415,
+    0.019572524614572456,
+    0.019643880155365827,
+    0.019712335927051624,
+    0.01977576771932635,
+    0.01983716424129544,
+    0.019897208361418138,
+    0.019957718213592376,
+    0.020021639443126328,
+    0.020088970294833742,
+    0.0201606348497762,
+    0.02023685432511858,
+    0.020318138529641008,
+    0.020404231480782895,
+    0.020494392779071332,
+    0.020588116563492746,
+    0.020688161507098214,
+    0.020793053724659425,
+    0.020903722511553733,
+    0.021020613204491487
+   ],
+   [
+    0.03616808837908207,
+    0.0362735027765191,
+    0.036375752628549265,
+    0.036470037508350615,
+    0.03655695790447114,
+    0.03663503513896593,
+    0.03670392736934272,
+    0.03676767062232506,
+    0.03682060860137445,
+    0.036869509565649244,
+    0.03691334942987421,
+    0.036954253853879286,
+    0.036994191028607536,
+    0.037033364311842565,
+    0.03707591709483089,
+    0.03711993780796043,
+    0.03716701433163397,
+    0.037218512113198626,
+    0.03727674345777128,
+    0.0373427800269381,
+    0.0374124097365089,
+    0.037491192968613654,
+    0.03757605360428098,
+    0.03766765104585109,
+    0.03776749791920739,
+    0.03787213444048977,
+    0.03798160489546315,
+    0.03809392086444658,
+    0.03820823672322324,
+    0.03832087392210862
+   ],
+   [
+    0.027352294640117843,
+    0.027425029020047925,
+    0.02749464999131112,
+    0.027560334816328292,
+    0.027618927680856057,
+    0.027673635268031085,
+    0.027721703816163498,
+    0.027769004982458996,
+    0.027816125283162185,
+    0.027865774274525773,
+    0.02791944821806385,
+    0.027978396629696763,
+    0.028043490373695027,
+    0.028113769368598687,
+    0.028190183233421068,
+    0.02827422608024697,
+    0.028365448152543375,
+    0.02846347403201614,
+    0.02856896562748931,
+    0.028679520815362194,
+    0.028794446187496145,
+    0.028907033337623227,
+    0.029020762587282995,
+    0.02912640575744814,
+    0.029223714850117766,
+    0.029316779046607906,
+    0.029395457963343957,
+    0.029468416725182526,
+    0.02953518616501831,
+    0.029597640109698592
+   ],
+   [
+    0.02763328292720958,
+    0.027657067269573045,
+    0.027688524885815455,
+    0.027728285358009388,
+    0.02777797072207015,
+    0.027832968686308895,
+    0.027898464310240227,
+    0.027971119729565376,
+    0.028049223095815506,
+    0.02813188312790326,
+    0.028216306543638256,
+    0.028301124828594093,
+    0.02838538771584767,
+    0.02846496571775864,
+    0.02853758889195027,
+    0.02860273197387598,
+    0.028658035781384008,
+    0.02870405901697795,
+    0.028742627190638664,
+    0.028775498183528286,
+    0.028804169848102322,
+    0.028831703503590034,
+    0.02886011237887304,
+    0.028890094604622326,
+    0.028924239469274308,
+    0.028963076205790472,
+    0.029007119387873235,
+    0.029055433332923007,
+    0.02911055440753621,
+    0.02917114597160473
+   ]
+  ],
+  "x_ref": [
+   0.9570680160543185,
+   1.5979486467469117,
+   2.055254000034051,
+   2.4378141144223795,
+   2.7762002083160855,
+   3.0843896001817512,
+   3.3709542426983634,
+   3.6404465727334956,
+   3.896592730192658,
+   4.140153129625491,
+   4.374963520984498,
+   4.601283543318633,
+   4.820388525519422,
+   5.032741422222976,
+   5.239669072331439,
+   5.441419557964784,
+   5.638555303798928,
+   5.831554431623829,
+   6.020548366227531,
+   6.206214487905754,
+   6.388692077537496,
+   6.5676846249443095,
+   6.74424415610074,
+   6.918059161466505,
+   7.090029321640793,
+   7.258492952883776,
+   7.42574230462233,
+   7.5905741133614795,
+   7.7537404362081315,
+   7.914747657211609
+  ],
+  "u_ref": [
+   0.012633620582858295,
+   0.012665514495151502,
+   0.012698563134150317,
+   0.0127335365332645,
+   0.012769684009908308,
+   0.012807711039648237,
+   0.012847962778304628,
+   0.012889417830947205,
+   0.01293194961053371,
+   0.012973132945013639,
+   0.013013914781447158,
+   0.013053609373919072,
+   0.013091402507059608,
+   0.013128345215118029,
+   0.013163876530903743,
+   0.013198899358339167,
+   0.013233406964165213,
+   0.013268005928509562,
+   0.013303901837256478,
+   0.013341059547961267,
+   0.013379622199749317,
+   0.013419529725111115,
+   0.013461334600574902,
+   0.01350413631708217,
+   0.013548027834433674,
+   0.01359316475483172,
+   0.013639379117124227,
+   0.013686907061077487,
+   0.013736176256190108,
+   0.013787169114559272
+  ],
+  "En": [
+   [
+    -0.22633351777176033,
+    -0.23008278194791626,
+    -0.233993843736066,
+    -0.23570772741244359,
+    -0.23501114248224209,
+    -0.23119537942354013,
+    -0.22371801153022597,
+    -0.21538539568767928,
+    -0.20613153908408696,
+    -0.19778242803463095,
+    -0.19126086759595268,
+    -0.18753623765318236,
+    -0.186904224220875,
+    -0.18858556726408832,
+    -0.19413352415633714,
+    -0.2016249199829489,
+    -0.20979247048488703,
+    -0.21864085513805323,
+    -0.2265057300059644,
+    -0.23263947114157593,
+    -0.23677753421378875,
+    -0.23755760507640883,
+    -0.23713005079652444,
+    -0.23508862814095155,
+    -0.2328961227527626,
+    -0.23014579985931088,
+    -0.22909013341428439,
+    -0.23067098762686808,
+    -0.23304380879130163,
+    -0.24039235199904188
+   ],
+   [
+    -0.06259335219260685,
+    -0.1026871667709882,
+    -0.13124049283205455,
+    -0.15394082802091877,
+    -0.17186688381561918,
+    -0.18632579374172764,
+    -0.19761532412400415,
+    -0.20564393916680526,
+    -0.2111457538513044,
+    -0.2133232565794902,
+    -0.21381093369768248,
+    -0.2109656357267758,
+    -0.20646512130730293,
+    -0.19925487699179043,
+    -0.19020032517295193,
+    -0.17911124161444963,
+    -0.16621870901514046,
+    -0.1513596887100731,
+    -0.13540156571117212,
+    -0.11822764978235399,
+    -0.1006299403178722,
+    -0.081962064689071,
+    -0.06389627635145446,
+    -0.045238873016168274,
+    -0.027850888197559456,
+    -0.010857782259350414,
+    0.00497853527794319,
+    0.020082488984978386,
+    0.0329223276824953,
+    0.04493325918884937
+   ],
+   [
+    0.2864583350267394,
+    0.32608477232036104,
+    0.3517517058467682,
+    0.3680650306104873,
+    0.3751153244141255,
+    0.374667993290127,
+    0.3662557205972607,
+    0.35341604174610897,
+    0.3360983275997178,
+    0.317249688518855,
+    0.29834318454852626,
+    0.28090859501042853,
+    0.265922639931553,
+    0.25252363260800853,
+    0.241855572587659,
+    0.23337700965090627,
+    0.2251761830768648,
+    0.21721050284036217,
+    0.20802017495264236,
+    0.19715115201462574,
+    0.18362068148815006,
+    0.16815153796736307,
+    0.15108830164391754,
+    0.13341970891162563,
+    0.11692103554158727,
+    0.10177524710947279,
+    0.09080600681397406,
+    0.08391745179375375,
+    0.08193655563036704,
+    0.08703861673756523
+   ],
+   [
+    0.038993948241392504,
+    0.0358686095232803,
+    0.03766630879098123,
+    0.04142330042176644,
+    0.04764472766099949,
+    0.054772182282764745,
+    0.06285591086555016,
+    0.07177258048800429,
+    0.08212095550747982,
+    0.09256106014040216,
+    0.1040271466665809,
+    0.11482042859498022,
+    0.12565284984656103,
+    0.13553283175525532,
+    0.14586460586276803,
+    0.15469064866225082,
+    0.1625569910713155,
+    0.16935515550293195,
+    0.1752196673576796,
+    0.17959385119099486,
+    0.1837906638391737,
+    0.18489115201598375,
+    0.1865345827582826,
+    0.18626715977894526,
+    0.18562451282272321,
+    0.18326708227013347,
+    0.17969471901844963,
+    0.17581020808491532,
+    0.16982875093908795,
+    0.16340128491802794
+   ]
+  ],
+  "members": [
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ],
+   [
+    "LAB1",
+    "LAB2",
+    "LAB3",
+    "LAB4"
+   ]
+  ],
+  "reference": "consensus"
+ },
+ "by_round": {
+  "quantity": "insertion_loss",
+  "pair": "A",
+  "f_hz": 600000000.0,
+  "reference": "consensus",
+  "sites": [
+   "LAB1",
+   "LAB2",
+   "LAB3",
+   "LAB4"
+  ],
+  "rounds": [
+   {
+    "batch": "RR-01",
+    "t_unix": 1772438400.0,
+    "x_ref": 7.908701434987588,
+    "u_ref": 0.013473918634113295,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.890536,
+      "u": 0.020732201271283637,
+      "d": -0.018165434987587936,
+      "u_d": 0.01575682982691345,
+      "En": -0.5764305125819302,
+      "z": -0.7488584234720396,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.901926442507265,
+      "u": 0.04081417766180622,
+      "d": -0.006774992480322872,
+      "u_d": 0.03852597324988399,
+      "En": -0.08792759674595987,
+      "z": -0.2899041658016384,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.903204010025061,
+      "u": 0.032067822261476406,
+      "d": -0.005497424962526587,
+      "u_d": 0.029099806549785452,
+      "En": -0.09445810151901368,
+      "z": -0.23842723227776277,
+      "n": 3
+     },
+     "LAB4": {
+      "x": 7.940818976279651,
+      "u": 0.024930376643958915,
+      "d": 0.03211754129206312,
+      "u_d": 0.020975633393319655,
+      "En": 0.7655916913167436,
+      "z": 1.2771898215514765,
+      "n": 3
+     }
+    }
+   },
+   {
+    "batch": "RR-02",
+    "t_unix": 1773648000.0,
+    "x_ref": 7.911801190285038,
+    "u_ref": 0.013407694199182859,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.92496,
+      "u": 0.019690262517727153,
+      "d": 0.013158809714961528,
+      "u_d": 0.014420130868969571,
+      "En": 0.4562652667486445,
+      "z": 1.2435269571541032,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.896011623080117,
+      "u": 0.0501581525133447,
+      "d": -0.015789567204921084,
+      "u_d": 0.04833294942182967,
+      "En": -0.16334164781789312,
+      "z": -0.6844234757023865,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.906361570593149,
+      "u": 0.031715762622990785,
+      "d": -0.005439619691888886,
+      "u_d": 0.028742361333389047,
+      "En": -0.09462722336542789,
+      "z": 0.004878927780112157,
+      "n": 3
+     },
+     "LAB4": {
+      "x": 7.897820058260508,
+      "u": 0.025063667822814904,
+      "d": -0.013981132024530218,
+      "u_d": 0.021175957616920316,
+      "En": -0.33011805835309227,
+      "z": -0.5639824092316514,
+      "n": 3
+     }
+    }
+   },
+   {
+    "batch": "RR-03",
+    "t_unix": 1774857600.0,
+    "x_ref": 7.915525535722411,
+    "u_ref": 0.013980787607981805,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.915636333333334,
+      "u": 0.02018258730845033,
+      "d": 0.00011079761092336327,
+      "u_d": 0.014555906303755969,
+      "En": 0.003805933090362547,
+      "z": -0.21010239613411374,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.9504704026567055,
+      "u": 0.0451728678004207,
+      "d": 0.03494486693429444,
+      "u_d": 0.042954924783717034,
+      "En": 0.40676205476142546,
+      "z": 1.281186414947518,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.912518629908103,
+      "u": 0.03228989703126981,
+      "d": -0.0030069058143080696,
+      "u_d": 0.02910627128559255,
+      "En": -0.05165391651861075,
+      "z": -0.34357506598377485,
+      "n": 3
+     },
+     "LAB4": {
+      "x": 7.903550561797753,
+      "u": 0.028724946684516733,
+      "d": -0.01197497392465774,
+      "u_d": 0.02509302970724801,
+      "En": -0.23861155995042763,
+      "z": -0.7275089528297055,
+      "n": 3
+     }
+    }
+   },
+   {
+    "batch": "RR-04",
+    "t_unix": 1776067200.0,
+    "x_ref": 7.921415474159143,
+    "u_ref": 0.013885001126959205,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.894855,
+      "u": 0.023233439536350507,
+      "d": -0.026560474159142977,
+      "u_d": 0.018627921419031072,
+      "En": -0.7129210383077865,
+      "z": -1.249044606038081,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.9457876297218775,
+      "u": 0.03898989840865192,
+      "d": 0.024372155562734754,
+      "u_d": 0.0364337607394754,
+      "En": 0.33447213611862897,
+      "z": 0.7082964977732196,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.927889724310777,
+      "u": 0.02618709002644453,
+      "d": 0.0064742501516343864,
+      "u_d": 0.02220293736777754,
+      "En": 0.14579715387186273,
+      "z": 0.020479942363248682,
+      "n": 3
+     },
+     "LAB4": {
+      "x": 7.940894881398251,
+      "u": 0.028649776088044497,
+      "d": 0.01947940723910868,
+      "u_d": 0.025060255657104295,
+      "En": 0.3886514069457726,
+      "z": 0.520268165901647,
+      "n": 3
+     }
+    }
+   },
+   {
+    "batch": "RR-05",
+    "t_unix": 1777276800.0,
+    "x_ref": 7.918925936660298,
+    "u_ref": 0.015365646026384187,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.927531666666667,
+      "u": 0.027326100763837,
+      "d": 0.00860573000636844,
+      "u_d": 0.022596741029343965,
+      "En": 0.19041971572788086,
+      "z": 0.1424448445876305,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.951519468659195,
+      "u": 0.042639520188015805,
+      "d": 0.03259353199889681,
+      "u_d": 0.039774685467720186,
+      "En": 0.409727086658531,
+      "z": 1.135600041602459,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.916414369256473,
+      "u": 0.03475719460253987,
+      "d": -0.00251156740382541,
+      "u_d": 0.031176264991667788,
+      "En": -0.04028012022121083,
+      "z": -0.31783916572446846,
+      "n": 3
+     },
+     "LAB4": {
+      "x": 7.900899209321682,
+      "u": 0.02566252268705349,
+      "d": -0.018026727338616766,
+      "u_d": 0.020553880238422112,
+      "En": -0.4385237028120547,
+      "z": -0.9602057204656578,
+      "n": 3
+     }
+    }
+   },
+   {
+    "batch": "RR-06",
+    "t_unix": 1778486400.0,
+    "x_ref": 7.926227099763341,
+    "u_ref": 0.013050698717301057,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.909342333333332,
+      "u": 0.021928781770781402,
+      "d": -0.01688476643000847,
+      "u_d": 0.01762244968614725,
+      "En": -0.4790697868549268,
+      "z": -0.32893075799129057,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.882421253632213,
+      "u": 0.037248583029364665,
+      "d": -0.0438058461311277,
+      "u_d": 0.03488747913916553,
+      "En": -0.627816156569911,
+      "z": -1.057141815273311,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.957130492898913,
+      "u": 0.02453587629248416,
+      "d": 0.030903393135572443,
+      "u_d": 0.020777114535717484,
+      "En": 0.7436882797764602,
+      "z": 0.9637315939338732,
+      "n": 3
+     },
+     "LAB4": {
+      "x": 7.93711593841032,
+      "u": 0.02663240316221715,
+      "d": 0.010888838646978982,
+      "u_d": 0.023215601676138193,
+      "En": 0.23451553827637625,
+      "z": 0.42234097933080034,
+      "n": 3
+     }
+    }
+   },
+   {
+    "batch": "RR-07",
+    "t_unix": 1779696000.0,
+    "x_ref": 7.89276474935216,
+    "u_ref": 0.016942363619166022,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.8890460000000004,
+      "u": 0.02593610953545357,
+      "d": -0.003718749352159989,
+      "u_d": 0.019637670249574034,
+      "En": -0.09468407669796404,
+      "z": -0.3311554125554268,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.877462183478623,
+      "u": 0.038270324833882,
+      "d": -0.01530256587353751,
+      "u_d": 0.03431579924592759,
+      "En": -0.22296677055181127,
+      "z": -0.6830132720643585,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.890694068504594,
+      "u": 0.032373902036007235,
+      "d": -0.002070680847566564,
+      "u_d": 0.02758669693952056,
+      "En": -0.03753042366953539,
+      "z": -0.2810954124440499,
+      "n": 3
+     },
+     "LAB4": {
+      "x": 7.9425907615480655,
+      "u": 0.0526829668679174,
+      "d": 0.0498260121959051,
+      "u_d": 0.04988437944890206,
+      "En": 0.4994149746509652,
+      "z": 1.2952640970638352,
+      "n": 3
+     }
+    }
+   },
+   {
+    "batch": "RR-08",
+    "t_unix": 1780905600.0,
+    "x_ref": 7.919336487215071,
+    "u_ref": 0.015725007767752666,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3",
+     "LAB4"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.924439333333333,
+      "u": 0.026318978196328818,
+      "d": 0.005102846118261617,
+      "u_d": 0.021104803813420062,
+      "En": 0.1208930005550877,
+      "z": 0.2200843233717508,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.93860888335409,
+      "u": 0.035535848421429594,
+      "d": 0.019272396139018433,
+      "u_d": 0.03186723479900536,
+      "En": 0.30238576174830145,
+      "z": 0.9082044635783268,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.895080701754385,
+      "u": 0.031549714544007866,
+      "d": -0.024255785460685964,
+      "u_d": 0.027351574333345053,
+      "En": -0.44340748296735283,
+      "z": -1.2056677752329716,
+      "n": 3
+     },
+     "LAB4": {
+      "x": 7.921500790678319,
+      "u": 0.035269781137071445,
+      "d": 0.0021643034632479186,
+      "u_d": 0.031570264366346995,
+      "En": 0.03427756318624631,
+      "z": 0.07737898828285089,
+      "n": 3
+     }
+    }
+   },
+   {
+    "batch": "RR-09",
+    "t_unix": 1782115200.0,
+    "x_ref": 7.92327834921445,
+    "u_ref": 0.01711855224106465,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.899804333333333,
+      "u": 0.02305569862728908,
+      "d": -0.023474015881117083,
+      "u_d": 0.015444105942472686,
+      "En": -0.7599668109165653,
+      "z": -0.9840557626110915,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.944728601079286,
+      "u": 0.034567930449515394,
+      "d": 0.02145025186483629,
+      "u_d": 0.030031599769783725,
+      "En": 0.35712802563415963,
+      "z": 0.2654064456599782,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.961024895572263,
+      "u": 0.03794992091985502,
+      "d": 0.037746546357812605,
+      "u_d": 0.03386962750006545,
+      "En": 0.5572329716017642,
+      "z": 0.7186493169511627,
+      "n": 3
+     }
+    }
+   },
+   {
+    "batch": "RR-10",
+    "t_unix": 1783324800.0,
+    "x_ref": 7.902706995673526,
+    "u_ref": 0.01595444119890028,
+    "members": [
+     "LAB1",
+     "LAB2",
+     "LAB3"
+    ],
+    "sites": {
+     "LAB1": {
+      "x": 7.895036666666667,
+      "u": 0.02511936162343899,
+      "d": -0.007670329006859156,
+      "u_d": 0.019402013668687407,
+      "En": -0.1976683744749179,
+      "z": -0.39447969201769034,
+      "n": 3
+     },
+     "LAB2": {
+      "x": 7.890671647986717,
+      "u": 0.03035262858986896,
+      "d": -0.01203534768680914,
+      "u_d": 0.025821267752481943,
+      "En": -0.23305106089634775,
+      "z": -0.6157305793323433,
+      "n": 3
+     },
+     "LAB3": {
+      "x": 7.922749540517962,
+      "u": 0.02819064725657851,
+      "d": 0.02004254484443635,
+      "u_d": 0.023241523159545092,
+      "En": 0.4311796758510866,
+      "z": 1.0102102713499888,
+      "n": 3
+     }
+    }
+   }
+  ]
+ },
+ "rnr": {
+  "insertion_loss[A] @ 10 MHz": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 10000000.0,
+   "unit": "dB",
+   "label": "insertion_loss[A] @ 10 MHz",
+   "anova": {
+    "sites": 4,
+    "conditions_per_site": 9.5,
+    "repeats_per_cell": 3.0,
+    "grand_mean": 0.9583676544086723,
+    "ms_site": 0.002467731086574287,
+    "ms_condition": 0.0024924667207629654,
+    "ms_error": 2.153022038997506e-05,
+    "var_site": 0.0,
+    "var_condition": 0.0008236455001243301,
+    "var_error": 2.153022038997506e-05,
+    "s_r": 0.00464006685188641,
+    "s_I": 0.029071906035110687,
+    "s_L": 0.0,
+    "s_R": 0.029071906035110687,
+    "r_limit": 0.012992187185281948,
+    "R_limit": 0.08140133689830992,
+    "site_means": {
+     "LAB1": 0.9508170190800384,
+     "LAB2": 0.9528254568390206,
+     "LAB3": 0.9709668806331191,
+     "LAB4": 0.9589846627509713
+    }
+   },
+   "cochran": {
+    "C": 0.29031196031960477,
+    "critical": 0.7679205583193612,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "grubbs": {
+    "G": 1.3855660379191197,
+    "critical": 1.4812500000000002,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "per_site": {
+    "LAB1": {
+     "s_r": 0.004706078047214357,
+     "rounds": 10,
+     "s_between_rounds": 0.01952045217460595,
+     "mean": 0.9508170190800384
+    },
+    "LAB2": {
+     "s_r": 0.004110902623084977,
+     "rounds": 10,
+     "s_between_rounds": 0.03749489914864669,
+     "mean": 0.9528254568390206
+    },
+    "LAB3": {
+     "s_r": 0.005003858576772446,
+     "rounds": 10,
+     "s_between_rounds": 0.026100277932594198,
+     "mean": 0.9709668806331191
+    },
+    "LAB4": {
+     "s_r": 0.0047076461558041675,
+     "rounds": 8,
+     "s_between_rounds": 0.029361529635622073,
+     "mean": 0.9589846627509713
+    }
+   }
+  },
+  "insertion_loss[A] @ 100 MHz": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 100000000.0,
+   "unit": "dB",
+   "label": "insertion_loss[A] @ 100 MHz",
+   "anova": {
+    "sites": 4,
+    "conditions_per_site": 9.5,
+    "repeats_per_cell": 3.0,
+    "grand_mean": 2.910596468658679,
+    "ms_site": 0.005347596688229549,
+    "ms_condition": 0.002652080660953657,
+    "ms_error": 2.1502284868804176e-05,
+    "var_site": 9.457950972897867e-05,
+    "var_condition": 0.0008768594586949511,
+    "var_error": 2.1502284868804176e-05,
+    "s_r": 0.004637055624941777,
+    "s_I": 0.029972683289351244,
+    "s_L": 0.00972519972694539,
+    "s_R": 0.03151097036418799,
+    "r_limit": 0.012983755749836975,
+    "R_limit": 0.08823071701972637,
+    "site_means": {
+     "LAB1": 2.903618059128617,
+     "LAB2": 2.8979616244598345,
+     "LAB3": 2.9285704235826766,
+     "LAB4": 2.9126455921648158
+    }
+   },
+   "cochran": {
+    "C": 0.2902460184489275,
+    "critical": 0.7679205583193612,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "grubbs": {
+    "G": 1.3375763009069284,
+    "critical": 1.4812500000000002,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "per_site": {
+    "LAB1": {
+     "s_r": 0.004691934518872012,
+     "rounds": 10,
+     "s_between_rounds": 0.018919892682224285,
+     "mean": 2.903618059128617
+    },
+    "LAB2": {
+     "s_r": 0.004142575049483878,
+     "rounds": 10,
+     "s_between_rounds": 0.041399703682133214,
+     "mean": 2.8979616244598345
+    },
+    "LAB3": {
+     "s_r": 0.004998869612350142,
+     "rounds": 10,
+     "s_between_rounds": 0.025909929425669668,
+     "mean": 2.9285704235826766
+    },
+    "LAB4": {
+     "s_r": 0.0046830555637037245,
+     "rounds": 8,
+     "s_between_rounds": 0.027691963597529404,
+     "mean": 2.9126455921648158
+    }
+   }
+  },
+  "insertion_loss[A] @ 300 MHz": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 300000000.0,
+   "unit": "dB",
+   "label": "insertion_loss[A] @ 300 MHz",
+   "anova": {
+    "sites": 4,
+    "conditions_per_site": 9.5,
+    "repeats_per_cell": 3.0,
+    "grand_mean": 5.291152723603173,
+    "ms_site": 0.0038972869092041133,
+    "ms_condition": 0.0020690057254798733,
+    "ms_error": 2.1506904383564867e-05,
+    "var_site": 6.415021697278035e-05,
+    "var_condition": 0.0006824996070321029,
+    "var_error": 2.1506904383564867e-05,
+    "s_r": 0.004637553706811908,
+    "s_I": 0.02653312102666529,
+    "s_L": 0.008009383058187462,
+    "s_R": 0.027715640501140292,
+    "r_limit": 0.012985150379073341,
+    "R_limit": 0.07760379340319282,
+    "site_means": {
+     "LAB1": 5.285588185786146,
+     "LAB2": 5.278379707046122,
+     "LAB3": 5.303317936935043,
+     "LAB4": 5.298868149905935
+    }
+   },
+   "cochran": {
+    "C": 0.29677426877848256,
+    "critical": 0.7679205583193612,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "grubbs": {
+    "G": 1.138107337391368,
+    "critical": 1.4812500000000002,
+    "outlier": false,
+    "index": 1,
+    "site": "LAB2"
+   },
+   "per_site": {
+    "LAB1": {
+     "s_r": 0.004619271706398675,
+     "rounds": 10,
+     "s_between_rounds": 0.018777405918112746,
+     "mean": 5.285588185786146
+    },
+    "LAB2": {
+     "s_r": 0.004161616245355255,
+     "rounds": 10,
+     "s_between_rounds": 0.03337256706708836,
+     "mean": 5.278379707046122
+    },
+    "LAB3": {
+     "s_r": 0.005055076431542305,
+     "rounds": 10,
+     "s_between_rounds": 0.01889639258187978,
+     "mean": 5.303317936935043
+    },
+    "LAB4": {
+     "s_r": 0.0046791716758513855,
+     "rounds": 8,
+     "s_between_rounds": 0.031708934817929475,
+     "mean": 5.298868149905935
+    }
+   }
+  },
+  "insertion_loss[A] @ 600 MHz": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 600000000.0,
+   "unit": "dB",
+   "label": "insertion_loss[A] @ 600 MHz",
+   "anova": {
+    "sites": 4,
+    "conditions_per_site": 9.5,
+    "repeats_per_cell": 3.0,
+    "grand_mean": 7.916554078522606,
+    "ms_site": 0.0013337479764742976,
+    "ms_condition": 0.001625125272283958,
+    "ms_error": 2.140042397987526e-05,
+    "var_site": 0.0,
+    "var_condition": 0.0005345749494346943,
+    "var_error": 2.140042397987526e-05,
+    "s_r": 0.00462605922788233,
+    "s_I": 0.02357913003939224,
+    "s_L": 0.0,
+    "s_R": 0.02357913003939224,
+    "r_limit": 0.012952965838070525,
+    "R_limit": 0.06602156411029826,
+    "site_means": {
+     "LAB1": 7.907118766666668,
+     "LAB2": 7.917960813615609,
+     "LAB3": 7.919306800334169,
+     "LAB4": 7.923148897211819
+    }
+   },
+   "cochran": {
+    "C": 0.2973773572003608,
+    "critical": 0.7679205583193612,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "grubbs": {
+    "G": 1.4211666616083225,
+    "critical": 1.4812500000000002,
+    "outlier": false,
+    "index": 0,
+    "site": "LAB1"
+   },
+   "per_site": {
+    "LAB1": {
+     "s_r": 0.004667653211197143,
+     "rounds": 10,
+     "s_between_rounds": 0.01514369104839153,
+     "mean": 7.907118766666668
+    },
+    "LAB2": {
+     "s_r": 0.004027520332220276,
+     "rounds": 10,
+     "s_between_rounds": 0.030708326018458798,
+     "mean": 7.917960813615609
+    },
+    "LAB3": {
+     "s_r": 0.005050448610790969,
+     "rounds": 10,
+     "s_between_rounds": 0.023905988911884404,
+     "mean": 7.919306800334169
+    },
+    "LAB4": {
+     "s_r": 0.004717874710454755,
+     "rounds": 8,
+     "s_between_rounds": 0.01972534873020045,
+     "mean": 7.923148897211819
+    }
+   }
+  },
+  "impedance_fitted[A]": {
+   "quantity": "impedance_fitted",
+   "pair": "A",
+   "f_hz": null,
+   "unit": "ohm",
+   "label": "impedance_fitted[A]",
+   "anova": {
+    "sites": 4,
+    "conditions_per_site": 9.5,
+    "repeats_per_cell": 3.0,
+    "grand_mean": 100.17516150643696,
+    "ms_site": 0.4399297092436076,
+    "ms_condition": 0.30359406867684063,
+    "ms_error": 7.547926962121918e-08,
+    "var_site": 0.004783706686553226,
+    "var_condition": 0.10119799773252368,
+    "var_error": 7.547926962121918e-08,
+    "s_r": 0.00027473490790436367,
+    "s_I": 0.3181164459939054,
+    "s_L": 0.06916434548633585,
+    "s_R": 0.3255484294207953,
+    "r_limit": 0.0007692577421322183,
+    "R_limit": 0.9115356023782268,
+    "site_means": {
+     "LAB1": 100.14331326666668,
+     "LAB2": 100.33622882726112,
+     "LAB3": 100.0446475878114,
+     "LAB4": 100.17678005340161
+    }
+   },
+   "cochran": {
+    "C": 0.5844496927271551,
+    "critical": 0.7679205583193612,
+    "outlier": false,
+    "index": 1,
+    "site": "LAB2"
+   },
+   "grubbs": {
+    "G": 1.3294000655529026,
+    "critical": 1.4812500000000002,
+    "outlier": false,
+    "index": 1,
+    "site": "LAB2"
+   },
+   "per_site": {
+    "LAB1": {
+     "s_r": 9.726750056777691e-05,
+     "rounds": 10,
+     "s_between_rounds": 0.22483044988403292,
+     "mean": 100.14331326666668
+    },
+    "LAB2": {
+     "s_r": 0.0004171058792541885,
+     "rounds": 10,
+     "s_between_rounds": 0.39691142729674245,
+     "mean": 100.33622882726112
+    },
+    "LAB3": {
+     "s_r": 0.00024486582313167435,
+     "rounds": 10,
+     "s_between_rounds": 0.31387305842596896,
+     "mean": 100.0446475878114
+    },
+    "LAB4": {
+     "s_r": 0.00023297980611945813,
+     "rounds": 8,
+     "s_between_rounds": 0.31197513551617195,
+     "mean": 100.17678005340161
+    }
+   }
+  },
+  "impedance_mean[A]": {
+   "quantity": "impedance_mean",
+   "pair": "A",
+   "f_hz": null,
+   "unit": "ohm",
+   "label": "impedance_mean[A]",
+   "anova": {
+    "sites": 4,
+    "conditions_per_site": 9.5,
+    "repeats_per_cell": 3.0,
+    "grand_mean": 102.07069410663492,
+    "ms_site": 0.5704191920502012,
+    "ms_condition": 0.4993210089870401,
+    "ms_error": 1.564203620774338e-06,
+    "var_site": 0.002494673089935476,
+    "var_condition": 0.16643981492780643,
+    "var_error": 1.564203620774338e-06,
+    "s_r": 0.0012506812626622093,
+    "s_I": 0.4079722774054963,
+    "s_L": 0.04994670249311235,
+    "s_R": 0.41101831129690886,
+    "r_limit": 0.0035019075354541856,
+    "R_limit": 1.1508512716313448,
+    "site_means": {
+     "LAB1": 102.02214723333333,
+     "LAB2": 102.2187186513453,
+     "LAB3": 101.90532538047717,
+     "LAB4": 102.15305792507107
+    }
+   },
+   "cochran": {
+    "C": 0.32762245600999224,
+    "critical": 0.7679205583193612,
+    "outlier": false,
+    "index": 3,
+    "site": "LAB4"
+   },
+   "grubbs": {
+    "G": 1.21547964026378,
+    "critical": 1.4812500000000002,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "per_site": {
+    "LAB1": {
+     "s_r": 0.0010553240102768886,
+     "rounds": 10,
+     "s_between_rounds": 0.3113415764308454,
+     "mean": 102.02214723333333
+    },
+    "LAB2": {
+     "s_r": 0.0013621385248262035,
+     "rounds": 10,
+     "s_between_rounds": 0.4832363749693117,
+     "mean": 102.2187186513453
+    },
+    "LAB3": {
+     "s_r": 0.001143547800095201,
+     "rounds": 10,
+     "s_between_rounds": 0.4113914007754524,
+     "mean": 101.90532538047717
+    },
+    "LAB4": {
+     "s_r": 0.0014435815098035295,
+     "rounds": 8,
+     "s_between_rounds": 0.4073830650325542,
+     "mean": 102.15305792507107
+    }
+   }
+  },
+  "return_loss_min[A]": {
+   "quantity": "return_loss_min",
+   "pair": "A",
+   "f_hz": null,
+   "unit": "dB",
+   "label": "return_loss_min[A]",
+   "anova": {
+    "sites": 4,
+    "conditions_per_site": 9.5,
+    "repeats_per_cell": 3.0,
+    "grand_mean": 26.810720807017546,
+    "ms_site": 1.211875104928826,
+    "ms_condition": 0.5451827563822329,
+    "ms_error": 2.35836974912266e-05,
+    "var_site": 0.023392713984090988,
+    "var_condition": 0.18171972422824723,
+    "var_error": 2.35836974912266e-05,
+    "s_r": 0.004856304921566046,
+    "s_I": 0.42631362624919517,
+    "s_L": 0.1529467684656691,
+    "s_R": 0.45291944306888554,
+    "r_limit": 0.013597653780384928,
+    "R_limit": 1.2681744405928794,
+    "site_means": {
+     "LAB1": 26.9027353,
+     "LAB2": 26.521219300000002,
+     "LAB3": 26.9771708,
+     "LAB4": 26.849517083333332
+    }
+   },
+   "cochran": {
+    "C": 0.3006063886862595,
+    "critical": 0.7679205583193612,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "grubbs": {
+    "G": 1.4483415860472966,
+    "critical": 1.4812500000000002,
+    "outlier": false,
+    "index": 1,
+    "site": "LAB2"
+   },
+   "per_site": {
+    "LAB1": {
+     "s_r": 0.004667848562239386,
+     "rounds": 10,
+     "s_between_rounds": 0.3975702238688442,
+     "mean": 26.9027353
+    },
+    "LAB2": {
+     "s_r": 0.004170871963190999,
+     "rounds": 10,
+     "s_between_rounds": 0.4640620929375904,
+     "mean": 26.521219300000002
+    },
+    "LAB3": {
+     "s_r": 0.0053462050122803,
+     "rounds": 10,
+     "s_between_rounds": 0.4131478479046283,
+     "mean": 26.9771708
+    },
+    "LAB4": {
+     "s_r": 0.005226274880351806,
+     "rounds": 8,
+     "s_between_rounds": 0.42791458201919197,
+     "mean": 26.849517083333332
+    }
+   }
+  },
+  "nvp[A]": {
+   "quantity": "nvp",
+   "pair": "A",
+   "f_hz": null,
+   "unit": "",
+   "label": "nvp[A]",
+   "anova": {
+    "sites": 4,
+    "conditions_per_site": 9.5,
+    "repeats_per_cell": 3.0,
+    "grand_mean": 0.6807975251860054,
+    "ms_site": 4.3329894648672196e-10,
+    "ms_condition": 4.537311236148323e-10,
+    "ms_error": 2.6313684397724808e-14,
+    "var_site": 0.0,
+    "var_condition": 1.5123493664347818e-10,
+    "var_error": 2.6313684397724808e-14,
+    "s_r": 1.6221493272114256e-07,
+    "s_I": 1.2298831258614613e-05,
+    "s_L": 0.0,
+    "s_R": 1.2298831258614613e-05,
+    "r_limit": 4.542018116191991e-07,
+    "R_limit": 3.443672752412092e-05,
+    "site_means": {
+     "LAB1": 0.6807989333333333,
+     "LAB2": 0.6807934714124271,
+     "LAB3": 0.6808020518768874,
+     "LAB4": 0.6807951738552156
+    }
+   },
+   "cochran": {
+    "C": 0.6666400002929052,
+    "critical": 0.7679205583193612,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "grubbs": {
+    "G": 1.2074843445150214,
+    "critical": 1.4812500000000002,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "per_site": {
+    "LAB1": {
+     "s_r": 1.825741858200356e-07,
+     "rounds": 10,
+     "s_between_rounds": 9.946523680826882e-06,
+     "mean": 0.6807989333333333
+    },
+    "LAB2": {
+     "s_r": 6.080941944488117e-17,
+     "rounds": 10,
+     "s_between_rounds": 1.579734247194364e-05,
+     "mean": 0.6807934714124271
+    },
+    "LAB3": {
+     "s_r": 2.581833987372259e-07,
+     "rounds": 10,
+     "s_between_rounds": 1.0945958932393755e-05,
+     "mean": 0.6808020518768874
+    },
+    "LAB4": {
+     "s_r": 6.798699777552591e-17,
+     "rounds": 8,
+     "s_between_rounds": 1.1511209769523355e-05,
+     "mean": 0.6807951738552156
+    }
+   }
+  },
+  "loop_resistance": {
+   "quantity": "loop_resistance",
+   "pair": null,
+   "f_hz": null,
+   "unit": "ohm",
+   "label": "loop_resistance",
+   "anova": {
+    "sites": 4,
+    "conditions_per_site": 9.5,
+    "repeats_per_cell": 3.0,
+    "grand_mean": 2.7351082863725087,
+    "ms_site": 5.777905307314511e-07,
+    "ms_condition": 0.0,
+    "ms_error": 2.649942526868848e-07,
+    "var_site": 2.0273351955489512e-08,
+    "var_condition": 0.0,
+    "var_error": 2.649942526868848e-07,
+    "s_r": 0.0005147759247351073,
+    "s_I": 0.0005147759247351073,
+    "s_L": 0.00014238452147438468,
+    "s_R": 0.0005341044885061109,
+    "r_limit": 0.0014413725892583001,
+    "R_limit": 0.0014954925678171103,
+    "site_means": {
+     "LAB1": 2.735139333333333,
+     "LAB2": 2.7349398628418804,
+     "LAB3": 2.7352739599961176,
+     "LAB4": 2.7350729150552495
+    }
+   },
+   "cochran": {
+    "C": 0.25246253585348183,
+    "critical": 0.7679205583193612,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "grubbs": {
+    "G": 1.2040617401504463,
+    "critical": 1.4812500000000002,
+    "outlier": false,
+    "index": 2,
+    "site": "LAB3"
+   },
+   "per_site": {
+    "LAB1": {
+     "s_r": 0.0005152449255773836,
+     "rounds": 10,
+     "s_between_rounds": 0.0,
+     "mean": 2.735139333333333
+    },
+    "LAB2": {
+     "s_r": 0.0005122253570973406,
+     "rounds": 10,
+     "s_between_rounds": 0.0,
+     "mean": 2.7349398628418804
+    },
+    "LAB3": {
+     "s_r": 0.0005172778274391008,
+     "rounds": 10,
+     "s_between_rounds": 0.0,
+     "mean": 2.7352739599961176
+    },
+    "LAB4": {
+     "s_r": 0.000514234454873583,
+     "rounds": 8,
+     "s_between_rounds": 0.0,
+     "mean": 2.7350729150552495
+    }
+   }
+  }
+ },
+ "verdicts_at_risk": {
+  "n_production": 68,
+  "n_at_risk": 0,
+  "band_db": 0.04715826007878448,
+  "runs": []
+ },
+ "charts": [
+  {
+   "site": "LAB1",
+   "series": "artefact IL @ 100 MHz",
+   "unit": "dB",
+   "n": 10,
+   "cl": 2.9030395566235936,
+   "sigma": 0.023611614436405144,
+   "phase1": 5,
+   "ucl": 2.973874399932809,
+   "lcl": 2.832204713314378,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     2.9157898284192525,
+     2.9193678714973212,
+     2.921293386509323,
+     2.922425605895721,
+     2.9231167459425005,
+     2.923546855096806,
+     2.92381745297745,
+     2.9239888013850113,
+     2.9240977326782853,
+     2.9241671539612804
+    ],
+    "lcl": [
+     2.8902892848279347,
+     2.886711241749866,
+     2.884785726737864,
+     2.883653507351466,
+     2.8829623673046867,
+     2.8825322581503814,
+     2.8822616602697373,
+     2.882090311862176,
+     2.881981380568902,
+     2.881911959285907
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB1",
+   "series": "artefact IL @ 600 MHz",
+   "unit": "dB",
+   "n": 10,
+   "cl": 7.9107038,
+   "sigma": 0.021543809101654817,
+   "phase1": 5,
+   "ucl": 7.9753352273049645,
+   "lcl": 7.846072372695036,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     7.922337456914894,
+     7.925602150112347,
+     7.927359036662933,
+     7.928392101063821,
+     7.929022713988254,
+     7.929415156001831,
+     7.929662056064493,
+     7.9298183985031825,
+     7.929917790054481,
+     7.929981131715105
+    ],
+    "lcl": [
+     7.8990701430851065,
+     7.8958054498876535,
+     7.894048563337067,
+     7.89301549893618,
+     7.8923848860117465,
+     7.89199244399817,
+     7.8917455439355075,
+     7.891589201496818,
+     7.8914898099455195,
+     7.891426468284895
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB1",
+   "series": "artefact fitted impedance",
+   "unit": "ohm",
+   "n": 10,
+   "cl": 100.11903693333333,
+   "sigma": 0.23963785460992126,
+   "phase1": 5,
+   "ucl": 100.83795049716309,
+   "lcl": 99.40012336950358,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     100.24844137482269,
+     100.28475547647973,
+     100.30429782025881,
+     100.31578888646416,
+     100.32280337158086,
+     100.32716861459562,
+     100.32991495351091,
+     100.33165399447694,
+     100.33275955468716,
+     100.33346412181305
+    ],
+    "lcl": [
+     99.98963249184398,
+     99.95331839018694,
+     99.93377604640786,
+     99.9222849802025,
+     99.9152704950858,
+     99.91090525207105,
+     99.90815891315576,
+     99.90641987218973,
+     99.90531431197951,
+     99.90460974485362
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB1",
+   "series": "artefact loop resistance",
+   "unit": "ohm",
+   "n": 10,
+   "cl": 2.735139333333333,
+   "sigma": 0.0,
+   "phase1": 5,
+   "ucl": 2.735139333333333,
+   "lcl": 2.735139333333333,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333
+    ],
+    "lcl": [
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333,
+     2.735139333333333
+    ],
+    "first_signal": 5,
+    "signals": [
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "site": "LAB1",
+   "series": "verification |S21| deviation",
+   "unit": "dB",
+   "n": 10,
+   "cl": 0.029415273183320066,
+   "sigma": 0.004213204608214882,
+   "phase1": 5,
+   "ucl": 0.04205488700796471,
+   "lcl": 0.01677565935867542,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     0.0316904036717561,
+     0.03232886181808551,
+     0.0326724464867071,
+     0.03287447722666897,
+     0.03299780273826653,
+     0.0330745504708637,
+     0.03312283536221554,
+     0.03315341039562942,
+     0.03317284785629257,
+     0.033185235237520136
+    ],
+    "lcl": [
+     0.02714014269488403,
+     0.026501684548554623,
+     0.026158099879933033,
+     0.025956069139971165,
+     0.025832743628373605,
+     0.02575599589577643,
+     0.025707711004424594,
+     0.025677135971010717,
+     0.025657698510347562,
+     0.025645311129119993
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB1",
+   "series": "verification return loss",
+   "unit": "dB",
+   "n": 10,
+   "cl": 41.63235580906992,
+   "sigma": 0.1824824688515092,
+   "phase1": 5,
+   "ucl": 42.179803215624446,
+   "lcl": 41.084908402515396,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     41.730896342249736,
+     41.758549264344566,
+     41.773430615814505,
+     41.78218097845776,
+     41.78752245743194,
+     41.79084655797427,
+     41.79293787491741,
+     41.79426214185943,
+     41.795104017851656,
+     41.795640540550934
+    ],
+    "lcl": [
+     41.533815275890106,
+     41.506162353795276,
+     41.49128100232534,
+     41.48253063968208,
+     41.4771891607079,
+     41.47386506016557,
+     41.47177374322243,
+     41.470449476280415,
+     41.469607600288185,
+     41.46907107758891
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB1",
+   "series": "trace noise (artefact runs)",
+   "unit": "dB",
+   "n": 30,
+   "cl": 0.00017714633745453845,
+   "sigma": 2.8710272438896586e-06,
+   "phase1": 8,
+   "ucl": 0.00018575941918620741,
+   "lcl": 0.00016853325572286948,
+   "violations": [
+    {
+     "rule": 3,
+     "index": 29,
+     "message": "four of five beyond 1 sigma (low)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     0.00017869669216623887,
+     0.00017913176022075987,
+     0.0001793658910157068,
+     0.00017950356193664968,
+     0.00017958760031992042,
+     0.00017963989895046012,
+     0.00017967280199017224,
+     0.00017969363690375394,
+     0.0001797068822797338,
+     0.00017971532348121626,
+     0.00017972071132471774,
+     0.00017972415363477846,
+     0.0001797263543029176,
+     0.00017972776174596377,
+     0.00017972866210694033,
+     0.00017972923817325553,
+     0.00017972960678828032,
+     0.00017972984267429482,
+     0.0001797299936300419,
+     0.0001797300902370915,
+     0.00017973015206370762,
+     0.00017973019163196557,
+     0.00017973021695533265,
+     0.00017973023316215735,
+     0.0001797302435344718,
+     0.0001797302501727312,
+     0.00017973025442120826,
+     0.00017973025714022991,
+     0.0001797302588804023,
+     0.00017973025999411198
+    ],
+    "lcl": [
+     0.00017559598274283802,
+     0.00017516091468831703,
+     0.0001749267838933701,
+     0.0001747891129724272,
+     0.00017470507458915648,
+     0.00017465277595861677,
+     0.00017461987291890466,
+     0.00017459903800532296,
+     0.0001745857926293431,
+     0.00017457735142786064,
+     0.00017457196358435916,
+     0.00017456852127429844,
+     0.0001745663206061593,
+     0.00017456491316311312,
+     0.00017456401280213657,
+     0.00017456343673582136,
+     0.00017456306812079658,
+     0.00017456283223478208,
+     0.000174562681279035,
+     0.0001745625846719854,
+     0.00017456252284536928,
+     0.00017456248327711132,
+     0.00017456245795374425,
+     0.00017456244174691955,
+     0.0001745624313746051,
+     0.0001745624247363457,
+     0.00017456242048786863,
+     0.00017456241776884698,
+     0.0001745624160286746,
+     0.00017456241491496492
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB2",
+   "series": "artefact IL @ 100 MHz",
+   "unit": "dB",
+   "n": 10,
+   "cl": 2.8994245469602102,
+   "sigma": 0.04392030558568008,
+   "phase1": 5,
+   "ucl": 3.0311854637172506,
+   "lcl": 2.76766363020317,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     2.9231415119764774,
+     2.9297970816670116,
+     2.9333787599959,
+     2.9354848176555555,
+     2.936770417254804,
+     2.937570469514812,
+     2.938073812547146,
+     2.938392540198828,
+     2.938595164873279,
+     2.938724296406046
+    ],
+    "lcl": [
+     2.875707581943943,
+     2.869052012253409,
+     2.8654703339245207,
+     2.863364276264865,
+     2.8620786766656163,
+     2.8612786244056085,
+     2.8607752813732743,
+     2.8604565537215927,
+     2.8602539290471416,
+     2.8601247975143744
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB2",
+   "series": "artefact IL @ 600 MHz",
+   "unit": "dB",
+   "n": 10,
+   "cl": 7.929143113325031,
+   "sigma": 0.015688876523910104,
+   "phase1": 5,
+   "ucl": 7.976209742896761,
+   "lcl": 7.882076483753301,
+   "violations": [
+    {
+     "rule": 1,
+     "index": 6,
+     "message": "point beyond 3 sigma (z = -3.29)"
+    },
+    {
+     "rule": 2,
+     "index": 6,
+     "message": "two of three beyond 2 sigma (low)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     7.937615106647942,
+     7.939992558482092,
+     7.941271978292609,
+     7.942024288144145,
+     7.942483520226045,
+     7.942769308791323,
+     7.942949109149681,
+     7.943062962610063,
+     7.943135342650589,
+     7.943181470031669
+    ],
+    "lcl": [
+     7.92067112000212,
+     7.91829366816797,
+     7.917014248357453,
+     7.916261938505917,
+     7.915802706424017,
+     7.915516917858739,
+     7.915337117500381,
+     7.915223264039999,
+     7.915150883999473,
+     7.915104756618393
+    ],
+    "first_signal": 6,
+    "signals": [
+     6
+    ]
+   }
+  },
+  {
+   "site": "LAB2",
+   "series": "artefact fitted impedance",
+   "unit": "ohm",
+   "n": 10,
+   "cl": 100.34473115913765,
+   "sigma": 0.2634324707426907,
+   "phase1": 5,
+   "ucl": 101.13502857136572,
+   "lcl": 99.55443374690958,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     100.4869846933387,
+     100.5269045696783,
+     100.54838735216359,
+     100.56101941301588,
+     100.56873039485674,
+     100.57352908058459,
+     100.576548114648,
+     100.57845983205655,
+     100.57967516783148,
+     100.58044969428967
+    ],
+    "lcl": [
+     100.2024776249366,
+     100.16255774859701,
+     100.14107496611172,
+     100.12844290525942,
+     100.12073192341856,
+     100.11593323769071,
+     100.1129142036273,
+     100.11100248621875,
+     100.10978715044382,
+     100.10901262398563
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB2",
+   "series": "artefact loop resistance",
+   "unit": "ohm",
+   "n": 10,
+   "cl": 2.7349398628418804,
+   "sigma": 0.0,
+   "phase1": 5,
+   "ucl": 2.7349398628418804,
+   "lcl": 2.7349398628418804,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804
+    ],
+    "lcl": [
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804,
+     2.7349398628418804
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB2",
+   "series": "verification |S21| deviation",
+   "unit": "dB",
+   "n": 10,
+   "cl": 0.06946100373612012,
+   "sigma": 0.010126668381746697,
+   "phase1": 5,
+   "ucl": 0.09984100888136022,
+   "lcl": 0.039080998590880024,
+   "violations": [
+    {
+     "rule": 3,
+     "index": 9,
+     "message": "four of five beyond 1 sigma (low)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     0.07492940466226333,
+     0.07646397383815769,
+     0.07728979843575713,
+     0.07777539040119923,
+     0.07807181003306868,
+     0.07825627741819097,
+     0.07837233280311467,
+     0.0784458215730499,
+     0.07849254057595216,
+     0.07852231432621468
+    ],
+    "lcl": [
+     0.0639926028099769,
+     0.062458033634082546,
+     0.0616322090364831,
+     0.06114661707104101,
+     0.060850197439171555,
+     0.060665730054049266,
+     0.060549674669125565,
+     0.06047618589919033,
+     0.060429466896288066,
+     0.06039969314602556
+    ],
+    "first_signal": 9,
+    "signals": [
+     9
+    ]
+   }
+  },
+  {
+   "site": "LAB2",
+   "series": "verification return loss",
+   "unit": "dB",
+   "n": 10,
+   "cl": 41.41846309036928,
+   "sigma": 0.0606802249116438,
+   "phase1": 5,
+   "ucl": 41.60050376510421,
+   "lcl": 41.23642241563435,
+   "violations": [
+    {
+     "rule": 3,
+     "index": 5,
+     "message": "four of five beyond 1 sigma (low)"
+    },
+    {
+     "rule": 1,
+     "index": 6,
+     "message": "point beyond 3 sigma (z = +8.81)"
+    },
+    {
+     "rule": 3,
+     "index": 8,
+     "message": "four of five beyond 1 sigma (low)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     41.45123041182157,
+     41.460425736406656,
+     41.46537417753565,
+     41.468283903475864,
+     41.470060085854115,
+     41.471165436794436,
+     41.471860854733876,
+     41.47230120835464,
+     41.47258115428521,
+     41.47275956220717
+    ],
+    "lcl": [
+     41.38569576891699,
+     41.3765004443319,
+     41.37155200320291,
+     41.368642277262694,
+     41.36686609488444,
+     41.36576074394412,
+     41.36506532600468,
+     41.36462497238392,
+     41.36434502645335,
+     41.364166618531385
+    ],
+    "first_signal": 6,
+    "signals": [
+     6
+    ]
+   }
+  },
+  {
+   "site": "LAB2",
+   "series": "trace noise (artefact runs)",
+   "unit": "dB",
+   "n": 30,
+   "cl": 0.0001762472607637315,
+   "sigma": 1.9662121582877224e-06,
+   "phase1": 8,
+   "ucl": 0.00018214589723859466,
+   "lcl": 0.00017034862428886834,
+   "violations": [
+    {
+     "rule": 3,
+     "index": 27,
+     "message": "four of five beyond 1 sigma (high)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     0.00017730901532920688,
+     0.00017760697004221156,
+     0.0001777673136323443,
+     0.0001778615970422899,
+     0.0001779191504114895,
+     0.0001779549669309767,
+     0.00017797750045338206,
+     0.00017799176916521276,
+     0.00017800084021089794,
+     0.0001780066211358337,
+     0.00017801031098009485,
+     0.00017801266843313137,
+     0.00017801417555239006,
+     0.00017801513943444146,
+     0.00017801575604325378,
+     0.00017801615056009277,
+     0.0001780164030046995,
+     0.0001780165645503451,
+     0.000178016667931818,
+     0.00017801673409279087,
+     0.00017801677643451526,
+     0.0001780168035326872,
+     0.00017801682087529943,
+     0.0001780168319744821,
+     0.00017801683907792243,
+     0.00017801684362410932,
+     0.00017801684653366277,
+     0.00017801684839577448,
+     0.00017801684958752495,
+     0.0001780168503502448
+    ],
+    "lcl": [
+     0.00017518550619825612,
+     0.00017488755148525143,
+     0.0001747272078951187,
+     0.0001746329244851731,
+     0.00017457537111597348,
+     0.0001745395545964863,
+     0.00017451702107408094,
+     0.00017450275236225024,
+     0.00017449368131656505,
+     0.0001744879003916293,
+     0.00017448421054736815,
+     0.00017448185309433163,
+     0.00017448034597507294,
+     0.00017447938209302154,
+     0.00017447876548420921,
+     0.00017447837096737023,
+     0.0001744781185227635,
+     0.0001744779569771179,
+     0.000174477853595645,
+     0.00017447778743467213,
+     0.00017447774509294774,
+     0.0001744777179947758,
+     0.00017447770065216357,
+     0.0001744776895529809,
+     0.00017447768244954057,
+     0.00017447767790335368,
+     0.00017447767499380022,
+     0.00017447767313168852,
+     0.00017447767193993805,
+     0.0001744776711772182
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB3",
+   "series": "artefact IL @ 100 MHz",
+   "unit": "dB",
+   "n": 10,
+   "cl": 2.9334866460810956,
+   "sigma": 0.03018930067106115,
+   "phase1": 5,
+   "ucl": 3.024054548094279,
+   "lcl": 2.8429187440679122,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     2.9497888684434685,
+     2.954363677107602,
+     2.9568255990486247,
+     2.9582732303223622,
+     2.959156907071118,
+     2.9597068353538987,
+     2.9600528159644885,
+     2.960271898340635,
+     2.960411175541438,
+     2.9604999360957382
+    ],
+    "lcl": [
+     2.9171844237187226,
+     2.9126096150545893,
+     2.9101476931135664,
+     2.908700061839829,
+     2.907816385091073,
+     2.9072664568082924,
+     2.9069204761977026,
+     2.9067013938215562,
+     2.906562116620753,
+     2.906473356066453
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB3",
+   "series": "artefact IL @ 600 MHz",
+   "unit": "dB",
+   "n": 10,
+   "cl": 7.9132776608187125,
+   "sigma": 0.008014421396280993,
+   "phase1": 5,
+   "ucl": 7.937320925007556,
+   "lcl": 7.8892343966298695,
+   "violations": [
+    {
+     "rule": 1,
+     "index": 5,
+     "message": "point beyond 3 sigma (z = +5.47)"
+    },
+    {
+     "rule": 2,
+     "index": 7,
+     "message": "two of three beyond 2 sigma (low)"
+    },
+    {
+     "rule": 1,
+     "index": 8,
+     "message": "point beyond 3 sigma (z = +5.96)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     7.917605448372704,
+     7.918819933094998,
+     7.919473505037425,
+     7.919857810960261,
+     7.920092402609792,
+     7.9202383933051035,
+     7.920330241554204,
+     7.920388401844238,
+     7.920425376075284,
+     7.92044893953882
+    ],
+    "lcl": [
+     7.908949873264721,
+     7.907735388542427,
+     7.9070818166,
+     7.906697510677164,
+     7.906462919027633,
+     7.906316928332322,
+     7.906225080083221,
+     7.906166919793187,
+     7.906129945562141,
+     7.9061063820986055
+    ],
+    "first_signal": 5,
+    "signals": [
+     5,
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "site": "LAB3",
+   "series": "artefact fitted impedance",
+   "unit": "ohm",
+   "n": 10,
+   "cl": 99.98747835129892,
+   "sigma": 0.34651659080123937,
+   "phase1": 5,
+   "ucl": 101.02702812370264,
+   "lcl": 98.9479285788952,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     100.17459731033159,
+     100.22710753967198,
+     100.25536578941143,
+     100.27198188327787,
+     100.28212483616325,
+     100.28843698217189,
+     100.29240819114328,
+     100.29492284621641,
+     100.29652148744776,
+     100.29754029225576
+    ],
+    "lcl": [
+     99.80035939226624,
+     99.74784916292586,
+     99.71959091318641,
+     99.70297481931996,
+     99.69283186643459,
+     99.68651972042595,
+     99.68254851145456,
+     99.68003385638143,
+     99.67843521515007,
+     99.67741641034208
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB3",
+   "series": "artefact loop resistance",
+   "unit": "ohm",
+   "n": 10,
+   "cl": 2.7352739599961176,
+   "sigma": 0.0,
+   "phase1": 5,
+   "ucl": 2.7352739599961176,
+   "lcl": 2.7352739599961176,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176
+    ],
+    "lcl": [
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176,
+     2.7352739599961176
+    ],
+    "first_signal": 5,
+    "signals": [
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "site": "LAB3",
+   "series": "verification |S21| deviation",
+   "unit": "dB",
+   "n": 10,
+   "cl": 0.047185858433442716,
+   "sigma": 0.007079598153174022,
+   "phase1": 5,
+   "ucl": 0.06842465289296479,
+   "lcl": 0.02594706397392065,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     0.051008841436156686,
+     0.052081665458237045,
+     0.05265900304604124,
+     0.05299848251274686,
+     0.05320571077373446,
+     0.05333467272941443,
+     0.053415807556565754,
+     0.053467183877019805,
+     0.05349984533626746,
+     0.053520660295287105
+    ],
+    "lcl": [
+     0.043362875430728746,
+     0.04229005140864839,
+     0.04171271382084419,
+     0.041373234354138574,
+     0.04116600609315097,
+     0.041037044137471,
+     0.04095590931031968,
+     0.04090453298986563,
+     0.04087187153061797,
+     0.04085105657159833
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB3",
+   "series": "verification return loss",
+   "unit": "dB",
+   "n": 10,
+   "cl": 41.61121918203472,
+   "sigma": 0.2549478787332299,
+   "phase1": 5,
+   "ucl": 42.376062818234416,
+   "lcl": 40.84637554583503,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     41.74889103655067,
+     41.787525179727396,
+     41.8083160480986,
+     41.820541257501375,
+     41.82800388523946,
+     41.8326480156444,
+     41.83556981312867,
+     41.83741995824052,
+     41.83859615066999,
+     41.83934573130058
+    ],
+    "lcl": [
+     41.47354732751878,
+     41.43491318434205,
+     41.41412231597085,
+     41.40189710656807,
+     41.394434478829986,
+     41.389790348425045,
+     41.386868550940775,
+     41.38501840582893,
+     41.383842213399454,
+     41.383092632768864
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB3",
+   "series": "trace noise (artefact runs)",
+   "unit": "dB",
+   "n": 30,
+   "cl": 0.0001766085058835721,
+   "sigma": 1.5305585119432965e-06,
+   "phase1": 8,
+   "ucl": 0.00018120018141940198,
+   "lcl": 0.0001720168303477422,
+   "violations": [
+    {
+     "rule": 4,
+     "index": 12,
+     "message": "eight in a row on one side"
+    },
+    {
+     "rule": 3,
+     "index": 17,
+     "message": "four of five beyond 1 sigma (low)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     0.00017743500748002147,
+     0.0001776669443644725,
+     0.00017779176062383636,
+     0.00017786515365775642,
+     0.00017790995492640292,
+     0.00017793783557933156,
+     0.00017795537634896633,
+     0.00017796648354218293,
+     0.0001779735447161906,
+     0.00017797804476153416,
+     0.00017798091704696777,
+     0.00017798275215911288,
+     0.0001779839253459433,
+     0.00017798467566063953,
+     0.00017798515564743155,
+     0.00017798546275117082,
+     0.00017798565926162367,
+     0.00017798578501359907,
+     0.00017798586548883804,
+     0.00017798591699052352,
+     0.00017798594995059166,
+     0.00017798597104462136,
+     0.00017798598454463085,
+     0.0001779859931845675,
+     0.0001779859987140985,
+     0.0001779860022529867,
+     0.00017798600451787038,
+     0.000177986005967394,
+     0.0001779860068950883,
+     0.00017798600748881232
+    ],
+    "lcl": [
+     0.00017578200428712272,
+     0.0001755500674026717,
+     0.00017542525114330783,
+     0.00017535185810938777,
+     0.00017530705684074127,
+     0.00017527917618781263,
+     0.00017526163541817786,
+     0.00017525052822496125,
+     0.00017524346705095358,
+     0.00017523896700561003,
+     0.00017523609472017642,
+     0.0001752342596080313,
+     0.00017523308642120088,
+     0.00017523233610650465,
+     0.00017523185611971264,
+     0.00017523154901597337,
+     0.00017523135250552052,
+     0.00017523122675354512,
+     0.00017523114627830615,
+     0.00017523109477662066,
+     0.00017523106181655253,
+     0.00017523104072252282,
+     0.00017523102722251334,
+     0.0001752310185825767,
+     0.00017523101305304568,
+     0.00017523100951415748,
+     0.0001752310072492738,
+     0.0001752310057997502,
+     0.0001752310048720559,
+     0.00017523100427833187
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB4",
+   "series": "artefact IL @ 100 MHz",
+   "unit": "dB",
+   "n": 8,
+   "cl": 2.904495757185402,
+   "sigma": 0.025611225833033668,
+   "phase1": 5,
+   "ucl": 2.981329434684503,
+   "lcl": 2.8276620796863012,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     2.9183258191352404,
+     2.9222068781606434,
+     2.924295460453485,
+     2.9255235648033877,
+     2.9262732358548105,
+     2.926739769929108,
+     2.927033284099847,
+     2.9272191435959867
+    ],
+    "lcl": [
+     2.890665695235564,
+     2.886784636210161,
+     2.8846960539173194,
+     2.8834679495674167,
+     2.882718278515994,
+     2.8822517444416964,
+     2.8819582302709574,
+     2.8817723707748177
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB4",
+   "series": "artefact IL @ 600 MHz",
+   "unit": "dB",
+   "n": 8,
+   "cl": 7.916796737411569,
+   "sigma": 0.02794091605351431,
+   "phase1": 5,
+   "ucl": 8.000619485572113,
+   "lcl": 7.832973989251026,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     7.931884832080467,
+     7.936118926345789,
+     7.93839749367777,
+     7.939737310864549,
+     7.9405551747205045,
+     7.941064146430451,
+     7.941384359717335,
+     7.9415871256690025
+    ],
+    "lcl": [
+     7.901708642742671,
+     7.897474548477349,
+     7.895195981145368,
+     7.8938561639585885,
+     7.893038300102633,
+     7.892529328392687,
+     7.8922091151058025,
+     7.892006349154135
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB4",
+   "series": "artefact fitted impedance",
+   "unit": "ohm",
+   "n": 8,
+   "cl": 100.14949888496655,
+   "sigma": 0.4079704985712267,
+   "phase1": 5,
+   "ucl": 101.37341038068023,
+   "lcl": 98.92558738925287,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     100.36980295419501,
+     100.43162575002292,
+     100.4648955343305,
+     100.48445845362195,
+     100.49640023550336,
+     100.5038318258588,
+     100.50850731946285,
+     100.51146794273791
+    ],
+    "lcl": [
+     99.92919481573809,
+     99.86737201991018,
+     99.8341022356026,
+     99.81453931631114,
+     99.80259753442974,
+     99.7951659440743,
+     99.79049045047024,
+     99.78752982719519
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB4",
+   "series": "artefact loop resistance",
+   "unit": "ohm",
+   "n": 8,
+   "cl": 2.7350729150552495,
+   "sigma": 0.0,
+   "phase1": 5,
+   "ucl": 2.7350729150552495,
+   "lcl": 2.7350729150552495,
+   "violations": [],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495
+    ],
+    "lcl": [
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495,
+     2.7350729150552495
+    ],
+    "first_signal": null,
+    "signals": []
+   }
+  },
+  {
+   "site": "LAB4",
+   "series": "verification |S21| deviation",
+   "unit": "dB",
+   "n": 18,
+   "cl": 0.03841505937331817,
+   "sigma": 0.0029931535332215894,
+   "phase1": 5,
+   "ucl": 0.04739451997298294,
+   "lcl": 0.029435598773653402,
+   "violations": [
+    {
+     "rule": 1,
+     "index": 6,
+     "message": "point beyond 3 sigma (z = +16.44)"
+    },
+    {
+     "rule": 2,
+     "index": 7,
+     "message": "two of three beyond 2 sigma (high)"
+    },
+    {
+     "rule": 1,
+     "index": 9,
+     "message": "point beyond 3 sigma (z = +26.14)"
+    },
+    {
+     "rule": 3,
+     "index": 9,
+     "message": "four of five beyond 1 sigma (high)"
+    },
+    {
+     "rule": 2,
+     "index": 10,
+     "message": "two of three beyond 2 sigma (high)"
+    },
+    {
+     "rule": 1,
+     "index": 12,
+     "message": "point beyond 3 sigma (z = +23.52)"
+    },
+    {
+     "rule": 3,
+     "index": 12,
+     "message": "four of five beyond 1 sigma (high)"
+    },
+    {
+     "rule": 4,
+     "index": 12,
+     "message": "eight in a row on one side"
+    },
+    {
+     "rule": 2,
+     "index": 13,
+     "message": "two of three beyond 2 sigma (high)"
+    },
+    {
+     "rule": 1,
+     "index": 15,
+     "message": "point beyond 3 sigma (z = +56.58)"
+    },
+    {
+     "rule": 3,
+     "index": 15,
+     "message": "four of five beyond 1 sigma (high)"
+    },
+    {
+     "rule": 4,
+     "index": 15,
+     "message": "eight in a row on one side"
+    },
+    {
+     "rule": 2,
+     "index": 16,
+     "message": "two of three beyond 2 sigma (high)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     0.04003136228125783,
+     0.040484937038290494,
+     0.0407290271693134,
+     0.040872554265518786,
+     0.04096016743057962,
+     0.041014690713532004,
+     0.041048993365928516,
+     0.04107071454441405,
+     0.04108452334542678,
+     0.04109332361442306,
+     0.04109894064325731,
+     0.04110252938054383,
+     0.04110482365957936,
+     0.04110629097171838,
+     0.04110722963178994,
+     0.0411078302025196,
+     0.04110821449750189,
+     0.0411084604175151
+    ],
+    "lcl": [
+     0.03679875646537851,
+     0.036345181708345844,
+     0.03610109157732294,
+     0.03595756448111755,
+     0.03586995131605672,
+     0.035815428033104335,
+     0.03578112538070782,
+     0.03575940420222229,
+     0.03574559540120956,
+     0.03573679513221328,
+     0.03573117810337903,
+     0.03572758936609251,
+     0.03572529508705698,
+     0.035723827774917956,
+     0.0357228891148464,
+     0.035722288544116736,
+     0.03572190424913445,
+     0.03572165832912124
+    ],
+    "first_signal": 6,
+    "signals": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  },
+  {
+   "site": "LAB4",
+   "series": "verification return loss",
+   "unit": "dB",
+   "n": 18,
+   "cl": 41.940112381729435,
+   "sigma": 0.577397974618081,
+   "phase1": 5,
+   "ucl": 43.672306305583675,
+   "lcl": 40.207918457875195,
+   "violations": [
+    {
+     "rule": 3,
+     "index": 11,
+     "message": "four of five beyond 1 sigma (high)"
+    },
+    {
+     "rule": 3,
+     "index": 14,
+     "message": "four of five beyond 1 sigma (high)"
+    },
+    {
+     "rule": 4,
+     "index": 15,
+     "message": "eight in a row on one side"
+    },
+    {
+     "rule": 3,
+     "index": 17,
+     "message": "four of five beyond 1 sigma (high)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     42.2519072880232,
+     42.33940468604897,
+     42.38649119387846,
+     42.414178465424,
+     42.43107959110784,
+     42.44159747226456,
+     42.448214667740146,
+     42.45240481847069,
+     42.45506862226431,
+     42.45676624901086,
+     42.45784980888718,
+     42.458542098680425,
+     42.458984679407955,
+     42.45926773306618,
+     42.459448806445195,
+     42.45956466028265,
+     42.45963879318027,
+     42.45968623268377
+    ],
+    "lcl": [
+     41.62831747543567,
+     41.5408200774099,
+     41.49373356958041,
+     41.46604629803487,
+     41.44914517235103,
+     41.43862729119431,
+     41.432010095718724,
+     41.42781994498818,
+     41.42515614119456,
+     41.42345851444801,
+     41.42237495457169,
+     41.421682664778444,
+     41.421240084050915,
+     41.42095703039269,
+     41.420775957013674,
+     41.42066010317622,
+     41.4205859702786,
+     41.4205385307751
+    ],
+    "first_signal": 14,
+    "signals": [
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  },
+  {
+   "site": "LAB4",
+   "series": "trace noise (artefact runs)",
+   "unit": "dB",
+   "n": 24,
+   "cl": 0.00017413583577326295,
+   "sigma": 5.953096619562691e-07,
+   "phase1": 8,
+   "ucl": 0.00017592176475913175,
+   "lcl": 0.00017234990678739414,
+   "violations": [
+    {
+     "rule": 3,
+     "index": 10,
+     "message": "four of five beyond 1 sigma (low)"
+    },
+    {
+     "rule": 1,
+     "index": 14,
+     "message": "point beyond 3 sigma (z = -3.61)"
+    },
+    {
+     "rule": 1,
+     "index": 17,
+     "message": "point beyond 3 sigma (z = -3.51)"
+    },
+    {
+     "rule": 1,
+     "index": 20,
+     "message": "point beyond 3 sigma (z = +6.32)"
+    },
+    {
+     "rule": 2,
+     "index": 20,
+     "message": "two of three beyond 2 sigma (high)"
+    },
+    {
+     "rule": 3,
+     "index": 21,
+     "message": "four of five beyond 1 sigma (high)"
+    },
+    {
+     "rule": 1,
+     "index": 23,
+     "message": "point beyond 3 sigma (z = +5.38)"
+    },
+    {
+     "rule": 2,
+     "index": 23,
+     "message": "two of three beyond 2 sigma (high)"
+    }
+   ],
+   "ewma": {
+    "lambda": 0.2,
+    "L": 2.7,
+    "ucl": [
+     0.00017445730299071933,
+     0.00017454751467958996,
+     0.0001745960618763085,
+     0.00017462460804548266,
+     0.00017464203346756555,
+     0.000174652877628008,
+     0.00017465970009808036,
+     0.00017466402023310785,
+     0.0001746667666717959,
+     0.0001746685169612826,
+     0.00017466963413469166,
+     0.00017467034790027606,
+     0.00017467080421047264,
+     0.00017467109604484858,
+     0.00017467128273537536,
+     0.00017467140218315982,
+     0.0001746714786157629,
+     0.00017467152752690573,
+     0.0001746715588276936,
+     0.00017467157885923813,
+     0.00017467159167903354,
+     0.00017467159988354165,
+     0.00017467160513436088,
+     0.0001746716084948582
+    ],
+    "lcl": [
+     0.00017381436855580656,
+     0.00017372415686693594,
+     0.0001736756096702174,
+     0.00017364706350104324,
+     0.00017362963807896034,
+     0.0001736187939185179,
+     0.00017361197144844553,
+     0.00017360765131341804,
+     0.00017360490487473,
+     0.0001736031545852433,
+     0.00017360203741183423,
+     0.00017360132364624984,
+     0.00017360086733605326,
+     0.0001736005755016773,
+     0.00017360038881115053,
+     0.00017360026936336608,
+     0.000173600192930763,
+     0.00017360014401962017,
+     0.0001736001127188323,
+     0.00017360009268728777,
+     0.00017360007986749236,
+     0.00017360007166298424,
+     0.000173600066412165,
+     0.0001736000630516677
+    ],
+    "first_signal": 14,
+    "signals": [
+     14,
+     15,
+     16,
+     17,
+     20,
+     21,
+     22,
+     23
+    ]
+   }
+  }
+ ],
+ "stability": {
+  "insertion_loss@600": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 600000000.0,
+   "per_site": {
+    "LAB1": {
+     "se": 0.00012480548105195597,
+     "p": 0.6707809212337061,
+     "intercept": 9.040075251963792,
+     "n": 10,
+     "r2": 0.0237493570963239,
+     "slope_per_day": -5.505844155844305e-05,
+     "slope_per_30d": -0.0016517532467532916,
+     "significant": false
+    },
+    "LAB2": {
+     "se": 0.0002557385775157115,
+     "p": 0.8779629575950515,
+     "intercept": 8.752248684787133,
+     "n": 10,
+     "r2": 0.0031318914081825905,
+     "slope_per_day": -4.0543919896351354e-05,
+     "slope_per_30d": -0.0012163175968905406,
+     "significant": false
+    },
+    "LAB3": {
+     "se": 0.00018974610017485826,
+     "p": 0.38757625101206233,
+     "intercept": 4.351728185853527,
+     "n": 10,
+     "r2": 0.09449722138437451,
+     "slope_per_day": 0.00017337340465160473,
+     "slope_per_30d": 0.0052012021395481415,
+     "significant": false
+    },
+    "LAB4": {
+     "se": 0.0002290323077173999,
+     "p": 0.5993365759486035,
+     "intercept": 5.312031181479298,
+     "n": 8,
+     "r2": 0.04873243230008353,
+     "slope_per_day": 0.00012697846512720677,
+     "slope_per_30d": 0.0038093539538162032,
+     "significant": false
+    }
+   },
+   "consensus": {
+    "se": 8.255981611680157e-05,
+    "p": 0.890577983506003,
+    "intercept": 8.155109818333697,
+    "n": 10,
+    "r2": 0.002514762924310896,
+    "slope_per_day": -1.1724895927207196e-05,
+    "slope_per_30d": -0.0003517468778162159,
+    "significant": false,
+    "points": [
+     {
+      "t_days": 20514.406377314815,
+      "value": 7.908854908899807,
+      "u": 0.00789523069492981,
+      "batch": "RR-01"
+     },
+     {
+      "t_days": 20528.406377314815,
+      "value": 7.911115610519452,
+      "u": 0.008008171817276576,
+      "batch": "RR-02"
+     },
+     {
+      "t_days": 20542.406377314815,
+      "value": 7.91556024407953,
+      "u": 0.008257800326219852,
+      "batch": "RR-03"
+     },
+     {
+      "t_days": 20556.406377314815,
+      "value": 7.9213486897236125,
+      "u": 0.008266491520732763,
+      "batch": "RR-04"
+     },
+     {
+      "t_days": 20570.406377314815,
+      "value": 7.91906424932489,
+      "u": 0.008965107768971074,
+      "batch": "RR-05"
+     },
+     {
+      "t_days": 20584.406377314815,
+      "value": 7.923807060125964,
+      "u": 0.007911665014068961,
+      "batch": "RR-06"
+     },
+     {
+      "t_days": 20598.406377314815,
+      "value": 7.892823707035456,
+      "u": 0.009877436204719203,
+      "batch": "RR-07"
+     },
+     {
+      "t_days": 20612.406377314815,
+      "value": 7.919358107120187,
+      "u": 0.009165358922550241,
+      "batch": "RR-08"
+     },
+     {
+      "t_days": 20626.38554398148,
+      "value": 7.923056748307016,
+      "u": 0.009942962419491731,
+      "batch": "RR-09"
+     },
+     {
+      "t_days": 20640.38554398148,
+      "value": 7.903429864479736,
+      "u": 0.009608162118065778,
+      "batch": "RR-10"
+     }
+    ]
+   }
+  },
+  "insertion_loss@100": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 100000000.0,
+   "per_site": {
+    "LAB1": {
+     "se": 0.0001546252956515197,
+     "p": 0.5796911124909422,
+     "intercept": 1.0671472405717917,
+     "n": 10,
+     "r2": 0.03997786583021874,
+     "slope_per_day": 8.924722401035514e-05,
+     "slope_per_30d": 0.002677416720310654,
+     "significant": false
+    },
+    "LAB2": {
+     "se": 0.00032236022385559443,
+     "p": 0.3089943901656662,
+     "intercept": 10.10369188355083,
+     "n": 10,
+     "r2": 0.12854306672212318,
+     "slope_per_day": -0.0003501771516935271,
+     "slope_per_30d": -0.010505314550805814,
+     "significant": false
+    },
+    "LAB3": {
+     "se": 0.00021422936455342198,
+     "p": 0.71652925943934,
+     "intercept": 4.587091027041633,
+     "n": 10,
+     "r2": 0.017385798594100565,
+     "slope_per_day": -8.059902661692936e-05,
+     "slope_per_30d": -0.0024179707985078807,
+     "significant": false
+    },
+    "LAB4": {
+     "se": 0.00027541154831231383,
+     "p": 0.15820718654351806,
+     "intercept": -6.2136856912885285,
+     "n": 8,
+     "r2": 0.30206438335712105,
+     "slope_per_day": 0.0004438128283658075,
+     "slope_per_30d": 0.013314384850974225,
+     "significant": false
+    }
+   },
+   "consensus": {
+    "se": 0.00010364312325294246,
+    "p": 0.6758208424398368,
+    "intercept": 1.985259883686478,
+    "n": 10,
+    "r2": 0.022993146911165125,
+    "slope_per_day": 4.497134611815703e-05,
+    "slope_per_30d": 0.001349140383544711,
+    "significant": false,
+    "points": [
+     {
+      "t_days": 20514.406377314815,
+      "value": 2.914235666267596,
+      "u": 0.008338377023708392,
+      "batch": "RR-01"
+     },
+     {
+      "t_days": 20528.406377314815,
+      "value": 2.910555736562437,
+      "u": 0.008416097477139766,
+      "batch": "RR-02"
+     },
+     {
+      "t_days": 20542.406377314815,
+      "value": 2.914120196387992,
+      "u": 0.008376232111290965,
+      "batch": "RR-03"
+     },
+     {
+      "t_days": 20556.406377314815,
+      "value": 2.90236860369085,
+      "u": 0.008201970593855863,
+      "batch": "RR-04"
+     },
+     {
+      "t_days": 20570.406377314815,
+      "value": 2.9068125233060877,
+      "u": 0.00909492072378641,
+      "batch": "RR-05"
+     },
+     {
+      "t_days": 20584.406377314815,
+      "value": 2.885821806178703,
+      "u": 0.008200638425567782,
+      "batch": "RR-06"
+     },
+     {
+      "t_days": 20598.406377314815,
+      "value": 2.933536212083135,
+      "u": 0.009621171247153771,
+      "batch": "RR-07"
+     },
+     {
+      "t_days": 20612.406377314815,
+      "value": 2.9080387436423627,
+      "u": 0.0090156291627793,
+      "batch": "RR-08"
+     },
+     {
+      "t_days": 20626.38554398148,
+      "value": 2.9078039748612072,
+      "u": 0.009984080124029904,
+      "batch": "RR-09"
+     },
+     {
+      "t_days": 20640.38554398148,
+      "value": 2.923240144160289,
+      "u": 0.009615083813489371,
+      "batch": "RR-10"
+     }
+    ]
+   }
+  },
+  "impedance_fitted@scalar": {
+   "quantity": "impedance_fitted",
+   "pair": "A",
+   "f_hz": null,
+   "per_site": {
+    "LAB1": {
+     "se": 0.0018672005228876586,
+     "p": 0.7983576522617633,
+     "intercept": 110.29166731755137,
+     "n": 10,
+     "r2": 0.008645096419247131,
+     "slope_per_day": -0.0004931809523809626,
+     "slope_per_30d": -0.014795428571428878,
+     "significant": false
+    },
+    "LAB2": {
+     "se": 0.0031538203684997753,
+     "p": 0.39288435361571844,
+     "intercept": 41.731474594228054,
+     "n": 10,
+     "r2": 0.09250508652833458,
+     "slope_per_day": 0.0028480175048367076,
+     "slope_per_30d": 0.08544052514510123,
+     "significant": false
+    },
+    "LAB3": {
+     "se": 0.0026153173987011674,
+     "p": 0.9005788119389232,
+     "intercept": 93.1049124241927,
+     "n": 10,
+     "r2": 0.0020742594527341325,
+     "slope_per_day": 0.0003372498948764407,
+     "slope_per_30d": 0.010117496846293221,
+     "significant": false
+    },
+    "LAB4": {
+     "se": 0.0036751429617084097,
+     "p": 0.7332493075310935,
+     "intercept": 127.16324901232133,
+     "n": 8,
+     "r2": 0.02080974351376581,
+     "slope_per_day": -0.0013123500280971866,
+     "slope_per_30d": -0.039370500842915594,
+     "significant": false
+    }
+   },
+   "consensus": {
+    "se": 0.0014284681715389467,
+    "p": 0.7473255545849065,
+    "intercept": 90.36356553152186,
+    "n": 10,
+    "r2": 0.013712623164395088,
+    "slope_per_day": 0.00047640256913272544,
+    "slope_per_30d": 0.014292077073981764,
+    "significant": false,
+    "points": [
+     {
+      "t_days": 20514.406377314815,
+      "value": 100.1014305525999,
+      "u": 0.2776878506272357,
+      "batch": "RR-01"
+     },
+     {
+      "t_days": 20528.406377314815,
+      "value": 100.11791497290064,
+      "u": 0.2717047599727981,
+      "batch": "RR-02"
+     },
+     {
+      "t_days": 20542.406377314815,
+      "value": 100.04425520468526,
+      "u": 0.2735824661743993,
+      "batch": "RR-03"
+     },
+     {
+      "t_days": 20556.406377314815,
+      "value": 100.32651450135764,
+      "u": 0.2816467136837881,
+      "batch": "RR-04"
+     },
+     {
+      "t_days": 20570.406377314815,
+      "value": 100.1012753806349,
+      "u": 0.27399623593316297,
+      "batch": "RR-05"
+     },
+     {
+      "t_days": 20584.406377314815,
+      "value": 100.40060125301864,
+      "u": 0.2831423498281907,
+      "batch": "RR-06"
+     },
+     {
+      "t_days": 20598.406377314815,
+      "value": 99.89006054450923,
+      "u": 0.27488720807201683,
+      "batch": "RR-07"
+     },
+     {
+      "t_days": 20612.406377314815,
+      "value": 100.37315737954559,
+      "u": 0.2793490818311472,
+      "batch": "RR-08"
+     },
+     {
+      "t_days": 20626.38554398148,
+      "value": 100.30077603131573,
+      "u": 0.3252965985195261,
+      "batch": "RR-09"
+     },
+     {
+      "t_days": 20640.38554398148,
+      "value": 100.01094228695307,
+      "u": 0.32230965695331015,
+      "batch": "RR-10"
+     }
+    ]
+   }
+  },
+  "loop_resistance@scalar": {
+   "quantity": "loop_resistance",
+   "pair": null,
+   "f_hz": null,
+   "per_site": {
+    "LAB1": {
+     "se": NaN,
+     "p": NaN,
+     "intercept": 2.735139333333333,
+     "n": 10,
+     "r2": NaN,
+     "slope_per_day": 0.0,
+     "slope_per_30d": 0.0,
+     "significant": false
+    },
+    "LAB2": {
+     "se": NaN,
+     "p": NaN,
+     "intercept": 2.7349398628418804,
+     "n": 10,
+     "r2": NaN,
+     "slope_per_day": 0.0,
+     "slope_per_30d": 0.0,
+     "significant": false
+    },
+    "LAB3": {
+     "se": NaN,
+     "p": NaN,
+     "intercept": 2.7352739599961176,
+     "n": 10,
+     "r2": NaN,
+     "slope_per_day": 0.0,
+     "slope_per_30d": 0.0,
+     "significant": false
+    },
+    "LAB4": {
+     "se": NaN,
+     "p": NaN,
+     "intercept": 2.7350729150552495,
+     "n": 8,
+     "r2": NaN,
+     "slope_per_day": 0.0,
+     "slope_per_30d": 0.0,
+     "significant": false
+    }
+   },
+   "consensus": {
+    "se": 4.2713792237244116e-08,
+    "p": 0.025325196856826774,
+    "intercept": 2.732708112874025,
+    "n": 10,
+    "r2": 0.4846997911898148,
+    "slope_per_day": 1.1717079631358453e-07,
+    "slope_per_30d": 3.5151238894075357e-06,
+    "significant": true,
+    "points": [
+     {
+      "t_days": 20514.406377314815,
+      "value": 2.7351158001397002,
+      "u": 0.0018661203404827542,
+      "batch": "RR-01"
+     },
+     {
+      "t_days": 20528.406377314815,
+      "value": 2.7351158001397002,
+      "u": 0.0018661203404827542,
+      "batch": "RR-02"
+     },
+     {
+      "t_days": 20542.406377314815,
+      "value": 2.7351158001397002,
+      "u": 0.0018661203404827542,
+      "batch": "RR-03"
+     },
+     {
+      "t_days": 20556.406377314815,
+      "value": 2.7351158001397002,
+      "u": 0.0018661203404827542,
+      "batch": "RR-04"
+     },
+     {
+      "t_days": 20570.406377314815,
+      "value": 2.7351158001397002,
+      "u": 0.0018661203404827542,
+      "batch": "RR-05"
+     },
+     {
+      "t_days": 20584.406377314815,
+      "value": 2.7351158001397002,
+      "u": 0.0018661203404827542,
+      "batch": "RR-06"
+     },
+     {
+      "t_days": 20598.406377314815,
+      "value": 2.7351158001397002,
+      "u": 0.0018661203404827542,
+      "batch": "RR-07"
+     },
+     {
+      "t_days": 20612.406377314815,
+      "value": 2.7351158001397002,
+      "u": 0.0018661203404827542,
+      "batch": "RR-08"
+     },
+     {
+      "t_days": 20626.38554398148,
+      "value": 2.7351327168267563,
+      "u": 0.002202859322682945,
+      "batch": "RR-09"
+     },
+     {
+      "t_days": 20640.38554398148,
+      "value": 2.7351327168267563,
+      "u": 0.002202859322682945,
+      "batch": "RR-10"
+     }
+    ]
+   }
+  }
+ },
+ "suspect_runs": [
+  {
+   "site": "LAB4",
+   "instrument_serial": "VNA-4004",
+   "run_id": "C1000T1A-L407-00028__sparam-1000base-t1-pair__20260608T114524",
+   "sample_id": "C1000T1A-L407-0002",
+   "started": "2026-06-08T11:45:24+00:00",
+   "verdict": "PASS",
+   "headline_margin": 0.22458074745882434,
+   "failed_verification": "2026-06-22T11:00:09+00:00",
+   "failed_calibration": "CAL-LAB4-20260621",
+   "max_dev_db": 0.11438748538863308
+  },
+  {
+   "site": "LAB4",
+   "instrument_serial": "VNA-4004",
+   "run_id": "C1000T1A-L408-0002L__sparam-1000base-t1-pair__20260608T115529",
+   "sample_id": "C1000T1A-L408-0002",
+   "started": "2026-06-08T11:55:29+00:00",
+   "verdict": "PASS",
+   "headline_margin": 0.22102545542532992,
+   "failed_verification": "2026-06-22T11:00:09+00:00",
+   "failed_calibration": "CAL-LAB4-20260621",
+   "max_dev_db": 0.11438748538863308
+  },
+  {
+   "site": "LAB4",
+   "instrument_serial": "VNA-4004",
+   "run_id": "GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T110000",
+   "sample_id": "GOLD-RR26-0001",
+   "started": "2026-06-08T11:00:00+00:00",
+   "verdict": "PASS",
+   "headline_margin": 0.22347235675249505,
+   "failed_verification": "2026-06-22T11:00:09+00:00",
+   "failed_calibration": "CAL-LAB4-20260621",
+   "max_dev_db": 0.11438748538863308
+  },
+  {
+   "site": "LAB4",
+   "instrument_serial": "VNA-4004",
+   "run_id": "GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T111514",
+   "sample_id": "GOLD-RR26-0001",
+   "started": "2026-06-08T11:15:14+00:00",
+   "verdict": "PASS",
+   "headline_margin": 0.21407180734500908,
+   "failed_verification": "2026-06-22T11:00:09+00:00",
+   "failed_calibration": "CAL-LAB4-20260621",
+   "max_dev_db": 0.11438748538863308
+  },
+  {
+   "site": "LAB4",
+   "instrument_serial": "VNA-4004",
+   "run_id": "GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T113019",
+   "sample_id": "GOLD-RR26-0001",
+   "started": "2026-06-08T11:30:19+00:00",
+   "verdict": "PASS",
+   "headline_margin": 0.22133131914211435,
+   "failed_verification": "2026-06-22T11:00:09+00:00",
+   "failed_calibration": "CAL-LAB4-20260621",
+   "max_dev_db": 0.11438748538863308
+  }
+ ],
+ "drift": [
+  {
+   "site": "LAB1",
+   "series": "IL @ 100 MHz",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    2.9100925991367195,
+    2.879978861238884,
+    2.9109418740413004,
+    2.9235283921263906,
+    2.8906560565746724,
+    2.883468600809849,
+    2.916885317003708,
+    2.8765003181129,
+    2.920493090517128,
+    2.923635481724618
+   ],
+   "trend": {
+    "se": 0.0001546252956515197,
+    "p": 0.5796911124909422,
+    "intercept": 2.8979954840159645,
+    "n": 10,
+    "r2": 0.03997786583021874,
+    "slope_per_30d": 0.002677416720310654,
+    "significant": false
+   },
+   "change_point": {
+    "index": 8,
+    "shift": 0.02305778374031986,
+    "t": 1.6941681412347387,
+    "p": 0.12868336563892893,
+    "p_bonferroni": 0.9007835594725025,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.7259113570016181,
+     "score": 0.7259113570016181
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": 0.42789967665047995,
+     "production_change_point": true,
+     "score": 0.42789967665047995
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.0025841723416729382,
+     "score": 0.0025841723416729382
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB1-20260607",
+     "to": "CAL-LAB1-20260621",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB1",
+   "series": "IL @ 600 MHz",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    7.890536,
+    7.92496,
+    7.915636333333334,
+    7.894855,
+    7.927531666666667,
+    7.909342333333332,
+    7.8890460000000004,
+    7.924439333333333,
+    7.899804333333333,
+    7.895036666666667
+   ],
+   "trend": {
+    "se": 0.00012480548105195597,
+    "p": 0.6707809212337061,
+    "intercept": 7.91058744848485,
+    "n": 10,
+    "r2": 0.0237493570963239,
+    "slope_per_30d": -0.0016517532467532916,
+    "significant": false
+   },
+   "change_point": {
+    "index": 8,
+    "shift": -0.012122833333333638,
+    "t": -1.0141941220909656,
+    "p": 0.3401779346600485,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.8958078742375918,
+     "score": 0.8958078742375918
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.19780339651562878,
+     "production_change_point": true,
+     "score": 0.19780339651562878
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.03579473061107417,
+     "score": 0.03579473061107417
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB1-20260607",
+     "to": "CAL-LAB1-20260621",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB1",
+   "series": "worst-case RL",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    27.14303666666667,
+    26.386847666666668,
+    27.071098000000003,
+    27.250560333333336,
+    26.744528333333335,
+    26.423129,
+    27.236170666666666,
+    26.301264,
+    27.229447000000004,
+    27.241271333333334
+   ],
+   "trend": {
+    "se": 0.0032927721350257473,
+    "p": 0.744287240283471,
+    "intercept": 26.83268341818182,
+    "n": 10,
+    "r2": 0.014053947392332818,
+    "slope_per_30d": 0.03335803896103841,
+    "significant": false
+   },
+   "change_point": {
+    "index": 8,
+    "shift": 0.4157798333333318,
+    "t": 1.3895790825614411,
+    "p": 0.20210564990223026,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.7551758906156077,
+     "score": 0.7551758906156077
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": 0.33767675850303297,
+     "production_change_point": true,
+     "score": 0.33767675850303297
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.02561526637308936,
+     "score": 0.02561526637308936
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB1-20260607",
+     "to": "CAL-LAB1-20260621",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB1",
+   "series": "fitted impedance",
+   "unit": "ohm",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    100.03773166666667,
+    100.442202,
+    99.98708133333334,
+    99.964532,
+    100.16363766666666,
+    100.44473,
+    99.973544,
+    100.48417666666667,
+    99.958665,
+    99.97683233333333
+   ],
+   "trend": {
+    "se": 0.0018672005228876586,
+    "p": 0.7983576522617633,
+    "intercept": 100.17438366666669,
+    "n": 10,
+    "r2": 0.008645096419247131,
+    "slope_per_30d": -0.014795428571428878,
+    "significant": false
+   },
+   "change_point": {
+    "index": 8,
+    "shift": -0.21945575000000872,
+    "t": -1.277245180071893,
+    "p": 0.23733512039182822,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.6672312007486041,
+     "score": 0.6672312007486041
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.3233589595837018,
+     "production_change_point": true,
+     "score": 0.3233589595837018
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": -0.04821483429409022,
+     "score": 0.04821483429409022
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB1-20260607",
+     "to": "CAL-LAB1-20260621",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB1",
+   "series": "verification dA",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    0.026388828299378275,
+    0.023820540334209994,
+    0.024777631834009384,
+    0.031827133887695425,
+    0.04026223156130726,
+    0.028725170361472152,
+    0.03765962214146157,
+    0.03841166122457196,
+    0.030674711426911472,
+    0.035205533326298166
+   ],
+   "trend": {
+    "se": 3.845034355232247e-05,
+    "p": 0.05304118324054548,
+    "intercept": 0.026280940255946142,
+    "n": 10,
+    "r2": 0.39138617417093924,
+    "slope_per_30d": 0.00261636484942163,
+    "significant": false
+   },
+   "change_point": {
+    "index": 3,
+    "shift": 0.00968519945314145,
+    "t": 3.666097914374691,
+    "p": 0.0063451085307322675,
+    "p_bonferroni": 0.044415759715125874,
+    "significant": true
+   },
+   "ewma_first_signal": null,
+   "drifting": true,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.008332403351848205,
+     "score": 0.008332403351848205
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB1-20260329",
+     "to": "CAL-LAB1-20260412",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "verification dA at LAB1 drifts at round RR-04 (shift +0.009685 dB); leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); instrument-side evidence from the check standard, independent of the artefact: test cable / connectors / calibration kit."
+  },
+  {
+   "site": "LAB1",
+   "series": "degree of equivalence d_i (IL @ 600 MHz)",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    -0.018165434987587936,
+    0.013158809714961528,
+    0.00011079761092336327,
+    -0.026560474159142977,
+    0.00860573000636844,
+    -0.01688476643000847,
+    -0.003718749352159989,
+    0.005102846118261617,
+    -0.023474015881117083,
+    -0.007670329006859156
+   ],
+   "trend": {
+    "se": 0.00011489846563054967,
+    "p": 0.7324284498517193,
+    "intercept": -0.0043864975959616685,
+    "n": 10,
+    "r2": 0.01542996596321883,
+    "slope_per_30d": -0.001220505257463999,
+    "significant": false
+   },
+   "change_point": {
+    "index": 8,
+    "shift": -0.010778267259190066,
+    "t": -0.9798878828977566,
+    "p": 0.35584104554879487,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.5487476541614871,
+     "score": 0.5487476541614871
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.24650417590405307,
+     "production_change_point": true,
+     "score": 0.24650417590405307
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.17210850616121048,
+     "score": 0.17210850616121048
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB1-20260607",
+     "to": "CAL-LAB1-20260621",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB2",
+   "series": "IL @ 100 MHz",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    2.9489439485912357,
+    2.9634990580836043,
+    2.8487895526170335,
+    2.8845278439899538,
+    2.851362331519225,
+    2.9056367462536024,
+    2.9408259037797264,
+    2.8766462269858444,
+    2.8604169687282712,
+    2.8989676640498505
+   ],
+   "trend": {
+    "se": 0.00032236022385559443,
+    "p": 0.3089943901656662,
+    "intercept": 2.920022785016527,
+    "n": 10,
+    "r2": 0.12854306672212318,
+    "slope_per_30d": -0.010505314550805814,
+    "significant": false
+   },
+   "change_point": {
+    "index": 2,
+    "shift": -0.0728248485969818,
+    "t": -3.1275799739436305,
+    "p": 0.014066617473542587,
+    "p_bonferroni": 0.09846632231479811,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.702221067603354,
+     "score": 0.702221067603354
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.257055815197144,
+     "score": 0.257055815197144
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.11716091723322879,
+     "production_change_point": false,
+     "score": 0.11716091723322879
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB2-20260315",
+     "to": "CAL-LAB2-20260329",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB2",
+   "series": "IL @ 600 MHz",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    7.901926442507265,
+    7.896011623080117,
+    7.9504704026567055,
+    7.9457876297218775,
+    7.951519468659195,
+    7.882421253632213,
+    7.877462183478623,
+    7.93860888335409,
+    7.944728601079286,
+    7.890671647986717
+   ],
+   "trend": {
+    "se": 0.0002557385775157115,
+    "p": 0.8779629575950515,
+    "intercept": 7.920515080569079,
+    "n": 10,
+    "r2": 0.0031318914081825905,
+    "slope_per_30d": -0.0012163175968905406,
+    "significant": false
+   },
+   "change_point": {
+    "index": 5,
+    "shift": -0.02236459941884572,
+    "t": -1.1757355189831813,
+    "p": 0.27350190346305814,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": 6,
+   "drifting": true,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.6047905869972422,
+     "score": 0.6047905869972422
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.11867770791302197,
+     "production_change_point": false,
+     "score": 0.11867770791302197
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.11781646520262108,
+     "score": 0.11781646520262108
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB2-20260426",
+     "to": "CAL-LAB2-20260510",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "IL @ 600 MHz at LAB2 drifts flagged by EWMA only; leading candidate: calibration (verification return loss); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+  },
+  {
+   "site": "LAB2",
+   "series": "worst-case RL",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    27.224292666666667,
+    27.202799,
+    26.17186533333333,
+    26.22237133333333,
+    26.12586466666667,
+    26.452894333333333,
+    27.100513333333335,
+    26.203846,
+    26.136118333333332,
+    26.371627999999998
+   ],
+   "trend": {
+    "se": 0.0034056864387381662,
+    "p": 0.16508341290128295,
+    "intercept": 26.849020781818183,
+    "n": 10,
+    "r2": 0.2258686976314578,
+    "slope_per_30d": -0.15609594372294366,
+    "significant": false
+   },
+   "change_point": {
+    "index": 2,
+    "shift": -0.8654081666666684,
+    "t": -3.5994955668022706,
+    "p": 0.006987415295003556,
+    "p_bonferroni": 0.04891190706502489,
+    "significant": true
+   },
+   "ewma_first_signal": null,
+   "drifting": true,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.7924840867504098,
+     "score": 0.7924840867504098
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.3885355899676672,
+     "score": 0.3885355899676672
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.1158900918293246,
+     "production_change_point": false,
+     "score": 0.1158900918293246
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB2-20260315",
+     "to": "CAL-LAB2-20260329",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "worst-case RL at LAB2 drifts at round RR-03 (shift -0.8654 dB); leading candidate: calibration (verification return loss); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+  },
+  {
+   "site": "LAB2",
+   "series": "fitted impedance",
+   "unit": "ohm",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    99.8594583512516,
+    99.88166034943146,
+    100.7090284792298,
+    100.54783330499747,
+    100.72567531077796,
+    100.14824400862744,
+    99.79682004713759,
+    100.728886599794,
+    100.73264393795442,
+    100.23203788340952
+   ],
+   "trend": {
+    "se": 0.0031538203684997753,
+    "p": 0.39288435361571844,
+    "intercept": 100.15680372445641,
+    "n": 10,
+    "r2": 0.09250508652833458,
+    "slope_per_30d": 0.08544052514510123,
+    "significant": false
+   },
+   "change_point": {
+    "index": 2,
+    "shift": 0.5820868461495081,
+    "t": 2.2254003820003336,
+    "p": 0.056702406443508824,
+    "p_bonferroni": 0.39691684510456177,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.7539907583672717,
+     "score": 0.7539907583672717
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": -0.18643525046480738,
+     "score": 0.18643525046480738
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": 0.05872396658321999,
+     "production_change_point": false,
+     "score": 0.05872396658321999
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB2-20260315",
+     "to": "CAL-LAB2-20260329",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB2",
+   "series": "verification dA",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    0.0644376457549356,
+    0.0818730829209997,
+    0.07244204097947815,
+    0.06072308045793662,
+    0.06782916856725052,
+    0.05760050036162667,
+    0.05967901935757425,
+    0.054290662002131285,
+    0.05238475969136758,
+    0.043933708182272824
+   ],
+   "trend": {
+    "se": 4.843908939539897e-05,
+    "p": 0.0022133001731031686,
+    "intercept": 0.07502131538632556,
+    "n": 10,
+    "r2": 0.7098907171211898,
+    "slope_per_30d": -0.0064294993136991595,
+    "significant": true
+   },
+   "change_point": {
+    "index": 5,
+    "shift": -0.015883273817125593,
+    "t": -3.4845584397205522,
+    "p": 0.008264143105974916,
+    "p_bonferroni": 0.05784900174182441,
+    "significant": false
+   },
+   "ewma_first_signal": 9,
+   "drifting": true,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.18409095410650372,
+     "score": 0.18409095410650372
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB2-20260426",
+     "to": "CAL-LAB2-20260510",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "verification dA at LAB2 drifts as a trend of -0.006429 dB/30 d; leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); instrument-side evidence from the check standard, independent of the artefact: test cable / connectors / calibration kit."
+  },
+  {
+   "site": "LAB2",
+   "series": "degree of equivalence d_i (IL @ 600 MHz)",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    -0.006774992480322872,
+    -0.015789567204921084,
+    0.03494486693429444,
+    0.024372155562734754,
+    0.03259353199889681,
+    -0.0438058461311277,
+    -0.01530256587353751,
+    0.019272396139018433,
+    0.02145025186483629,
+    -0.01203534768680914
+   ],
+   "trend": {
+    "se": 0.00021785653395359423,
+    "p": 0.9073498032944592,
+    "intercept": 0.005541134488268863,
+    "n": 10,
+    "r2": 0.0018003629263523273,
+    "slope_per_30d": -0.0007850696076012486,
+    "significant": false
+   },
+   "change_point": {
+    "index": 5,
+    "shift": -0.019953421299660334,
+    "t": -1.2428068735914268,
+    "p": 0.24912904630814042,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.3963792732434101,
+     "score": 0.3963792732434101
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.15232331095997367,
+     "production_change_point": false,
+     "score": 0.15232331095997367
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.11945299274473939,
+     "score": 0.11945299274473939
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB2-20260426",
+     "to": "CAL-LAB2-20260510",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB3",
+   "series": "IL @ 100 MHz",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    2.9346505650017964,
+    2.9518482693372547,
+    2.9420285759777305,
+    2.890579223044527,
+    2.948326597044169,
+    2.881884532508461,
+    2.94569076203908,
+    2.9506332445684076,
+    2.9069344366287933,
+    2.9331280296765505
+   ],
+   "trend": {
+    "se": 0.00021422936455342198,
+    "p": 0.71652925943934,
+    "intercept": 2.933648162259543,
+    "n": 10,
+    "r2": 0.017385798594100565,
+    "slope_per_30d": -0.0024179707985078807,
+    "significant": false
+   },
+   "change_point": {
+    "index": 3,
+    "shift": -0.020388637889881434,
+    "t": -1.1623619494331408,
+    "p": 0.2785884463602107,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.5656920334738366,
+     "score": 0.5656920334738366
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.529828605969097,
+     "score": 0.529828605969097
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.007379451483936787,
+     "production_change_point": false,
+     "score": 0.007379451483936787
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB3-20260329",
+     "to": "CAL-LAB3-20260412",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB3",
+   "series": "IL @ 600 MHz",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    7.903204010025061,
+    7.906361570593149,
+    7.912518629908103,
+    7.927889724310777,
+    7.916414369256473,
+    7.957130492898913,
+    7.890694068504594,
+    7.895080701754385,
+    7.961024895572263,
+    7.922749540517962
+   ],
+   "trend": {
+    "se": 0.00018974610017485826,
+    "p": 0.38757625101206233,
+    "intercept": 7.908384275841118,
+    "n": 10,
+    "r2": 0.09449722138437451,
+    "slope_per_30d": 0.0052012021395481415,
+    "significant": false
+   },
+   "change_point": {
+    "index": 8,
+    "shift": 0.028225522138679793,
+    "t": 1.6235289283972536,
+    "p": 0.14313209457377296,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": 5,
+   "drifting": true,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.37104946560891144,
+     "score": 0.37104946560891144
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": -0.14833526998265778,
+     "score": 0.14833526998265778
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": 0.026752245984469476,
+     "production_change_point": false,
+     "score": 0.026752245984469476
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB3-20260607",
+     "to": "CAL-LAB3-20260621",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "IL @ 600 MHz at LAB3 drifts flagged by EWMA only; leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+  },
+  {
+   "site": "LAB3",
+   "series": "worst-case RL",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    26.932884333333334,
+    27.322173333333335,
+    27.375601,
+    26.478536000000002,
+    27.276917333333333,
+    26.21123266666667,
+    27.10278033333333,
+    27.241111333333333,
+    26.57010866666667,
+    27.260362999999998
+   ],
+   "trend": {
+    "se": 0.0034298624980171337,
+    "p": 0.7899365073440942,
+    "intercept": 27.036694745454547,
+    "n": 10,
+    "r2": 0.009396342572838843,
+    "slope_per_30d": -0.028344735930736234,
+    "significant": false
+   },
+   "change_point": {
+    "index": 3,
+    "shift": -0.33292679365079536,
+    "t": -1.1952403308850512,
+    "p": 0.2662197451051772,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.6345966201289298,
+     "score": 0.6345966201289298
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.42013225754666766,
+     "score": 0.42013225754666766
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.1359309535520135,
+     "production_change_point": false,
+     "score": 0.1359309535520135
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB3-20260329",
+     "to": "CAL-LAB3-20260412",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB3",
+   "series": "fitted impedance",
+   "unit": "ohm",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    100.03339299642022,
+    99.78940030264852,
+    99.79024591857821,
+    100.47774766847323,
+    99.84660487037445,
+    100.66895319614157,
+    99.9280986474145,
+    99.83547053843436,
+    100.24159683752309,
+    99.83496490210587
+   ],
+   "trend": {
+    "se": 0.0026153173987011674,
+    "p": 0.9005788119389232,
+    "intercept": 100.02340084443418,
+    "n": 10,
+    "r2": 0.0020742594527341316,
+    "slope_per_30d": 0.01011749684629322,
+    "significant": false
+   },
+   "change_point": {
+    "index": 3,
+    "shift": 0.24804930751774634,
+    "t": 1.1682059887090317,
+    "p": 0.27635630619661006,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.5918065848194832,
+     "score": 0.5918065848194832
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": -0.527942748725102,
+     "score": 0.527942748725102
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": 0.16271970656109286,
+     "production_change_point": false,
+     "score": 0.16271970656109286
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB3-20260329",
+     "to": "CAL-LAB3-20260412",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB3",
+   "series": "verification dA",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    0.048316400092325296,
+    0.04761123934600775,
+    0.04926196705818242,
+    0.036804798106750525,
+    0.0539348875639476,
+    0.0329615060542352,
+    0.04929785082189042,
+    0.047663727859085014,
+    0.05979922862520226,
+    0.040533198394449244
+   ],
+   "trend": {
+    "se": 6.606064318672819e-05,
+    "p": 0.8800172825971898,
+    "intercept": 0.04596988883819765,
+    "n": 10,
+    "r2": 0.003026700328564801,
+    "slope_per_30d": 0.0003088531209571086,
+    "significant": false
+   },
+   "change_point": {
+    "index": 6,
+    "shift": 0.004508368388248606,
+    "t": 0.8684227047910889,
+    "p": 0.41045697412718757,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.13642912410163102,
+     "score": 0.13642912410163102
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB3-20260510",
+     "to": "CAL-LAB3-20260524",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB3",
+   "series": "degree of equivalence d_i (IL @ 600 MHz)",
+   "unit": "dB",
+   "n": 10,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08",
+    "RR-09",
+    "RR-10"
+   ],
+   "x": [
+    -0.005497424962526587,
+    -0.005439619691888886,
+    -0.0030069058143080696,
+    0.0064742501516343864,
+    -0.00251156740382541,
+    0.030903393135572443,
+    -0.002070680847566564,
+    -0.024255785460685964,
+    0.037746546357812605,
+    0.02004254484443635
+   ],
+   "trend": {
+    "se": 0.00014304189376778428,
+    "p": 0.22574022729230966,
+    "intercept": -0.006589670239693182,
+    "n": 10,
+    "r2": 0.17718867879187933,
+    "slope_per_30d": 0.005632450128837434,
+    "significant": false
+   },
+   "change_point": {
+    "index": 8,
+    "shift": 0.02957008821282381,
+    "t": 2.481335599490548,
+    "p": 0.038032393493709654,
+    "p_bonferroni": 0.26622675445596755,
+    "significant": false
+   },
+   "ewma_first_signal": 5,
+   "drifting": true,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.44494438104095657,
+     "score": 0.44494438104095657
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": -0.13483720043466466,
+     "score": 0.13483720043466466
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.08348608086950049,
+     "production_change_point": false,
+     "score": 0.08348608086950049
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB3-20260607",
+     "to": "CAL-LAB3-20260621",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "degree of equivalence d_i (IL @ 600 MHz) at LAB3 drifts flagged by EWMA only; leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+  },
+  {
+   "site": "LAB4",
+   "series": "IL @ 100 MHz",
+   "unit": "dB",
+   "n": 8,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08"
+   ],
+   "x": [
+    2.885277339142384,
+    2.9058475945989932,
+    2.9247232448897686,
+    2.8850806356581233,
+    2.921549971637741,
+    2.885026342368187,
+    2.962446329214167,
+    2.931213279809162
+   ],
+   "trend": {
+    "se": 0.00027541154831231383,
+    "p": 0.15820718654351806,
+    "intercept": 2.8908987635748913,
+    "n": 8,
+    "r2": 0.30206438335712105,
+    "slope_per_30d": 0.013314384850974225,
+    "significant": false
+   },
+   "change_point": {
+    "index": 6,
+    "shift": 0.04557894979579791,
+    "t": 2.8815436308717257,
+    "p": 0.028001186004371244,
+    "p_bonferroni": 0.1400059300218562,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.8118543582555358,
+     "score": 0.8118543582555358
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.4039278956243535,
+     "production_change_point": false,
+     "score": 0.4039278956243535
+    },
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.3150390703169869,
+     "score": 0.3150390703169869
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB4-20260510",
+     "to": "CAL-LAB4-20260524",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB4",
+   "series": "IL @ 600 MHz",
+   "unit": "dB",
+   "n": 8,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08"
+   ],
+   "x": [
+    7.940818976279651,
+    7.897820058260508,
+    7.903550561797753,
+    7.940894881398251,
+    7.900899209321682,
+    7.93711593841032,
+    7.9425907615480655,
+    7.921500790678319
+   ],
+   "trend": {
+    "se": 0.0002290323077173999,
+    "p": 0.5993365759486035,
+    "intercept": 7.916926952420586,
+    "n": 8,
+    "r2": 0.04873243230008353,
+    "slope_per_30d": 0.0038093539538162032,
+    "significant": false
+   },
+   "change_point": {
+    "index": 5,
+    "shift": 0.016939092800666522,
+    "t": 1.2152858159178226,
+    "p": 0.26990346673925986,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.9549915288721714,
+     "score": 0.9549915288721714
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": 0.5820162062330712,
+     "production_change_point": false,
+     "score": 0.5820162062330712
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.39722810376631656,
+     "score": 0.39722810376631656
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB4-20260426",
+     "to": "CAL-LAB4-20260510",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB4",
+   "series": "worst-case RL",
+   "unit": "dB",
+   "n": 8,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08"
+   ],
+   "x": [
+    26.347208,
+    26.75243,
+    27.364536,
+    26.477034,
+    27.380818,
+    26.495105666666664,
+    27.280163666666667,
+    26.69884133333333
+   ],
+   "trend": {
+    "se": 0.004955962733555086,
+    "p": 0.5813717611573985,
+    "intercept": 26.70803397222222,
+    "n": 8,
+    "r2": 0.05354392349879878,
+    "slope_per_30d": 0.08662231292516956,
+    "significant": false
+   },
+   "change_point": {
+    "index": 2,
+    "shift": 0.3995974444444421,
+    "t": 1.1742379695563794,
+    "p": 0.28479111364127113,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": 0.7199678183371033,
+     "score": 0.7199678183371033
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": -0.5251063308758301,
+     "production_change_point": false,
+     "score": 0.5251063308758301
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.381451154411169,
+     "score": 0.381451154411169
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB4-20260315",
+     "to": "CAL-LAB4-20260329",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB4",
+   "series": "fitted impedance",
+   "unit": "ohm",
+   "n": 8,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08"
+   ],
+   "x": [
+    100.48933334666707,
+    100.35800707354554,
+    99.78326449793492,
+    100.34494934848045,
+    99.77194015820476,
+    100.33445670036768,
+    99.8672736848772,
+    100.46501561713518
+   ],
+   "trend": {
+    "se": 0.0036751429617084097,
+    "p": 0.7332493075310935,
+    "intercept": 100.24108520477837,
+    "n": 8,
+    "r2": 0.02080974351376581,
+    "slope_per_30d": -0.039370500842915594,
+    "significant": false
+   },
+   "change_point": {
+    "index": 2,
+    "shift": -0.32918687560628257,
+    "t": -1.3711447008591915,
+    "p": 0.2194011812152364,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.6103132561266983,
+     "score": 0.6103132561266983
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": 0.4009726126641826,
+     "production_change_point": false,
+     "score": 0.4009726126641826
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": -0.31404198947856127,
+     "score": 0.31404198947856127
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB4-20260315",
+     "to": "CAL-LAB4-20260329",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  },
+  {
+   "site": "LAB4",
+   "series": "verification dA",
+   "unit": "dB",
+   "n": 8,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08"
+   ],
+   "x": [
+    0.034950908313248874,
+    0.03529280293031434,
+    0.0426208339179901,
+    0.04242510092420204,
+    0.03678565078083551,
+    0.038763469666182715,
+    0.08762852296094081,
+    0.055551082224102544
+   ],
+   "trend": {
+    "se": 0.00016339361286814066,
+    "p": 0.08956179928724622,
+    "intercept": 0.03055778502179714,
+    "n": 8,
+    "r2": 0.4054351345200337,
+    "slope_per_30d": 0.009915007005875495,
+    "significant": false
+   },
+   "change_point": {
+    "index": 6,
+    "shift": 0.033116674837059414,
+    "t": 4.151294283535112,
+    "p": 0.006002411515542156,
+    "p_bonferroni": 0.03001205757771078,
+    "significant": true
+   },
+   "ewma_first_signal": 6,
+   "drifting": true,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.276073429272936,
+     "score": 0.276073429272936
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB4-20260510",
+     "to": "CAL-LAB4-20260524",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "verification dA at LAB4 drifts at round RR-07 (shift +0.03312 dB); leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); instrument-side evidence from the check standard, independent of the artefact: test cable / connectors / calibration kit."
+  },
+  {
+   "site": "LAB4",
+   "series": "degree of equivalence d_i (IL @ 600 MHz)",
+   "unit": "dB",
+   "n": 8,
+   "labels": [
+    "RR-01",
+    "RR-02",
+    "RR-03",
+    "RR-04",
+    "RR-05",
+    "RR-06",
+    "RR-07",
+    "RR-08"
+   ],
+   "x": [
+    0.03211754129206312,
+    -0.013981132024530218,
+    -0.01197497392465774,
+    0.01947940723910868,
+    -0.018026727338616766,
+    0.010888838646978982,
+    0.0498260121959051,
+    0.0021643034632479186
+   ],
+   "trend": {
+    "se": 0.0002825119383445678,
+    "p": 0.6872170178766481,
+    "intercept": 0.002959643717118433,
+    "n": 8,
+    "r2": 0.02892326955023411,
+    "slope_per_30d": 0.003582866312185073,
+    "significant": false
+   },
+   "change_point": {
+    "index": 6,
+    "shift": 0.0229113321811855,
+    "t": 1.201587313791929,
+    "p": 0.27479539018508214,
+    "p_bonferroni": 1.0,
+    "significant": false
+   },
+   "ewma_first_signal": null,
+   "drifting": false,
+   "causes": [
+    {
+     "candidate": "calibration (verification return loss)",
+     "kind": "correlation over rounds",
+     "r": -0.8238093623717065,
+     "score": 0.8238093623717065
+    },
+    {
+     "candidate": "calibration / test cable (verification dA)",
+     "kind": "correlation over rounds",
+     "r": 0.6314783179891222,
+     "score": 0.6314783179891222
+    },
+    {
+     "candidate": "production samples move with the artefact",
+     "kind": "artefact vs production",
+     "r": 0.462623954314992,
+     "production_change_point": false,
+     "score": 0.462623954314992
+    },
+    {
+     "candidate": "recalibration",
+     "kind": "routine recalibration every round: uninformative",
+     "from": "CAL-LAB4-20260510",
+     "to": "CAL-LAB4-20260524",
+     "score": 0.0
+    }
+   ],
+   "conclusion": "no drift detected"
+  }
+ ],
+ "trust_cards": {
+  "LAB1": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 600000000.0,
+   "value": 7.889064,
+   "value_raw": 7.889064,
+   "unit": "dB",
+   "U_k2": 0.05028752458463842,
+   "u_c": 0.02514376229231921,
+   "sample": {
+    "id": "GOLD-RR26-0001",
+    "kind": "artefact",
+    "length_m": 15.0,
+    "cable_type": "1000base-t1-link-segment",
+    "part_number": "GOLD",
+    "lot": "RR26"
+   },
+   "measurement": {
+    "started": "2026-07-06T08:30:19+00:00",
+    "procedure_id": "roundrobin-1000base-t1-artefact",
+    "procedure_sha256": "71412b7884673a1a536d0c3d05b8a1d0a98bdd093c14beab903c1068ec54c750",
+    "attempts": 1,
+    "trust": "trusted",
+    "verdict": "PASS",
+    "sweep": {
+     "points": 1200,
+     "ifbw_hz": 1000.0,
+     "power_dbm": 0.0,
+     "averages": 1
+    }
+   },
+   "site": {
+    "id": "LAB1",
+    "name": "Site 1 - Roth (reference laboratory)",
+    "operator": "a.schmidt"
+   },
+   "instrument": {
+    "manufacturer": "labauto-sim",
+    "model": "VNA4-8500",
+    "serial": "VNA-1001",
+    "firmware": "A.01.20"
+   },
+   "calibration": {
+    "record": "CAL-LAB1-20260705",
+    "type": "SOLT",
+    "date": "2026-07-05T06:00:00+00:00",
+    "kit_serial": "85052D-LAB1",
+    "kit_due": "2027-05-01T06:00:00+00:00",
+    "age_days": 1.1043944444479765,
+    "delta_t_k": 0.3000000000000007,
+    "verification": {
+     "time": "2026-07-06T08:00:09+00:00",
+     "status": "pass",
+     "max_dev_db": 0.035205533326298166,
+     "min_rl_db": 41.80756943264161,
+     "standard": "CHECK-ATT20"
+    }
+   },
+   "fixture": "none",
+   "temperature": {
+    "sample_c": 23.0,
+    "method": "ambient (no chamber)",
+    "ambient_c": 23.0,
+    "humidity_pct": 45.0,
+    "corrected_to_c": 23.0
+   },
+   "raw_data": {
+    "files": [
+     {
+      "path": "pairA.s4p",
+      "sha256": "1fa7e754e3a679b33ca6111af7f0dd561da0898c68563a54b122c6c26548cad2",
+      "bytes": 927864
+     }
+    ],
+    "manifest_sha256": "12331c44d0a8ad27c8e538cd1c5764d7b75e3e07929174dc2b2bce28de1301ff",
+    "archive_dir": "/tmp/claude-0/-home-claude/3f47c158-0c10-51ff-923e-b80cf8aa746d/scratchpad/net10/LAB1/archive/2026/GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260706T083019",
+    "integrity_ok": true
+   },
+   "software": {
+    "labauto": "0.1.0",
+    "cablecheck": "0.1.1",
+    "numpy": "2.4.4",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v33-x86_64-with-glibc2.39",
+    "labauto_git": "880a73f",
+    "zprofile": "0.1.0",
+    "cableanalytics": "0.1.0"
+   },
+   "uncertainty": {
+    "u_repeat": 0.004667653211197143,
+    "u_reprod": 0.0,
+    "u_cal": 0.020325924142902588,
+    "u_fixture": 0.0,
+    "u_instrument": 0.01,
+    "u_environment": 0.00986133,
+    "u_noise": 0.00017399448475233158,
+    "u_res": 5e-05,
+    "rep_source": "pooled artefact repeats",
+    "reprod_source": "site round-to-round sigma_c beyond the calibration bound"
+   },
+   "doe": {
+    "round": "RR-10",
+    "d": -0.007670329006859156,
+    "U_d": 0.03880402733737481,
+    "En": -0.1976683744749179,
+    "status": "compatible",
+    "x_ref": 7.902706995673526,
+    "U_ref": 0.03190888239780056,
+    "reference": "consensus"
+   },
+   "status": "compatible"
+  },
+  "LAB2": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 600000000.0,
+   "value": 7.8898689912826905,
+   "value_raw": 7.919456,
+   "unit": "dB",
+   "U_k2": 0.0703439422483353,
+   "u_c": 0.03517197112416765,
+   "sample": {
+    "id": "GOLD-RR26-0001",
+    "kind": "artefact",
+    "length_m": 15.0,
+    "cable_type": "1000base-t1-link-segment",
+    "part_number": "GOLD",
+    "lot": "RR26"
+   },
+   "measurement": {
+    "started": "2026-07-06T09:30:19+00:00",
+    "procedure_id": "roundrobin-1000base-t1-artefact",
+    "procedure_sha256": "71412b7884673a1a536d0c3d05b8a1d0a98bdd093c14beab903c1068ec54c750",
+    "attempts": 1,
+    "trust": "trusted",
+    "verdict": "PASS",
+    "sweep": {
+     "points": 1200,
+     "ifbw_hz": 1000.0,
+     "power_dbm": 0.0,
+     "averages": 1
+    }
+   },
+   "site": {
+    "id": "LAB2",
+    "name": "Site 2 - Kitzingen",
+    "operator": "m.rossi"
+   },
+   "instrument": {
+    "manufacturer": "labauto-sim",
+    "model": "VNA4-8500",
+    "serial": "VNA-2002",
+    "firmware": "A.01.20"
+   },
+   "calibration": {
+    "record": "CAL-LAB2-20260705",
+    "type": "SOLT",
+    "date": "2026-07-05T07:00:00+00:00",
+    "kit_serial": "85052D-LAB2",
+    "kit_due": "2027-05-01T07:00:00+00:00",
+    "age_days": 1.1043944444479765,
+    "delta_t_k": 0.3000000000000007,
+    "verification": {
+     "time": "2026-07-06T09:00:09+00:00",
+     "status": "pass",
+     "max_dev_db": 0.043933708182272824,
+     "min_rl_db": 41.33344263129111,
+     "standard": "CHECK-ATT20"
+    }
+   },
+   "fixture": "none",
+   "temperature": {
+    "sample_c": 24.5,
+    "method": "ambient (no chamber)",
+    "ambient_c": 24.5,
+    "humidity_pct": 45.0,
+    "corrected_to_c": 23.0
+   },
+   "raw_data": {
+    "files": [
+     {
+      "path": "pairA.s4p",
+      "sha256": "42dc60ccdb498ccf243d5b4222bfff320ee94233928f5d65a2290c3c7def85ea",
+      "bytes": 927852
+     }
+    ],
+    "manifest_sha256": "a737f742799576719a8b8a0a2bb783d4f1e33b677bf3c1f2fe4790f229b312a3",
+    "archive_dir": "/tmp/claude-0/-home-claude/3f47c158-0c10-51ff-923e-b80cf8aa746d/scratchpad/net10/LAB2/archive/2026/GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260706T093019",
+    "integrity_ok": true
+   },
+   "software": {
+    "labauto": "0.1.0",
+    "cablecheck": "0.1.1",
+    "numpy": "2.4.4",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v33-x86_64-with-glibc2.39",
+    "labauto_git": "880a73f",
+    "zprofile": "0.1.0",
+    "cableanalytics": "0.1.0"
+   },
+   "uncertainty": {
+    "u_repeat": 0.004042623533466118,
+    "u_reprod": 0.01735653241780007,
+    "u_cal": 0.02536513824553368,
+    "u_fixture": 0.0,
+    "u_instrument": 0.01,
+    "u_environment": 0.013268416398672751,
+    "u_noise": 0.00017865668809418896,
+    "u_res": 5e-05,
+    "rep_source": "pooled artefact repeats",
+    "reprod_source": "site round-to-round sigma_c beyond the calibration bound"
+   },
+   "doe": {
+    "round": "RR-10",
+    "d": -0.01203534768680914,
+    "U_d": 0.051642535504963887,
+    "En": -0.23305106089634775,
+    "status": "compatible",
+    "x_ref": 7.902706995673526,
+    "U_ref": 0.03190888239780056,
+    "reference": "consensus"
+   },
+   "status": "compatible"
+  },
+  "LAB3": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 600000000.0,
+   "value": 7.921682205513784,
+   "value_raw": 7.901878,
+   "unit": "dB",
+   "U_k2": 0.05723445433985205,
+   "u_c": 0.028617227169926027,
+   "sample": {
+    "id": "GOLD-RR26-0001",
+    "kind": "artefact",
+    "length_m": 15.0,
+    "cable_type": "1000base-t1-link-segment",
+    "part_number": "GOLD",
+    "lot": "RR26"
+   },
+   "measurement": {
+    "started": "2026-07-06T10:30:19+00:00",
+    "procedure_id": "roundrobin-1000base-t1-artefact",
+    "procedure_sha256": "71412b7884673a1a536d0c3d05b8a1d0a98bdd093c14beab903c1068ec54c750",
+    "attempts": 1,
+    "trust": "trusted",
+    "verdict": "PASS",
+    "sweep": {
+     "points": 1200,
+     "ifbw_hz": 1000.0,
+     "power_dbm": 0.0,
+     "averages": 1
+    }
+   },
+   "site": {
+    "id": "LAB3",
+    "name": "Site 3 - Jelenia Gora",
+    "operator": "j.kowalski"
+   },
+   "instrument": {
+    "manufacturer": "labauto-sim",
+    "model": "VNA4-8500",
+    "serial": "VNA-3003",
+    "firmware": "A.01.20"
+   },
+   "calibration": {
+    "record": "CAL-LAB3-20260705",
+    "type": "SOLT",
+    "date": "2026-07-05T08:00:00+00:00",
+    "kit_serial": "85052D-LAB3",
+    "kit_due": "2027-05-01T08:00:00+00:00",
+    "age_days": 1.1043944444479765,
+    "delta_t_k": 0.3000000000000007,
+    "verification": {
+     "time": "2026-07-06T10:00:09+00:00",
+     "status": "pass",
+     "max_dev_db": 0.040533198394449244,
+     "min_rl_db": 41.50528100204571,
+     "standard": "CHECK-ATT20"
+    }
+   },
+   "fixture": "none",
+   "temperature": {
+    "sample_c": 22.0,
+    "method": "ambient (no chamber)",
+    "ambient_c": 22.0,
+    "humidity_pct": 45.0,
+    "corrected_to_c": 23.0
+   },
+   "raw_data": {
+    "files": [
+     {
+      "path": "pairA.s4p",
+      "sha256": "cdafb71742ceba8274836a0f68d69bcdd100e1c510ca1d347d8970ccb708549f",
+      "bytes": 927811
+     }
+    ],
+    "manifest_sha256": "00abc158c1bb1c0844834f83ff2ca529a4286eb39271fde23b8df901b7605b71",
+    "archive_dir": "/tmp/claude-0/-home-claude/3f47c158-0c10-51ff-923e-b80cf8aa746d/scratchpad/net10/LAB3/archive/2026/GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260706T103019",
+    "integrity_ok": true
+   },
+   "software": {
+    "labauto": "0.1.0",
+    "cablecheck": "0.1.1",
+    "numpy": "2.4.4",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v33-x86_64-with-glibc2.39",
+    "labauto_git": "880a73f",
+    "zprofile": "0.1.0",
+    "cableanalytics": "0.1.0"
+   },
+   "uncertainty": {
+    "u_repeat": 0.005037822489263965,
+    "u_reprod": 0.0035405913355541475,
+    "u_cal": 0.02340185300415178,
+    "u_fixture": 0.0,
+    "u_instrument": 0.01,
+    "u_environment": 0.011547736966650724,
+    "u_noise": 0.00017548611779338307,
+    "u_res": 5e-05,
+    "rep_source": "pooled artefact repeats",
+    "reprod_source": "site round-to-round sigma_c beyond the calibration bound"
+   },
+   "doe": {
+    "round": "RR-10",
+    "d": 0.02004254484443635,
+    "U_d": 0.046483046319090185,
+    "En": 0.4311796758510866,
+    "status": "compatible",
+    "x_ref": 7.902706995673526,
+    "U_ref": 0.03190888239780056,
+    "reference": "consensus"
+   },
+   "status": "compatible"
+  },
+  "LAB4": {
+   "quantity": "insertion_loss",
+   "pair": "A",
+   "f_hz": 600000000.0,
+   "value": 7.919634456928839,
+   "value_raw": 7.929534,
+   "unit": "dB",
+   "U_k2": 0.07093123208843391,
+   "u_c": 0.035465616044216955,
+   "sample": {
+    "id": "GOLD-RR26-0001",
+    "kind": "artefact",
+    "length_m": 15.0,
+    "cable_type": "1000base-t1-link-segment",
+    "part_number": "GOLD",
+    "lot": "RR26"
+   },
+   "measurement": {
+    "started": "2026-06-08T11:30:19+00:00",
+    "procedure_id": "roundrobin-1000base-t1-artefact",
+    "procedure_sha256": "71412b7884673a1a536d0c3d05b8a1d0a98bdd093c14beab903c1068ec54c750",
+    "attempts": 1,
+    "trust": "trusted",
+    "verdict": "PASS",
+    "sweep": {
+     "points": 1200,
+     "ifbw_hz": 1000.0,
+     "power_dbm": 0.0,
+     "averages": 1
+    }
+   },
+   "site": {
+    "id": "LAB4",
+    "name": "Site 4 - Changzhou",
+    "operator": "l.wang"
+   },
+   "instrument": {
+    "manufacturer": "labauto-sim",
+    "model": "VNA4-8500",
+    "serial": "VNA-4004",
+    "firmware": "A.01.20"
+   },
+   "calibration": {
+    "record": "CAL-LAB4-20260607",
+    "type": "SOLT",
+    "date": "2026-06-07T09:00:00+00:00",
+    "kit_serial": "85052D-LAB4",
+    "kit_due": "2027-04-03T09:00:00+00:00",
+    "age_days": 1.1043944444479765,
+    "delta_t_k": 0.3000000000000007,
+    "verification": {
+     "time": "2026-06-08T11:00:09+00:00",
+     "status": "pass",
+     "max_dev_db": 0.055551082224102544,
+     "min_rl_db": 41.739642976329904,
+     "standard": "CHECK-ATT20"
+    }
+   },
+   "fixture": "none",
+   "temperature": {
+    "sample_c": 23.5,
+    "method": "ambient (no chamber)",
+    "ambient_c": 23.5,
+    "humidity_pct": 45.0,
+    "corrected_to_c": 23.0
+   },
+   "raw_data": {
+    "files": [
+     {
+      "path": "pairA.s4p",
+      "sha256": "93c2e39f979dc907e5b6bced53a31e9feafeffc721b0faa3b41c13896388c6ca",
+      "bytes": 927859
+     }
+    ],
+    "manifest_sha256": "be45c540e9e8eafed8aa2442525fda1ec63edfaa4345677c08c1adde1e60df8d",
+    "archive_dir": "/tmp/claude-0/-home-claude/3f47c158-0c10-51ff-923e-b80cf8aa746d/scratchpad/net10/LAB4/archive/2026/GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T113019",
+    "integrity_ok": true
+   },
+   "software": {
+    "labauto": "0.1.0",
+    "cablecheck": "0.1.1",
+    "numpy": "2.4.4",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v33-x86_64-with-glibc2.39",
+    "labauto_git": "880a73f",
+    "zprofile": "0.1.0",
+    "cableanalytics": "0.1.0"
+   },
+   "uncertainty": {
+    "u_repeat": 0.004723772053842894,
+    "u_reprod": 0.0,
+    "u_cal": 0.03207243227586064,
+    "u_fixture": 0.0,
+    "u_instrument": 0.01,
+    "u_environment": 0.010335426396108304,
+    "u_noise": 0.00017733612184904582,
+    "u_res": 5e-05,
+    "rep_source": "pooled artefact repeats",
+    "reprod_source": "site round-to-round sigma_c beyond the calibration bound"
+   },
+   "doe": {
+    "round": "RR-08",
+    "d": 0.0021643034632479186,
+    "U_d": 0.06314052873269399,
+    "En": 0.03427756318624631,
+    "status": "compatible",
+    "x_ref": 7.919336487215071,
+    "U_ref": 0.03145001553550533,
+    "reference": "consensus"
+   },
+   "status": "compatible; SUSPECT - a later verification on this instrument failed (2026-06-22)"
+  }
+ },
+ "events": [
+  {
+   "time": "2026-04-27T11:30:19+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "trace noise (artefact runs)",
+   "severity": "action",
+   "message": "trace noise (artefact runs): point beyond 3 sigma (z = -3.61) at GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260427T113019 (x = 0.000172 dB)"
+  },
+  {
+   "time": "2026-04-27T11:30:19+00:00",
+   "kind": "ewma",
+   "site": "LAB4",
+   "subject": "trace noise (artefact runs)",
+   "severity": "warning",
+   "message": "trace noise (artefact runs): EWMA signal at GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260427T113019 (z = 0.0001736, CL 0.0001741)"
+  },
+  {
+   "time": "2026-05-11T08:15:11+00:00",
+   "kind": "ewma",
+   "site": "LAB1",
+   "subject": "artefact loop resistance",
+   "severity": "warning",
+   "message": "artefact loop resistance: EWMA signal at RR-06 (z = 2.735, CL 2.735)"
+  },
+  {
+   "time": "2026-05-11T10:15:11+00:00",
+   "kind": "control-chart",
+   "site": "LAB3",
+   "subject": "artefact IL @ 600 MHz",
+   "severity": "action",
+   "message": "artefact IL @ 600 MHz: point beyond 3 sigma (z = +5.47) at RR-06 (x = 7.957 dB)"
+  },
+  {
+   "time": "2026-05-11T10:15:11+00:00",
+   "kind": "ewma",
+   "site": "LAB3",
+   "subject": "artefact IL @ 600 MHz",
+   "severity": "warning",
+   "message": "artefact IL @ 600 MHz: EWMA signal at RR-06 (z = 7.923, CL 7.913)"
+  },
+  {
+   "time": "2026-05-11T10:15:11+00:00",
+   "kind": "ewma",
+   "site": "LAB3",
+   "subject": "artefact loop resistance",
+   "severity": "warning",
+   "message": "artefact loop resistance: EWMA signal at RR-06 (z = 2.735, CL 2.735)"
+  },
+  {
+   "time": "2026-05-11T11:30:19+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "trace noise (artefact runs)",
+   "severity": "action",
+   "message": "trace noise (artefact runs): point beyond 3 sigma (z = -3.51) at GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260511T113019 (x = 0.000172 dB)"
+  },
+  {
+   "time": "2026-05-25T09:00:09+00:00",
+   "kind": "control-chart",
+   "site": "LAB2",
+   "subject": "verification return loss",
+   "severity": "action",
+   "message": "verification return loss: point beyond 3 sigma (z = +8.81) at CAL-LAB2-20260524 (x = 41.95 dB)"
+  },
+  {
+   "time": "2026-05-25T09:00:09+00:00",
+   "kind": "ewma",
+   "site": "LAB2",
+   "subject": "verification return loss",
+   "severity": "warning",
+   "message": "verification return loss: EWMA signal at CAL-LAB2-20260524 (z = 41.5, CL 41.42)"
+  },
+  {
+   "time": "2026-05-25T09:15:11+00:00",
+   "kind": "control-chart",
+   "site": "LAB2",
+   "subject": "artefact IL @ 600 MHz",
+   "severity": "action",
+   "message": "artefact IL @ 600 MHz: point beyond 3 sigma (z = -3.29) at RR-07 (x = 7.877 dB)"
+  },
+  {
+   "time": "2026-05-25T09:15:11+00:00",
+   "kind": "control-chart",
+   "site": "LAB2",
+   "subject": "artefact IL @ 600 MHz",
+   "severity": "warning",
+   "message": "artefact IL @ 600 MHz: two of three beyond 2 sigma (low) at RR-07 (x = 7.877 dB)"
+  },
+  {
+   "time": "2026-05-25T09:15:11+00:00",
+   "kind": "ewma",
+   "site": "LAB2",
+   "subject": "artefact IL @ 600 MHz",
+   "severity": "warning",
+   "message": "artefact IL @ 600 MHz: EWMA signal at RR-07 (z = 7.914, CL 7.929)"
+  },
+  {
+   "time": "2026-05-25T11:00:09+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "verification |S21| deviation",
+   "severity": "action",
+   "message": "verification |S21| deviation: point beyond 3 sigma (z = +16.44) at CAL-LAB4-20260524 (x = 0.08763 dB)"
+  },
+  {
+   "time": "2026-05-25T11:00:09+00:00",
+   "kind": "ewma",
+   "site": "LAB4",
+   "subject": "verification |S21| deviation",
+   "severity": "warning",
+   "message": "verification |S21| deviation: EWMA signal at CAL-LAB4-20260524 (z = 0.04847, CL 0.03842)"
+  },
+  {
+   "time": "2026-05-25T11:30:19+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "trace noise (artefact runs)",
+   "severity": "action",
+   "message": "trace noise (artefact runs): point beyond 3 sigma (z = +6.32) at GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260525T113019 (x = 0.0001779 dB)"
+  },
+  {
+   "time": "2026-05-25T11:30:19+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "trace noise (artefact runs)",
+   "severity": "warning",
+   "message": "trace noise (artefact runs): two of three beyond 2 sigma (high) at GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260525T113019 (x = 0.0001779 dB)"
+  },
+  {
+   "time": "2026-06-08T10:15:11+00:00",
+   "kind": "control-chart",
+   "site": "LAB3",
+   "subject": "artefact IL @ 600 MHz",
+   "severity": "warning",
+   "message": "artefact IL @ 600 MHz: two of three beyond 2 sigma (low) at RR-08 (x = 7.895 dB)"
+  },
+  {
+   "time": "2026-06-08T11:00:09+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "verification |S21| deviation",
+   "severity": "warning",
+   "message": "verification |S21| deviation: two of three beyond 2 sigma (high) at CAL-LAB4-20260607 (x = 0.05555 dB)"
+  },
+  {
+   "time": "2026-06-08T11:30:19+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "trace noise (artefact runs)",
+   "severity": "action",
+   "message": "trace noise (artefact runs): point beyond 3 sigma (z = +5.38) at GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T113019 (x = 0.0001773 dB)"
+  },
+  {
+   "time": "2026-06-08T11:30:19+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "trace noise (artefact runs)",
+   "severity": "warning",
+   "message": "trace noise (artefact runs): two of three beyond 2 sigma (high) at GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T113019 (x = 0.0001773 dB)"
+  },
+  {
+   "time": "2026-06-22T10:15:11+00:00",
+   "kind": "control-chart",
+   "site": "LAB3",
+   "subject": "artefact IL @ 600 MHz",
+   "severity": "action",
+   "message": "artefact IL @ 600 MHz: point beyond 3 sigma (z = +5.96) at RR-09 (x = 7.961 dB)"
+  },
+  {
+   "time": "2026-06-22T11:00:09+00:00",
+   "kind": "suspect-run",
+   "site": "LAB4",
+   "subject": "C1000T1A-L407-00028__sparam-1000base-t1-pair__20260608T114524",
+   "severity": "action",
+   "message": "run C1000T1A-L407-00028__sparam-1000base-t1-pair__20260608T114524 (C1000T1A-L407-0002) measured between the last passed verification and the failed one at 2026-06-22T11:00:09+00:00 (dA = 0.114 dB): review"
+  },
+  {
+   "time": "2026-06-22T11:00:09+00:00",
+   "kind": "suspect-run",
+   "site": "LAB4",
+   "subject": "C1000T1A-L408-0002L__sparam-1000base-t1-pair__20260608T115529",
+   "severity": "action",
+   "message": "run C1000T1A-L408-0002L__sparam-1000base-t1-pair__20260608T115529 (C1000T1A-L408-0002) measured between the last passed verification and the failed one at 2026-06-22T11:00:09+00:00 (dA = 0.114 dB): review"
+  },
+  {
+   "time": "2026-06-22T11:00:09+00:00",
+   "kind": "suspect-run",
+   "site": "LAB4",
+   "subject": "GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T110000",
+   "severity": "action",
+   "message": "run GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T110000 (GOLD-RR26-0001) measured between the last passed verification and the failed one at 2026-06-22T11:00:09+00:00 (dA = 0.114 dB): review"
+  },
+  {
+   "time": "2026-06-22T11:00:09+00:00",
+   "kind": "suspect-run",
+   "site": "LAB4",
+   "subject": "GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T111514",
+   "severity": "action",
+   "message": "run GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T111514 (GOLD-RR26-0001) measured between the last passed verification and the failed one at 2026-06-22T11:00:09+00:00 (dA = 0.114 dB): review"
+  },
+  {
+   "time": "2026-06-22T11:00:09+00:00",
+   "kind": "suspect-run",
+   "site": "LAB4",
+   "subject": "GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T113019",
+   "severity": "action",
+   "message": "run GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T113019 (GOLD-RR26-0001) measured between the last passed verification and the failed one at 2026-06-22T11:00:09+00:00 (dA = 0.114 dB): review"
+  },
+  {
+   "time": "2026-06-22T11:15:19+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "verification |S21| deviation",
+   "severity": "action",
+   "message": "verification |S21| deviation: point beyond 3 sigma (z = +26.14) at CAL-LAB4-20260621 (x = 0.1167 dB)"
+  },
+  {
+   "time": "2026-06-22T11:30:29+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "verification |S21| deviation",
+   "severity": "warning",
+   "message": "verification |S21| deviation: two of three beyond 2 sigma (high) at CAL-LAB4-20260621 (x = 0.1096 dB)"
+  },
+  {
+   "time": "2026-06-22T11:55:49+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "verification |S21| deviation",
+   "severity": "action",
+   "message": "verification |S21| deviation: point beyond 3 sigma (z = +23.52) at CAL-LAB4-20260621 (x = 0.1088 dB)"
+  },
+  {
+   "time": "2026-07-06T09:00:09+00:00",
+   "kind": "ewma",
+   "site": "LAB2",
+   "subject": "verification |S21| deviation",
+   "severity": "warning",
+   "message": "verification |S21| deviation: EWMA signal at CAL-LAB2-20260705 (z = 0.05755, CL 0.06946)"
+  },
+  {
+   "time": "2026-07-06T11:00:09+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "verification |S21| deviation",
+   "severity": "warning",
+   "message": "verification |S21| deviation: two of three beyond 2 sigma (high) at CAL-LAB4-20260705 (x = 0.2129 dB)"
+  },
+  {
+   "time": "2026-07-06T11:15:19+00:00",
+   "kind": "ewma",
+   "site": "LAB4",
+   "subject": "verification return loss",
+   "severity": "warning",
+   "message": "verification return loss: EWMA signal at CAL-LAB4-20260705 (z = 42.55, CL 41.94)"
+  },
+  {
+   "time": "2026-07-06T11:30:29+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "verification |S21| deviation",
+   "severity": "action",
+   "message": "verification |S21| deviation: point beyond 3 sigma (z = +56.58) at CAL-LAB4-20260705 (x = 0.2078 dB)"
+  },
+  {
+   "time": "2026-07-06T11:45:39+00:00",
+   "kind": "control-chart",
+   "site": "LAB4",
+   "subject": "verification |S21| deviation",
+   "severity": "warning",
+   "message": "verification |S21| deviation: two of three beyond 2 sigma (high) at CAL-LAB4-20260705 (x = 0.2063 dB)"
+  },
+  {
+   "time": "2026-09-18T10:27:38+00:00",
+   "kind": "drift",
+   "site": "LAB1",
+   "subject": "verification dA",
+   "severity": "action",
+   "message": "verification dA at LAB1 drifts at round RR-04 (shift +0.009685 dB); leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); instrument-side evidence from the check standard, independent of the artefact: test cable / connectors / calibration kit."
+  },
+  {
+   "time": "2026-09-18T10:27:38+00:00",
+   "kind": "drift",
+   "site": "LAB2",
+   "subject": "IL @ 600 MHz",
+   "severity": "warning",
+   "message": "IL @ 600 MHz at LAB2 drifts flagged by EWMA only; leading candidate: calibration (verification return loss); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+  },
+  {
+   "time": "2026-09-18T10:27:38+00:00",
+   "kind": "drift",
+   "site": "LAB2",
+   "subject": "worst-case RL",
+   "severity": "action",
+   "message": "worst-case RL at LAB2 drifts at round RR-03 (shift -0.8654 dB); leading candidate: calibration (verification return loss); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+  },
+  {
+   "time": "2026-09-18T10:27:38+00:00",
+   "kind": "drift",
+   "site": "LAB2",
+   "subject": "verification dA",
+   "severity": "warning",
+   "message": "verification dA at LAB2 drifts as a trend of -0.006429 dB/30 d; leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); instrument-side evidence from the check standard, independent of the artefact: test cable / connectors / calibration kit."
+  },
+  {
+   "time": "2026-09-18T10:27:38+00:00",
+   "kind": "drift",
+   "site": "LAB3",
+   "subject": "IL @ 600 MHz",
+   "severity": "warning",
+   "message": "IL @ 600 MHz at LAB3 drifts flagged by EWMA only; leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+  },
+  {
+   "time": "2026-09-18T10:27:38+00:00",
+   "kind": "drift",
+   "site": "LAB3",
+   "subject": "degree of equivalence d_i (IL @ 600 MHz)",
+   "severity": "warning",
+   "message": "degree of equivalence d_i (IL @ 600 MHz) at LAB3 drifts flagged by EWMA only; leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+  },
+  {
+   "time": "2026-09-18T10:27:38+00:00",
+   "kind": "drift",
+   "site": "LAB4",
+   "subject": "verification dA",
+   "severity": "action",
+   "message": "verification dA at LAB4 drifts at round RR-07 (shift +0.03312 dB); leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); instrument-side evidence from the check standard, independent of the artefact: test cable / connectors / calibration kit."
+  }
+ ],
+ "counts": {
+  "sites": 4,
+  "instruments": 4,
+  "calibrations": 40,
+  "samples": 81,
+  "procedures": 2,
+  "runs": 200,
+  "results": 3610,
+  "traces": 1520,
+  "verifications": 48,
+  "events": 41
+ }
+}

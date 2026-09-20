@@ -1,0 +1,62 @@
+[
+ {
+  "site": "LAB4",
+  "instrument_serial": "VNA-4004",
+  "run_id": "C1000T1A-L407-00028__sparam-1000base-t1-pair__20260608T114524",
+  "sample_id": "C1000T1A-L407-0002",
+  "started": "2026-06-08T11:45:24+00:00",
+  "verdict": "PASS",
+  "headline_margin": 0.22458074745882434,
+  "failed_verification": "2026-06-22T11:00:09+00:00",
+  "failed_calibration": "CAL-LAB4-20260621",
+  "max_dev_db": 0.11438748538863308
+ },
+ {
+  "site": "LAB4",
+  "instrument_serial": "VNA-4004",
+  "run_id": "C1000T1A-L408-0002L__sparam-1000base-t1-pair__20260608T115529",
+  "sample_id": "C1000T1A-L408-0002",
+  "started": "2026-06-08T11:55:29+00:00",
+  "verdict": "PASS",
+  "headline_margin": 0.22102545542532992,
+  "failed_verification": "2026-06-22T11:00:09+00:00",
+  "failed_calibration": "CAL-LAB4-20260621",
+  "max_dev_db": 0.11438748538863308
+ },
+ {
+  "site": "LAB4",
+  "instrument_serial": "VNA-4004",
+  "run_id": "GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T110000",
+  "sample_id": "GOLD-RR26-0001",
+  "started": "2026-06-08T11:00:00+00:00",
+  "verdict": "PASS",
+  "headline_margin": 0.22347235675249505,
+  "failed_verification": "2026-06-22T11:00:09+00:00",
+  "failed_calibration": "CAL-LAB4-20260621",
+  "max_dev_db": 0.11438748538863308
+ },
+ {
+  "site": "LAB4",
+  "instrument_serial": "VNA-4004",
+  "run_id": "GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T111514",
+  "sample_id": "GOLD-RR26-0001",
+  "started": "2026-06-08T11:15:14+00:00",
+  "verdict": "PASS",
+  "headline_margin": 0.21407180734500908,
+  "failed_verification": "2026-06-22T11:00:09+00:00",
+  "failed_calibration": "CAL-LAB4-20260621",
+  "max_dev_db": 0.11438748538863308
+ },
+ {
+  "site": "LAB4",
+  "instrument_serial": "VNA-4004",
+  "run_id": "GOLD-RR26-00012__roundrobin-1000base-t1-artefact__20260608T113019",
+  "sample_id": "GOLD-RR26-0001",
+  "started": "2026-06-08T11:30:19+00:00",
+  "verdict": "PASS",
+  "headline_margin": 0.22133131914211435,
+  "failed_verification": "2026-06-22T11:00:09+00:00",
+  "failed_calibration": "CAL-LAB4-20260621",
+  "max_dev_db": 0.11438748538863308
+ }
+]

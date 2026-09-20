@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "labplatform: Compares laboratories against each other, quantifies the uncertainty of every result, and detects measurement-system drift"
+abstract: "Compares laboratories against each other, quantifies the uncertainty of every result, and detects measurement-system drift."
+type: software
+authors:
+  - family-names: Anil
+    given-names: Sreeram
+    email: sreeramanil30@gmail.com
+repository-code: "https://github.com/anilram30/labplatform"
+license: MIT
+keywords:
+  - metrology
+  - uncertainty-quantification
+  - gum
+  - interlaboratory-comparison
+  - iso-5725
+  - statistical-process-control
+  - drift-detection
+  - traceability
+  - data-platform
+  - python

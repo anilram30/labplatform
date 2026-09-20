@@ -1,0 +1,59 @@
+insertion_loss[A] @ 600 MHz = 7.889 dB   U = 0.05 dB (k = 2)
+Sample ........ GOLD-RR26-0001 (artefact, 15 m, 1000base-t1-link-segment)
+Measurement ... 2026-07-06T08:30 UTC, procedure roundrobin-1000base-t1-artefact, attempt 1, trust trusted, verdict PASS
+Site .......... LAB1 - Site 1 - Roth (reference laboratory), operator a.schmidt
+Instrument .... labauto-sim VNA4-8500 VNA-1001, firmware A.01.20
+Calibration ... CAL-LAB1-20260705 (SOLT, 2026-07-05, kit 85052D-LAB1 due 2027-05-01), verified 2026-07-06 pass dA = 0.0352 dB, RL = 41.8 dB
+Fixture ....... none
+Temperature ... 23 C (ambient (no chamber)), corrected to 23 C; ambient 23 C
+Procedure ..... sha256 71412b7884673a1a…
+Raw data ...... pairA.s4p sha256 1fa7e754e3a6…; manifest 12331c44d0a8…; archive integrity OK
+Software ...... labauto 0.1.0, cablecheck 0.1.1, numpy 2.4.4
+Uncertainty ... repeat 4.7 mdB, reprod 0 mdB, cal 20 mdB, fixture 0 mdB, instrument 10 mdB, environment 9.9 mdB, noise 0.17 mdB
+Round ......... RR-10; DoE d = -0.00767 dB, U(d) = 0.039 dB, E_n = -0.20 (reference consensus: 7.903 ± 0.032 dB)
+Status ........ compatible
+
+insertion_loss[A] @ 600 MHz = 7.89 dB   U = 0.07 dB (k = 2)
+Sample ........ GOLD-RR26-0001 (artefact, 15 m, 1000base-t1-link-segment)
+Measurement ... 2026-07-06T09:30 UTC, procedure roundrobin-1000base-t1-artefact, attempt 1, trust trusted, verdict PASS
+Site .......... LAB2 - Site 2 - Kitzingen, operator m.rossi
+Instrument .... labauto-sim VNA4-8500 VNA-2002, firmware A.01.20
+Calibration ... CAL-LAB2-20260705 (SOLT, 2026-07-05, kit 85052D-LAB2 due 2027-05-01), verified 2026-07-06 pass dA = 0.0439 dB, RL = 41.3 dB
+Fixture ....... none
+Temperature ... 24.5 C (ambient (no chamber)), corrected to 23 C; ambient 24.5 C
+Procedure ..... sha256 71412b7884673a1a…
+Raw data ...... pairA.s4p sha256 42dc60ccdb49…; manifest a737f7427995…; archive integrity OK
+Software ...... labauto 0.1.0, cablecheck 0.1.1, numpy 2.4.4
+Uncertainty ... repeat 4 mdB, reprod 17 mdB, cal 25 mdB, fixture 0 mdB, instrument 10 mdB, environment 13 mdB, noise 0.18 mdB
+Round ......... RR-10; DoE d = -0.01204 dB, U(d) = 0.052 dB, E_n = -0.23 (reference consensus: 7.903 ± 0.032 dB)
+Status ........ compatible
+
+insertion_loss[A] @ 600 MHz = 7.922 dB   U = 0.057 dB (k = 2)
+Sample ........ GOLD-RR26-0001 (artefact, 15 m, 1000base-t1-link-segment)
+Measurement ... 2026-07-06T10:30 UTC, procedure roundrobin-1000base-t1-artefact, attempt 1, trust trusted, verdict PASS
+Site .......... LAB3 - Site 3 - Jelenia Gora, operator j.kowalski
+Instrument .... labauto-sim VNA4-8500 VNA-3003, firmware A.01.20
+Calibration ... CAL-LAB3-20260705 (SOLT, 2026-07-05, kit 85052D-LAB3 due 2027-05-01), verified 2026-07-06 pass dA = 0.0405 dB, RL = 41.5 dB
+Fixture ....... none
+Temperature ... 22 C (ambient (no chamber)), corrected to 23 C; ambient 22 C
+Procedure ..... sha256 71412b7884673a1a…
+Raw data ...... pairA.s4p sha256 cdafb71742ce…; manifest 00abc158c1bb…; archive integrity OK
+Software ...... labauto 0.1.0, cablecheck 0.1.1, numpy 2.4.4
+Uncertainty ... repeat 5 mdB, reprod 3.5 mdB, cal 23 mdB, fixture 0 mdB, instrument 10 mdB, environment 12 mdB, noise 0.18 mdB
+Round ......... RR-10; DoE d = +0.02004 dB, U(d) = 0.046 dB, E_n = +0.43 (reference consensus: 7.903 ± 0.032 dB)
+Status ........ compatible
+
+insertion_loss[A] @ 600 MHz = 7.92 dB   U = 0.071 dB (k = 2)
+Sample ........ GOLD-RR26-0001 (artefact, 15 m, 1000base-t1-link-segment)
+Measurement ... 2026-06-08T11:30 UTC, procedure roundrobin-1000base-t1-artefact, attempt 1, trust trusted, verdict PASS
+Site .......... LAB4 - Site 4 - Changzhou, operator l.wang
+Instrument .... labauto-sim VNA4-8500 VNA-4004, firmware A.01.20
+Calibration ... CAL-LAB4-20260607 (SOLT, 2026-06-07, kit 85052D-LAB4 due 2027-04-03), verified 2026-06-08 pass dA = 0.0556 dB, RL = 41.7 dB
+Fixture ....... none
+Temperature ... 23.5 C (ambient (no chamber)), corrected to 23 C; ambient 23.5 C
+Procedure ..... sha256 71412b7884673a1a…
+Raw data ...... pairA.s4p sha256 93c2e39f979d…; manifest be45c540e9e8…; archive integrity OK
+Software ...... labauto 0.1.0, cablecheck 0.1.1, numpy 2.4.4
+Uncertainty ... repeat 4.7 mdB, reprod 0 mdB, cal 32 mdB, fixture 0 mdB, instrument 10 mdB, environment 10 mdB, noise 0.18 mdB
+Round ......... RR-08; DoE d = +0.002164 dB, U(d) = 0.063 dB, E_n = +0.03 (reference consensus: 7.919 ± 0.031 dB)
+Status ........ compatible; SUSPECT - a later verification on this instrument failed (2026-06-22)

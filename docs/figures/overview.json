@@ -1,0 +1,102 @@
+[
+ {
+  "site": "LAB1",
+  "name": "Site 1 - Roth (reference laboratory)",
+  "instrument": "VNA4-8500 VNA-1001",
+  "runs": 50,
+  "trusted": 50,
+  "flagged": 0,
+  "rejected": 0,
+  "aborted": 0,
+  "pass": 50,
+  "fail": 0,
+  "last_verification": {
+   "time": "2026-07-06T08:00:09+00:00",
+   "status": "pass",
+   "max_dev_db": 0.035205533326298166
+  },
+  "last_calibration": {
+   "record_id": "CAL-LAB1-20260705",
+   "date": "2026-07-05T06:00:00+00:00"
+  },
+  "events": {
+   "action": 1,
+   "warning": 1
+  }
+ },
+ {
+  "site": "LAB2",
+  "name": "Site 2 - Kitzingen",
+  "instrument": "VNA4-8500 VNA-2002",
+  "runs": 50,
+  "trusted": 50,
+  "flagged": 0,
+  "rejected": 0,
+  "aborted": 0,
+  "pass": 42,
+  "fail": 8,
+  "last_verification": {
+   "time": "2026-07-06T09:00:09+00:00",
+   "status": "pass",
+   "max_dev_db": 0.043933708182272824
+  },
+  "last_calibration": {
+   "record_id": "CAL-LAB2-20260705",
+   "date": "2026-07-05T07:00:00+00:00"
+  },
+  "events": {
+   "action": 3,
+   "warning": 6
+  }
+ },
+ {
+  "site": "LAB3",
+  "name": "Site 3 - Jelenia Gora",
+  "instrument": "VNA4-8500 VNA-3003",
+  "runs": 50,
+  "trusted": 50,
+  "flagged": 0,
+  "rejected": 0,
+  "aborted": 0,
+  "pass": 42,
+  "fail": 8,
+  "last_verification": {
+   "time": "2026-07-06T10:00:09+00:00",
+   "status": "pass",
+   "max_dev_db": 0.040533198394449244
+  },
+  "last_calibration": {
+   "record_id": "CAL-LAB3-20260705",
+   "date": "2026-07-05T08:00:00+00:00"
+  },
+  "events": {
+   "action": 2,
+   "warning": 5
+  }
+ },
+ {
+  "site": "LAB4",
+  "name": "Site 4 - Changzhou",
+  "instrument": "VNA4-8500 VNA-4004",
+  "runs": 50,
+  "trusted": 40,
+  "flagged": 0,
+  "rejected": 0,
+  "aborted": 10,
+  "pass": 40,
+  "fail": 0,
+  "last_verification": {
+   "time": "2026-07-06T11:55:49+00:00",
+   "status": "fail",
+   "max_dev_db": 0.2067660667989415
+  },
+  "last_calibration": {
+   "record_id": "CAL-LAB4-20260705",
+   "date": "2026-07-05T09:00:00+00:00"
+  },
+  "events": {
+   "action": 14,
+   "warning": 9
+  }
+ }
+]

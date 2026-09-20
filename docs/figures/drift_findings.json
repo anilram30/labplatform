@@ -1,0 +1,505 @@
+[
+ {
+  "site": "LAB1",
+  "series": "verification dA",
+  "unit": "dB",
+  "n": 10,
+  "labels": [
+   "RR-01",
+   "RR-02",
+   "RR-03",
+   "RR-04",
+   "RR-05",
+   "RR-06",
+   "RR-07",
+   "RR-08",
+   "RR-09",
+   "RR-10"
+  ],
+  "x": [
+   0.026388828299378275,
+   0.023820540334209994,
+   0.024777631834009384,
+   0.031827133887695425,
+   0.04026223156130726,
+   0.028725170361472152,
+   0.03765962214146157,
+   0.03841166122457196,
+   0.030674711426911472,
+   0.035205533326298166
+  ],
+  "trend": {
+   "se": 3.845034355232247e-05,
+   "p": 0.05304118324054548,
+   "intercept": 0.026280940255946142,
+   "n": 10,
+   "r2": 0.39138617417093924,
+   "slope_per_30d": 0.00261636484942163,
+   "significant": false
+  },
+  "change_point": {
+   "index": 3,
+   "shift": 0.00968519945314145,
+   "t": 3.666097914374691,
+   "p": 0.0063451085307322675,
+   "p_bonferroni": 0.044415759715125874,
+   "significant": true
+  },
+  "ewma_first_signal": null,
+  "drifting": true,
+  "causes": [
+   {
+    "candidate": "calibration (verification return loss)",
+    "kind": "correlation over rounds",
+    "r": 0.008332403351848205,
+    "score": 0.008332403351848205
+   },
+   {
+    "candidate": "recalibration",
+    "kind": "routine recalibration every round: uninformative",
+    "from": "CAL-LAB1-20260329",
+    "to": "CAL-LAB1-20260412",
+    "score": 0.0
+   }
+  ],
+  "conclusion": "verification dA at LAB1 drifts at round RR-04 (shift +0.009685 dB); leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); instrument-side evidence from the check standard, independent of the artefact: test cable / connectors / calibration kit."
+ },
+ {
+  "site": "LAB2",
+  "series": "IL @ 600 MHz",
+  "unit": "dB",
+  "n": 10,
+  "labels": [
+   "RR-01",
+   "RR-02",
+   "RR-03",
+   "RR-04",
+   "RR-05",
+   "RR-06",
+   "RR-07",
+   "RR-08",
+   "RR-09",
+   "RR-10"
+  ],
+  "x": [
+   7.901926442507265,
+   7.896011623080117,
+   7.9504704026567055,
+   7.9457876297218775,
+   7.951519468659195,
+   7.882421253632213,
+   7.877462183478623,
+   7.93860888335409,
+   7.944728601079286,
+   7.890671647986717
+  ],
+  "trend": {
+   "se": 0.0002557385775157115,
+   "p": 0.8779629575950515,
+   "intercept": 7.920515080569079,
+   "n": 10,
+   "r2": 0.0031318914081825905,
+   "slope_per_30d": -0.0012163175968905406,
+   "significant": false
+  },
+  "change_point": {
+   "index": 5,
+   "shift": -0.02236459941884572,
+   "t": -1.1757355189831813,
+   "p": 0.27350190346305814,
+   "p_bonferroni": 1.0,
+   "significant": false
+  },
+  "ewma_first_signal": 6,
+  "drifting": true,
+  "causes": [
+   {
+    "candidate": "calibration (verification return loss)",
+    "kind": "correlation over rounds",
+    "r": -0.6047905869972422,
+    "score": 0.6047905869972422
+   },
+   {
+    "candidate": "production samples move with the artefact",
+    "kind": "artefact vs production",
+    "r": -0.11867770791302197,
+    "production_change_point": false,
+    "score": 0.11867770791302197
+   },
+   {
+    "candidate": "calibration / test cable (verification dA)",
+    "kind": "correlation over rounds",
+    "r": 0.11781646520262108,
+    "score": 0.11781646520262108
+   },
+   {
+    "candidate": "recalibration",
+    "kind": "routine recalibration every round: uninformative",
+    "from": "CAL-LAB2-20260426",
+    "to": "CAL-LAB2-20260510",
+    "score": 0.0
+   }
+  ],
+  "conclusion": "IL @ 600 MHz at LAB2 drifts flagged by EWMA only; leading candidate: calibration (verification return loss); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+ },
+ {
+  "site": "LAB2",
+  "series": "worst-case RL",
+  "unit": "dB",
+  "n": 10,
+  "labels": [
+   "RR-01",
+   "RR-02",
+   "RR-03",
+   "RR-04",
+   "RR-05",
+   "RR-06",
+   "RR-07",
+   "RR-08",
+   "RR-09",
+   "RR-10"
+  ],
+  "x": [
+   27.224292666666667,
+   27.202799,
+   26.17186533333333,
+   26.22237133333333,
+   26.12586466666667,
+   26.452894333333333,
+   27.100513333333335,
+   26.203846,
+   26.136118333333332,
+   26.371627999999998
+  ],
+  "trend": {
+   "se": 0.0034056864387381662,
+   "p": 0.16508341290128295,
+   "intercept": 26.849020781818183,
+   "n": 10,
+   "r2": 0.2258686976314578,
+   "slope_per_30d": -0.15609594372294366,
+   "significant": false
+  },
+  "change_point": {
+   "index": 2,
+   "shift": -0.8654081666666684,
+   "t": -3.5994955668022706,
+   "p": 0.006987415295003556,
+   "p_bonferroni": 0.04891190706502489,
+   "significant": true
+  },
+  "ewma_first_signal": null,
+  "drifting": true,
+  "causes": [
+   {
+    "candidate": "calibration (verification return loss)",
+    "kind": "correlation over rounds",
+    "r": 0.7924840867504098,
+    "score": 0.7924840867504098
+   },
+   {
+    "candidate": "calibration / test cable (verification dA)",
+    "kind": "correlation over rounds",
+    "r": 0.3885355899676672,
+    "score": 0.3885355899676672
+   },
+   {
+    "candidate": "production samples move with the artefact",
+    "kind": "artefact vs production",
+    "r": -0.1158900918293246,
+    "production_change_point": false,
+    "score": 0.1158900918293246
+   },
+   {
+    "candidate": "recalibration",
+    "kind": "routine recalibration every round: uninformative",
+    "from": "CAL-LAB2-20260315",
+    "to": "CAL-LAB2-20260329",
+    "score": 0.0
+   }
+  ],
+  "conclusion": "worst-case RL at LAB2 drifts at round RR-03 (shift -0.8654 dB); leading candidate: calibration (verification return loss); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+ },
+ {
+  "site": "LAB2",
+  "series": "verification dA",
+  "unit": "dB",
+  "n": 10,
+  "labels": [
+   "RR-01",
+   "RR-02",
+   "RR-03",
+   "RR-04",
+   "RR-05",
+   "RR-06",
+   "RR-07",
+   "RR-08",
+   "RR-09",
+   "RR-10"
+  ],
+  "x": [
+   0.0644376457549356,
+   0.0818730829209997,
+   0.07244204097947815,
+   0.06072308045793662,
+   0.06782916856725052,
+   0.05760050036162667,
+   0.05967901935757425,
+   0.054290662002131285,
+   0.05238475969136758,
+   0.043933708182272824
+  ],
+  "trend": {
+   "se": 4.843908939539897e-05,
+   "p": 0.0022133001731031686,
+   "intercept": 0.07502131538632556,
+   "n": 10,
+   "r2": 0.7098907171211898,
+   "slope_per_30d": -0.0064294993136991595,
+   "significant": true
+  },
+  "change_point": {
+   "index": 5,
+   "shift": -0.015883273817125593,
+   "t": -3.4845584397205522,
+   "p": 0.008264143105974916,
+   "p_bonferroni": 0.05784900174182441,
+   "significant": false
+  },
+  "ewma_first_signal": 9,
+  "drifting": true,
+  "causes": [
+   {
+    "candidate": "calibration (verification return loss)",
+    "kind": "correlation over rounds",
+    "r": 0.18409095410650372,
+    "score": 0.18409095410650372
+   },
+   {
+    "candidate": "recalibration",
+    "kind": "routine recalibration every round: uninformative",
+    "from": "CAL-LAB2-20260426",
+    "to": "CAL-LAB2-20260510",
+    "score": 0.0
+   }
+  ],
+  "conclusion": "verification dA at LAB2 drifts as a trend of -0.006429 dB/30 d; leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); instrument-side evidence from the check standard, independent of the artefact: test cable / connectors / calibration kit."
+ },
+ {
+  "site": "LAB3",
+  "series": "IL @ 600 MHz",
+  "unit": "dB",
+  "n": 10,
+  "labels": [
+   "RR-01",
+   "RR-02",
+   "RR-03",
+   "RR-04",
+   "RR-05",
+   "RR-06",
+   "RR-07",
+   "RR-08",
+   "RR-09",
+   "RR-10"
+  ],
+  "x": [
+   7.903204010025061,
+   7.906361570593149,
+   7.912518629908103,
+   7.927889724310777,
+   7.916414369256473,
+   7.957130492898913,
+   7.890694068504594,
+   7.895080701754385,
+   7.961024895572263,
+   7.922749540517962
+  ],
+  "trend": {
+   "se": 0.00018974610017485826,
+   "p": 0.38757625101206233,
+   "intercept": 7.908384275841118,
+   "n": 10,
+   "r2": 0.09449722138437451,
+   "slope_per_30d": 0.0052012021395481415,
+   "significant": false
+  },
+  "change_point": {
+   "index": 8,
+   "shift": 0.028225522138679793,
+   "t": 1.6235289283972536,
+   "p": 0.14313209457377296,
+   "p_bonferroni": 1.0,
+   "significant": false
+  },
+  "ewma_first_signal": 5,
+  "drifting": true,
+  "causes": [
+   {
+    "candidate": "calibration (verification return loss)",
+    "kind": "correlation over rounds",
+    "r": -0.37104946560891144,
+    "score": 0.37104946560891144
+   },
+   {
+    "candidate": "calibration / test cable (verification dA)",
+    "kind": "correlation over rounds",
+    "r": -0.14833526998265778,
+    "score": 0.14833526998265778
+   },
+   {
+    "candidate": "production samples move with the artefact",
+    "kind": "artefact vs production",
+    "r": 0.026752245984469476,
+    "production_change_point": false,
+    "score": 0.026752245984469476
+   },
+   {
+    "candidate": "recalibration",
+    "kind": "routine recalibration every round: uninformative",
+    "from": "CAL-LAB3-20260607",
+    "to": "CAL-LAB3-20260621",
+    "score": 0.0
+   }
+  ],
+  "conclusion": "IL @ 600 MHz at LAB3 drifts flagged by EWMA only; leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+ },
+ {
+  "site": "LAB3",
+  "series": "degree of equivalence d_i (IL @ 600 MHz)",
+  "unit": "dB",
+  "n": 10,
+  "labels": [
+   "RR-01",
+   "RR-02",
+   "RR-03",
+   "RR-04",
+   "RR-05",
+   "RR-06",
+   "RR-07",
+   "RR-08",
+   "RR-09",
+   "RR-10"
+  ],
+  "x": [
+   -0.005497424962526587,
+   -0.005439619691888886,
+   -0.0030069058143080696,
+   0.0064742501516343864,
+   -0.00251156740382541,
+   0.030903393135572443,
+   -0.002070680847566564,
+   -0.024255785460685964,
+   0.037746546357812605,
+   0.02004254484443635
+  ],
+  "trend": {
+   "se": 0.00014304189376778428,
+   "p": 0.22574022729230966,
+   "intercept": -0.006589670239693182,
+   "n": 10,
+   "r2": 0.17718867879187933,
+   "slope_per_30d": 0.005632450128837434,
+   "significant": false
+  },
+  "change_point": {
+   "index": 8,
+   "shift": 0.02957008821282381,
+   "t": 2.481335599490548,
+   "p": 0.038032393493709654,
+   "p_bonferroni": 0.26622675445596755,
+   "significant": false
+  },
+  "ewma_first_signal": 5,
+  "drifting": true,
+  "causes": [
+   {
+    "candidate": "calibration (verification return loss)",
+    "kind": "correlation over rounds",
+    "r": -0.44494438104095657,
+    "score": 0.44494438104095657
+   },
+   {
+    "candidate": "calibration / test cable (verification dA)",
+    "kind": "correlation over rounds",
+    "r": -0.13483720043466466,
+    "score": 0.13483720043466466
+   },
+   {
+    "candidate": "production samples move with the artefact",
+    "kind": "artefact vs production",
+    "r": -0.08348608086950049,
+    "production_change_point": false,
+    "score": 0.08348608086950049
+   },
+   {
+    "candidate": "recalibration",
+    "kind": "routine recalibration every round: uninformative",
+    "from": "CAL-LAB3-20260607",
+    "to": "CAL-LAB3-20260621",
+    "score": 0.0
+   }
+  ],
+  "conclusion": "degree of equivalence d_i (IL @ 600 MHz) at LAB3 drifts flagged by EWMA only; leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); the production results did not follow the artefact: a measurement-system change confined to the artefact hook-up, or the artefact itself."
+ },
+ {
+  "site": "LAB4",
+  "series": "verification dA",
+  "unit": "dB",
+  "n": 8,
+  "labels": [
+   "RR-01",
+   "RR-02",
+   "RR-03",
+   "RR-04",
+   "RR-05",
+   "RR-06",
+   "RR-07",
+   "RR-08"
+  ],
+  "x": [
+   0.034950908313248874,
+   0.03529280293031434,
+   0.0426208339179901,
+   0.04242510092420204,
+   0.03678565078083551,
+   0.038763469666182715,
+   0.08762852296094081,
+   0.055551082224102544
+  ],
+  "trend": {
+   "se": 0.00016339361286814066,
+   "p": 0.08956179928724622,
+   "intercept": 0.03055778502179714,
+   "n": 8,
+   "r2": 0.4054351345200337,
+   "slope_per_30d": 0.009915007005875495,
+   "significant": false
+  },
+  "change_point": {
+   "index": 6,
+   "shift": 0.033116674837059414,
+   "t": 4.151294283535112,
+   "p": 0.006002411515542156,
+   "p_bonferroni": 0.03001205757771078,
+   "significant": true
+  },
+  "ewma_first_signal": 6,
+  "drifting": true,
+  "causes": [
+   {
+    "candidate": "calibration (verification return loss)",
+    "kind": "correlation over rounds",
+    "r": -0.276073429272936,
+    "score": 0.276073429272936
+   },
+   {
+    "candidate": "recalibration",
+    "kind": "routine recalibration every round: uninformative",
+    "from": "CAL-LAB4-20260510",
+    "to": "CAL-LAB4-20260524",
+    "score": 0.0
+   }
+  ],
+  "conclusion": "verification dA at LAB4 drifts at round RR-07 (shift +0.03312 dB); leading candidate: no metadata candidate (|r| < 0.6, no categorical change; recalibration is routine); instrument-side evidence from the check standard, independent of the artefact: test cable / connectors / calibration kit."
+ }
+]
